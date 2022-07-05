@@ -63,7 +63,7 @@ class TextWriter {
 
 }
 
-class CLI {
+class CommandLineInterface {
   Input
   Output
 }
