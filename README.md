@@ -1,5 +1,4 @@
-![image](https://user-images.githubusercontent.com/87342389/177408810-6d8f3c00-40d0-442e-ae14-704d6546fc6c.png)
-
+![image](https://user-images.githubusercontent.com/92636394/177410905-fc86e3c9-745c-476b-9207-bca843961b0f.png)
 
 
 title Classes - Website Analysis
@@ -51,4 +50,14 @@ enum TargetType {
     AUDIO
 }
 
-![image](https://user-images.githubusercontent.com/92636394/177410905-fc86e3c9-745c-476b-9207-bca843961b0f.png)
+class ExcelWriter {
+
+}
+
+class JSONWriter {
+
+}
+
+class TextWriter {
+
+}
