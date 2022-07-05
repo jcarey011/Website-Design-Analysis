@@ -61,3 +61,8 @@ class JSONWriter {
 class TextWriter {
 
 }
+
+class CLI {
+  Input
+  Output
+}
