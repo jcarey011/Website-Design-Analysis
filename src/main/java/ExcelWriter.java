@@ -1,7 +1,6 @@
 package src.main.java;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -15,10 +14,15 @@ public class ExcelWriter {
     
     public static void main(String[] args) {
 
-            LocalDateTime today = LocalDateTime.now();
+            produceFileName();
+}
+
+    public static void produceFileName(){
+
+        LocalDateTime today = LocalDateTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-hhmmss");
             String formattedTime = formatter.format(today);
 
-            System.out.println(formattedTime);
+            System.out.println(formattedTime + "-summary");
     }
-}
+    }
