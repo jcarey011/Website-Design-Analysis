@@ -8,6 +8,8 @@ public class TextWriter
 
     //string array with fake directory data 
     String[] directory = {"Rainbow", "Reindeer", "Apple", "Zebra", "Unicorn", "Test"};
+    
+    //calling method to sort directory names lexicographically
     sortingDirectories(directory);
 
     //printing to commandline output to visualize/test
