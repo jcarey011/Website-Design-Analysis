@@ -1,5 +1,2 @@
-dependencies {
-    implementation 'org.apache.poi:poi-ooxml:3.12+' 
-
-     
-}
+// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
