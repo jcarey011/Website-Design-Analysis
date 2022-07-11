@@ -1,1 +1,12 @@
-apply plugin: 'java'
+plugins {
+    id 'java'
+}
+
+repositories {
+
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.apache.poi:poi-ooxml:3.12'
+}
