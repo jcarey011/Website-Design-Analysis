@@ -1,3 +1,0 @@
-dependencies {
-   testImplementation 'org.apache.poi:poi-ooxml:3.12+'
-}
