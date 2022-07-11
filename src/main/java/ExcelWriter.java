@@ -1,10 +1,12 @@
-package src.main.java;
+
 import java.io.*;
-//import java.io.File;
+import java.util.*;
 //import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-//import org.apache.poi.xssf.usermodel.*;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.*;
 
  
 
@@ -13,23 +15,68 @@ import java.time.format.DateTimeFormatter;
 
 public class ExcelWriter {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-            produceFileName();
+            createExcel();
     }   
 
-    public static void produceFileName(){
+    public static String produceFileName(){
 
         LocalDateTime today = LocalDateTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-hhmmss");
             String formattedTime = formatter.format(today);
 
-            System.out.println(formattedTime + "-summary");
+            return formattedTime + "-summary.xlsx";
     }
 
-    public static void createExcel(){
+    /**
+     * @throws IOException
+     */
+    public static void createExcel() throws IOException{
 
+        //creating workbook
+        XSSFWorkbook workbook = new XSSFWorkbook();
         
+        //creating spreadsheet
+        XSSFSheet spreadsheet = workbook.createSheet("Analysis");
+
+        //creating row
+        XSSFRow row;
+
+        //data to be written
+        Map <String, Object[]> websiteData = new TreeMap<String, Object[]>();
+
+        websiteData.put( "1", new Object[] { "Page", "# Images", "# CSS", "Scripts", "# Links (Intra-Page)", "# Links (Internal)", "# Links (External)"} );
+
+        Set<String> keyid = websiteData.keySet();
+
+        int rowID = 0;
+
+        //writing data into rows
+
+        for (String key : keyid)
+        {
+            row = spreadsheet.createRow(rowID++);
+            Object[] objectArr = websiteData.get(key);
+
+            int cellID = 0;
+
+            for (Object obj : objectArr)
+            {
+                Cell cell = row.createCell(cellID++);
+                cell.setCellValue((String)obj);
+            }
+        }
+
+        OutputStream out = new FileOutputStream(produceFileName());
+
+        workbook.write(out);
+        out.close();
+
+        workbook.close();
+
+
+
     }
 }
 
