@@ -1,4 +1,4 @@
-package src.main.java;
+package edu.odu.cs.cs350;
 public class CommandLine {
     
     public void main(String args[])
@@ -12,12 +12,12 @@ public class CommandLine {
     //Function will access files and pull names
     public static String fetchFileNames(String[] FileList)
     {
-        
+        return FileList;
     }
     //Function will access files and collect number of files in total
-    public static String fetchNumberFiles(int numFiles)
+    public static int fetchNumberFiles(int numFiles)
     {
-
+        return numFiles;
     }
     //Function will output file names to CLI
     public static void outPutFileNames(String[] FileList, int FileListSize)
