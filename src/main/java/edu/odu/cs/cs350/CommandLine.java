@@ -10,7 +10,7 @@ public class CommandLine {
         outPutFileNames(fileList, FileListSize);
     }
     //Function will access files and pull names
-    public static String fetchFileNames(String[] FileList)
+    public static String[] fetchFileNames(String[] FileList)
     {
         return FileList;
     }
