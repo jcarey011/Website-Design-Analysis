@@ -13,7 +13,7 @@ public class Options {
     private int maxFuncParams;
 
     public Options(){
-        this.validExts = new ArrayList<>(Arrays.asList("?", "?"));
+        this.validExts = new ArrayList<>(Arrays.asList("html", "htm"));
         this.smallestSeq = 10;
         this.maxFuncParams = 8;
     }
@@ -55,7 +55,7 @@ public class Options {
             e.printStackTrace();
         }
 
-        this.validExts = Arrays.asList("?", "?");
+        this.validExts = Arrays.asList("html", "htm");
         this.smallestSeq = 10;
         this.maxFuncParams = 8;
 
