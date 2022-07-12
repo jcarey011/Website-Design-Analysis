@@ -1,4 +1,4 @@
-package edu.odu.cs.cs350;
+package src.main.java;
 class Website {
 
 public static void main(String[] args)
