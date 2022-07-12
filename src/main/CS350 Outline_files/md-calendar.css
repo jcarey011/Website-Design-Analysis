@@ -1,0 +1,21 @@
+html    {
+	}
+
+body    {
+    background-color: rgba(255,255,255,0.0);
+}
+
+li.currentEvent {
+  font-weight:bold;
+}
+
+li.recentEvent {
+    text-decoration: line-through;
+}
+
+li.pastEvent {
+    display: none;
+}
+
+li.futureEvent {
+}

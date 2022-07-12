@@ -1,0 +1,62 @@
+html    {
+	}
+
+body	{
+         background: transparent;
+	}
+
+
+table {
+  background: #002441;
+  color: #919693; 
+  width: 15ex;
+  padding: 0.5ex;
+}
+
+
+input {
+  font-weight: bold;
+  font-family: serif;
+  font-size: 10pt;
+  width: 95;
+}
+
+span  {
+  padding: 2px;
+  margin: 2px;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 10pt;
+  border-width: thin;
+  border-style: outset;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+td  {
+  padding: 8px;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 12pt;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+tr.separator	{
+  height: 1px;
+}
+
+
+a:link {
+  color: #D0D0D0; 
+  text-decoration: none;
+}
+a:visited {
+  color: #D0D0D0; 
+  text-decoration: none;
+}
+a:hover {
+  color: #006600;
+  text-decoration: none;
+}
+
