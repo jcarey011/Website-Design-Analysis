@@ -10,9 +10,8 @@ public class CommandLine {
         outPutFileNames(fileList, FileListSize);
     }
     //Function will access files and pull names
-    public static String fetchFileNames(String[] FileList)
+    public static void fetchFileNames(String[] FileList)
     {
-        return FileList;
     }
     //Function will access files and collect number of files in total
     public static int fetchNumberFiles(int numFiles)
