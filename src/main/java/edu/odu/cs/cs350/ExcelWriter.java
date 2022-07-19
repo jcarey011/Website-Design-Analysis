@@ -20,6 +20,11 @@ public class ExcelWriter {
             createExcel();
     }   
 
+    /**
+     * Gets the local date and time and adds the summary titele to the end
+     * @return file name
+     */
+    
     public static String produceFileName(){
 
         LocalDateTime today = LocalDateTime.now();
@@ -30,6 +35,8 @@ public class ExcelWriter {
     }
 
     /**
+     * Returns the newly created Excel document with the file name created from the produceFileName function
+     * @return Excel file
      * @throws IOException
      */
     public static void createExcel() throws IOException{
