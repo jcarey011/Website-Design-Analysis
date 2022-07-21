@@ -1,3 +1,6 @@
+/**
+ * This class creates and outputs a json file
+ */
 package edu.odu.cs.cs350;
 
 import java.io.FileWriter;
@@ -15,20 +18,24 @@ public class JsonWriter {
 	public static void main(String args[]) {
 		CreateJson();
 	}
-	/*
-	 *	Produces filename (duplicate function used in ExcelWriter; authored by Jasmine) 
-	 */
+    /**
+     * @return name of file to be created
+     */
 	public static String produceFileName(){
+
 		LocalDateTime today = LocalDateTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-hhmmss");
 		String formattedTime = formatter.format(today);
 
 		return formattedTime + "-summary.json";
 	}
-	/*
-	 * Create and output json file
-	 */
+    /**
+     * @return json file
+     * @param json object
+     * @throws IOException
+     */
 	public static void CreateJson() {
+		
 		JSONObject jObject  = new JSONObject();
 		jObject.put("Images", "Image Information");
 
