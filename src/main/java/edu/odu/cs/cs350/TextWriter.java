@@ -11,7 +11,7 @@ public class TextWriter
     public static void main(String [] directories)
     {
 
-    //string array with fake directory data 
+    //string array with fake directory data and int array with fake image size data
     String[] directory = {"/Rainbow", "/Reindeer", "/Apple", "/Zebra", "/Unicorn", "/Test"};
     int[] sizes = {125, 657, 27, 195, 206, 987};
     //calling method to sort directory names lexicographically
@@ -41,14 +41,15 @@ public class TextWriter
         i++;
     }
     System.out.println(total); 
-
-
-
-
-    
-
 }
-//method to lexicographically sort directory names
+
+
+/**
+ * Sorts directory names lexicographically
+ * @param directories which is the list of directories
+ * @return directories which would be the now sorted list of directories
+ */
+
 public static String[] sortingDirectories(String[] directories)
 {
     for (int i=0; i<directories.length; i++){
@@ -64,8 +65,10 @@ public static String[] sortingDirectories(String[] directories)
 }
 
 
-
-//method to get filename as current day
+/**
+ * Creates filename based on the date and time
+ * @return the date and time to name the file + summary as an appendage
+ */
 public static String FileName(){
 
     LocalDateTime today = LocalDateTime.now();
