@@ -10,4 +10,5 @@ repositories {
 dependencies {
     implementation 'org.apache.poi:poi-ooxml:3.12'
     implementation 'org.ini4j:ini4j:0.5.4'
+    implementation 'com.cedarsoftware:json-io:4.10.1'
 }
