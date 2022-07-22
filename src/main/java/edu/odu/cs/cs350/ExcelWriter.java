@@ -18,7 +18,7 @@ public class ExcelWriter {
     public static void main(String[] args) throws IOException {
 
             createExcel();
-    }   
+    } 
 
     /**
      * Gets the local date and time and adds the summary titele to the end
@@ -45,7 +45,7 @@ public class ExcelWriter {
         XSSFWorkbook workbook = new XSSFWorkbook();
         
         //creating spreadsheet
-        XSSFSheet spreadsheet = workbook.createSheet("Analysis");
+        XSSFSheet spreadsheet = workbook.createSheet("Summary");
 
         //creating row
         XSSFRow row;
