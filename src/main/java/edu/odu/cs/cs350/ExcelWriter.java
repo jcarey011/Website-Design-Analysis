@@ -18,8 +18,13 @@ public class ExcelWriter {
     public static void main(String[] args) throws IOException {
 
             createExcel();
-    }   
+    } 
 
+    /**
+     * Gets the local date and time and adds the summary titele to the end
+     * @return file name
+     */
+    
     public static String produceFileName(){
 
         LocalDateTime today = LocalDateTime.now();
@@ -30,6 +35,8 @@ public class ExcelWriter {
     }
 
     /**
+     * Returns the newly created Excel document with the file name created from the produceFileName function
+     * @return Excel file
      * @throws IOException
      */
     public static void createExcel() throws IOException{
@@ -38,7 +45,7 @@ public class ExcelWriter {
         XSSFWorkbook workbook = new XSSFWorkbook();
         
         //creating spreadsheet
-        XSSFSheet spreadsheet = workbook.createSheet("Analysis");
+        XSSFSheet spreadsheet = workbook.createSheet("Summary");
 
         //creating row
         XSSFRow row;
