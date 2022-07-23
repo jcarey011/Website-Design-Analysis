@@ -15,11 +15,9 @@ import org.json.simple.JSONObject;
 
 
 public class JsonWriter {
-	public static void main(String args[]) {
-		CreateJson();
-	}
     /**
-     * @return name of file to be created
+     * Produces file name for json file to be created)
+     * @return string name for json output
      */
 	public static String produceFileName(){
 
@@ -30,6 +28,7 @@ public class JsonWriter {
 		return formattedTime + "-summary.json";
 	}
     /**
+     * Creates and outputs json file
      * @return json file
      * @param json object
      * @throws IOException
