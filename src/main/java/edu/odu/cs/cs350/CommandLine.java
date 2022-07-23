@@ -1,29 +1,52 @@
 package edu.odu.cs.cs350;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class CommandLine {
     
-    public void main(String args[])
-    {
-        //Example File List
-        String[] fileList = {"test.txt", "test.xlxs", "test.json"};
-        //Example File Size 
-        int FileListSize = 3;
-        outPutFileNames(fileList, FileListSize);
+    private static int numberOfFiles;
+
+    public CommandLine(){
+
     }
-    //Function will access files and pull names
-    public static String[] fetchFileNames(String[] FileList)
-    {
+    /*
+     * Function will access files and pull names
+     */
+    public static String getNames(String Name){
+        return Name;
     }
-    //Function will access files and collect number of files in total
-    public static int fetchNumberFiles(int numFiles)
+    /*
+     * Function will set number of files known
+     * @param number  number to set private integer to
+     */
+    public static void setNumberFiles(int number)
     {
-        return numFiles;
+        numberOfFiles = number;
     }
-    //Function will output file names to CLI
-    public static void outPutFileNames(String[] FileList, int FileListSize)
+    /*
+    *   Function will access files and collect number of files in total
+    *   @param numfiles  number of files found
+    *   @return numFiles
+    */
+    public static int fetchNumberFiles()
     {
+        return numberOfFiles;
+    }
+    /* 
+     * Function will output file names to CLI
+     * @param FileListSize  number of known files
+     * @param numberOfFile  
+    */
+    public static void outPutFileNames(int FileListSize, String FileName)
+    {
+        FileListSize = fetchNumberFiles();
+        List<String> files = new ArrayList<>();
+        files.add(getNames(FileName));
         for (int i = 0; i < FileListSize; i++)
         {
-            System.out.println(FileList);
+           files.forEach(System.out::println);
         }
     }
     
