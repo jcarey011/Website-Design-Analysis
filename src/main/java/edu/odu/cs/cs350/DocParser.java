@@ -55,7 +55,7 @@ public class DocParser
     }
 
     public String toString(){
-        String out = String.format("    %s, %d", this.absFilePath, this.numTokens);
+        String out = String.format("    %s, %d", this.absFilePath, this.numTags);
         return out;
     }
 
