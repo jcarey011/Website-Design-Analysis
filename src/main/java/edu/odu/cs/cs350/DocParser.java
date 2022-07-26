@@ -90,7 +90,7 @@ public class DocParser
     System.out.println(numScriptTags);
     System.out.println(scriptTags);
 
-    return .getTokens();
+    return null;
     }
 }
   /*  
