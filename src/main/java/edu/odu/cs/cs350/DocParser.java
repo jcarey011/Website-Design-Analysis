@@ -44,7 +44,8 @@ public class DocParser {
 public static void main(String[] args) throws IOException {
 
     inputURL();
-    
+    Website website = new Website(args);
+    Options userOptions = website.getOptions();
 }
     
 }
