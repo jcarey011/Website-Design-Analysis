@@ -11,8 +11,7 @@ public class OptionsTest {
 
         List<String> extensions = options.getValidExts();
 
-        assertEquals(extensions.get(0), "cpp");
-        assertEquals(extensions.get(1), "h");
-        assertEquals(extensions.get(2), "hpp");
+        assertEquals(extensions.get(0), "html");
+        assertEquals(extensions.get(1), "htm");
     }
 }

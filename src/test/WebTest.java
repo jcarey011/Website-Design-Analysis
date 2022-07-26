@@ -10,10 +10,10 @@ import org.junit.jupiter.api.Test;
 
 public class WebTest{
     @Test void testConstructor(){
-        String [] thingy = new String[]{"1", "settings.ini", "src/test/data/outline.html", "src/test/data/foo.cpp"};
+        String [] thingy = new String[]{"1", "settings.ini", "src/test/data/outline.html", "src/test/data/outline.htm"};
         List<File> files = new ArrayList<>();
         File f1 = new File("src/test/data/outline.html");
-        File f2 = new File("src/test/data/foo.cpp");
+        File f2 = new File("src/test/data/outline.htm");
         files.add(f1);
         files.add(f2);
 
