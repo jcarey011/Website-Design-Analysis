@@ -14,13 +14,13 @@ public class DocParser {
     
     //File input = new File("example/test.html");
 
-    Document newDoc = Jsoup.connect("https://www.cnn.com/").get();
+    Document newDoc = Jsoup.connect("https://www.cs.odu.edu/~tkennedy/summer22").get();
 
 
     Elements anchorTags = newDoc.select( "a[href]");
     Elements imageTags = newDoc.select("img[src]");
-    Elements linkTags = newDoc.select("[link]");
-    Elements scriptTags = newDoc.select("[script]");
+    Elements linkTags = newDoc.select("link");
+    Elements scriptTags = newDoc.select("script");
 
     int numAnchorTags = anchorTags.size();
     int numImageTags = imageTags.size();
