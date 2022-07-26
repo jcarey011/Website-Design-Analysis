@@ -70,8 +70,8 @@ public class DocParser
     Document newDoc = Jsoup.parse(filePath);
     Elements anchorTags = newDoc.select( "a[href]");
     Elements imageTags = newDoc.select("img[src]");
-    Elements linkTags = newDoc.select("[link]");
-    Elements scriptTags = newDoc.select("[script]");
+    Elements linkTags = newDoc.select("link");
+    Elements scriptTags = newDoc.select("script");
 
     int numAnchorTags = anchorTags.size();
     int numImageTags = imageTags.size();
