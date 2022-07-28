@@ -3,9 +3,6 @@ name: Java CI with Gradle
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
 jobs:
   build:
 
@@ -21,15 +18,12 @@ jobs:
         cache: gradle
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-<<<<<<< HEAD
     - name: Test with Gradle
       run: ./gradlew test
-    - name: Docs with Gradle
-      run: ./gradlew javadoc
     - name: Build with Gradle
       run: ./gradlew build
-=======
     - name: Build and test
       working-directory: src/main/java/edu/odu/cs/cs350
       run: ../gradlew build
->>>>>>> 43a19c3b3036af68043bb85df8870f3c5f04fd29
+=======
+
