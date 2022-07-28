@@ -66,7 +66,9 @@ public class DocParser
 
     public List<Tag> Tag(File file) throws IOException{
     String filePath = file.getAbsolutePath();
-     
+    
+    ///Store these in the list and then print out the list
+
     Document newDoc = Jsoup.parse(filePath);
     Elements anchorTags = newDoc.select( "a[href]");
     Elements imageTags = newDoc.select("img[src]");
@@ -94,7 +96,7 @@ public class DocParser
     }
 }
   /*  
-    //File input = new File("example/test.html");
+    //File input = new File("example/test.html")
 
     Document newDoc = Jsoup.connect("https://www.cnn.com/").get();
 
@@ -122,7 +124,7 @@ public class DocParser
     System.out.println(scriptTags);
     
     }
-    */
+
 
 public static void main(String[] args) throws IOException {
 
@@ -136,4 +138,4 @@ public static void main(String[] args) throws IOException {
 }
 
 }
-    
+    */
