@@ -1,0 +1,14 @@
+-classpath '/home/cs_hhawa001/Website-Design-Analysis/build/classes/java/main:/home/cs_hhawa001/Website-Design-Analysis/build/resources/main:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/3.12/d7a6675a9e99f351c9f3b98ca21e293d3ca12b08/poi-ooxml-3.12.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/org.ini4j/ini4j/0.5.4/4a3ee4146a90c619b20977d65951825f5675b560/ini4j-0.5.4.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/3.12/8be19a6a1fa08e934a497929f360111a4d2e5115/poi-3.12.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.12.1/55819a28fc834c2f2bcf4dcdb278524dc3cf088f/jsoup-1.12.1.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml-schemas/3.12/f74d5b8b80fa17e174660c84f54d888912a97106/poi-ooxml-schemas-3.12.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/org.apache.xmlbeans/xmlbeans/2.6.0/29e80d2dd51f9dcdef8f9ffaee0d4dc1c9bbfc87/xmlbeans-2.6.0.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar:/home/cs_hhawa001/.gradle/caches/modules-2/files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar'
+-d '/home/cs_hhawa001/Website-Design-Analysis/build/docs/javadoc'
+-doctitle 'Website-Design-Analysis API'
+-notimestamp 
+-quiet 
+-windowtitle 'Website-Design-Analysis API'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/CommandLine.java'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/DocParser.java'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/ExcelWriter.java'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/JsonWriter.java'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Main.java'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Options.java'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/TextWriter.java'
+'/home/cs_hhawa001/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Website.java'

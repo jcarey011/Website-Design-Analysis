@@ -25,3 +25,37 @@ test {
         events "passed", "skipped", "failed", "standardOut", "standardError"
     }
 }
+
+task reports (dependsOn: ['javadoc', 'test']){
+    
+}
+
+task deployReports(dependsOn: 'reports'){
+    doLast{
+        exec{
+            commandLine "git", "add", "."
+        }
+        exec{
+            commandLine "git", "commit", "-m", "cleanup"
+        }
+        exec{
+            commandLine "git", "checkout", "gh-pages"
+        }
+        exec{
+            commandLine "git", "checkout", "main", "--", "build/docs"
+        }
+        exec{
+            commandLine "git", "add", "."
+        }
+        exec{
+            commandLine "git", "commit", "-m", "cleanup"
+        }
+        exec{
+            commandLine "git", "checkout", "main", "--", "build/reports"
+        }
+        exec{
+            commandLine "git", "add", "."
+        }
+    
+    }
+}
