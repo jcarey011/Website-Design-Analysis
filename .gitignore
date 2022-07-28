@@ -22,7 +22,7 @@
 *.project
 *.classpath
 *.vscode/
-!.gradle
+!settings.gradle
 *.json
 *.txt
 *xlsx
