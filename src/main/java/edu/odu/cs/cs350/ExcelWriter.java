@@ -8,17 +8,15 @@ import java.time.format.DateTimeFormatter;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.*;
 
- 
-
-
 
 
 public class ExcelWriter {
-    
+    /* 
     public static void main(String[] args) throws IOException {
 
             createExcel();
     } 
+    */
 
     /**
      * Gets the local date and time and adds the summary titele to the end
