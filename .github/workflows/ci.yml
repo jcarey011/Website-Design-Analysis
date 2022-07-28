@@ -30,6 +30,6 @@ jobs:
       run: ./gradlew build
 =======
     - name: Build and test
-      working-directory: code/src/main/java/edu/odu/cs/cs350
+      working-directory: src/main/java/edu/odu/cs/cs350
       run: ../gradlew build
 >>>>>>> 43a19c3b3036af68043bb85df8870f3c5f04fd29
