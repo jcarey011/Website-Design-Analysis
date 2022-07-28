@@ -1,9 +1,8 @@
-package src.test;
+package edu.odu.cs.cs350;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.fail;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import src.main.java.TextWriter;
 
 public class testWriterSortingTest 
 {

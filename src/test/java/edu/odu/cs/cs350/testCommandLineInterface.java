@@ -1,14 +1,12 @@
-package src.test;
+package edu.odu.cs.cs350;
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.assertEquals;
 import static org.junit.Assert.fail;
-import static org.junit.Assert;
-import org.junit.Test;
-import src.main.java.CommandLine;
+import org.junit.jupiter.api.Test;
 
-public class testCommandLineInterface {
+
+/*public class testCommandLineInterface {
     
-    @test
+    @Test
     public void testCLIFetchNumber()
     {
         int numberOfFiles = 4;
@@ -20,3 +18,4 @@ public class testCommandLineInterface {
 
     }
 }
+*/

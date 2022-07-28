@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-public class WebTest{
+/*public class WebTest{
     @Test void testConstructor(){
         String [] thingy = new String[]{"1", "settings.ini", "src/test/data/outline.html", "src/test/data/outline.htm"};
         List<File> files = new ArrayList<>();
@@ -30,4 +30,4 @@ public class WebTest{
 
         assertEquals(5, files.size());
     }
-}
+}*/
