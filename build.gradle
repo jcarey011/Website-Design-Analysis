@@ -36,7 +36,7 @@ task deployReports(dependsOn: 'reports'){
             commandLine "git", "add", "."
         }
         exec{
-            commandLine "git", "commit", "-m", "cleanup"
+            commandLine "git", "commit", "-m", "commit before checkout"
         }
         exec{
             commandLine "git", "checkout", "gh-pages"
@@ -48,7 +48,7 @@ task deployReports(dependsOn: 'reports'){
             commandLine "git", "add", "."
         }
         exec{
-            commandLine "git", "commit", "-m", "cleanup"
+            commandLine "git", "commit", "-m", "commit before checkout"
         }
         exec{
             commandLine "git", "checkout", "main", "--", "build/reports"
