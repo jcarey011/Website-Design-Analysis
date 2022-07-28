@@ -18,12 +18,10 @@ jobs:
         cache: gradle
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: Test with Gradle
-      run: ./gradlew test
-    - name: Build with Gradle
-      run: ./gradlew build
-    - name: Build and test
-      working-directory: src/main/java/edu/odu/cs/cs350
-      run: ./gradlew build
+    - name: Build and Test
+      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+      with:
+        arguments: build 
+
 
 
