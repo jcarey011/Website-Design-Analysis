@@ -1,0 +1,206 @@
+
+<!-- saved from url=(0071)https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./Write Once, Run Anywhere_files/md-scroll.css" media="screen, projection, print" rel="stylesheet" type="text/css"><link href="./Write Once, Run Anywhere_files/md-scroll-ext.css" media="screen, projection, print" rel="stylesheet" type="text/css"><meta content="width=device-width, initial-scale=1" name="viewport"><link href="./Write Once, Run Anywhere_files/googlecode.css" rel="stylesheet"><script src="./Write Once, Run Anywhere_files/highlight.pack.js.download"> </script><script>hljs.initHighlightingOnLoad();</script><script src="./Write Once, Run Anywhere_files/md-scroll.js.download" type="text/javascript"> </script><script src="./Write Once, Run Anywhere_files/md-scroll-ext.js.download" type="text/javascript"> </script><script src="./Write Once, Run Anywhere_files/rawdeflate.js.download" type="text/javascript"> </script><script src="./Write Once, Run Anywhere_files/plantuml.js.download" type="text/javascript"> </script><script src="./Write Once, Run Anywhere_files/mermaid.min.js.download" type="text/javascript"> </script><script type="text/javascript">
+             window.MathJax = {
+               tex2jax: {
+               inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+               processEscapes: true
+             }
+           };
+           </script><script src="./Write Once, Run Anywhere_files/MathJax.js.download" type="text/javascript"> </script><title>Write Once, Run Anywhere</title><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head><body><div id="MathJax_Message" style="display: none;"></div><script>sshowControl0 = { counter: 1,
+             showNumber: 0, max: 1};
+             window.onhashchange = hashHasChanged;</script><div class="navHeader" id="slideshowControlA0"><table class="navHeader"><tbody><tr class="slideshowcontrol"><td class="slideshowcontrolLeft"></td><td class="slideshowcontrolMiddle">
+<a class="imgLink" href="https://www.cs.odu.edu/~zeil/cs382/latest/Directory/outline/" title="Course home/outline"><img src="./Write Once, Run Anywhere_files/home.png"></a>
+<a href="mailto:zeil@cs.odu.edu?subject=CS382%2C%20Write%20Once%2C%20Run%20Anywhere"><img src="./Write Once, Run Anywhere_files/email.png" title="Email to instructor"></a><span style="margin: 0 32px;"></span></td><td class="slideshowcontrolRight"></td></tr></tbody></table></div><div class="mainBody"><div class="titleblock"><h1 class="title">Write Once, Run Anywhere</h1><div class="date">Last modified: Jun 16, 2020</div></div><div class="toc">Contents:<div class="toc-h1"><a href="https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/index.html#compiling-the-code">1 Compiling the Code</a></div><div class="toc-h1"><a href="https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/index.html#running-elsewhere">2 Running Elsewhere</a></div><div class="toc-h1"><a href="https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/index.html#a-larger-example">3 A Larger Example</a></div><div class="toc-h2"><a href="https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/index.html#compilation-flags">3.1 Compilation Flags</a></div><div class="toc-h2"><a href="https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/index.html#execution-options">3.2 Execution Options</a></div><div class="toc-h1"><a href="https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/index.html#packaging">4 Packaging</a></div></div><p>One of the main promises that Java offers is “Write Once, Run Anywhere”. The idea is that Java code can be run on almost any platform.</p>
+    <p>This is stronger than the promise made by (though not always fulfilled by) many programming languages of being <span class="firstterm">portable</span> to many platforms. A C++ programmer, for example, who pays careful attention to language standards might have very good reason to believe that his <span class="emph">source code</span> could be copied to a platform with a completely different CPU or operating system, recompiled on that platform, and then executed.</p>
+    <p>Java, however, offers the promise that your source code can be compiled on one platform, the compiled <span class="emph">object code</span> transferred to a platform with a different CPU or operating system, and then executed without requiring recompilation of the source.</p>
+    <p>We’ll explore that promise in this lab.</p>
+    <a id="compilingthecode"><h1 id="compiling-the-code">1 Compiling the Code</h1></a><p><a id="compilingthecode"></a><a href="http://www.cs.odu.du/~zeil/cs252/latest/index.html?doc=loggingin&amp;anchor=" target="cs252">Log in</a> to one of the Dept’s Linux machines. <span class="command">cd</span> to any convenient working directory.</p>
+    <p>Using a text editor (e.g., <span class="command">emacs</span> or <span class="command">gedit</span>), create a file named <span class="file">HelloWorld.java</span> with the following content (feel free to copy and paste):</p>
+    <pre><code class="sh hljs java"><span class="hljs-javadoc">/**
+* The HelloWorld class implements an application that
+* simply prints "Hello World!" to standard output.
+*/</span>
+class HelloWorld {
+   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span>(String[] args) {
+      System.out.println(<span class="hljs-string">"Hello World!"</span>); <span class="hljs-comment">// Display the string.</span>
+   }
+}
+</code></pre><p>We’ll look at this code in detail in a later lesson. But for now, let’s compile and run it.</p>
+    <p>Java programs get compiled into object code for an imaginary CPU called the “<span class="firstterm">Java Virtual Machine</span>” (<span class="firstterm">JVM</span>). Consequently, you can’t execute compiled Java code directly. You must run a program that simulates a JVM and let that simulated computer execute the Java code.</p>
+    <p>That may seem a little convoluted, but the JVM simulator is easier to write than a “true” compiler. This means that Java programs can be compiled on one machine and then run on platforms for which no such compiler exists. Also, JVM simulators can be built into other programs (such as web browsers), allowing Java code compiled on one machine to be executed on almost any other machine. By contrast, a true native-code compiler (e.g., g++) produces executables that can only be run on a single kind of computer.</p>
+    <p>The command to compile Java code is “<span class="command">javac</span>” (“c” for compiler) and the command to execute compiled Java code is “<span class="command">java</span>”. So a typical sequence to compile and execute a single-file Java program like the one you have just produced would be </p>
+    <pre><code class="sh hljs ">javac HelloWorld.java
+java HelloWorld
+</code></pre><p>Try issuing these two commands now. You should see the expected greeting appear on your screen.</p>
+    <p>If you now do an</p>
+    <pre><code class="sh hljs ">ls
+</code></pre><p>you can see that the <span class="command">javac</span> command created a file named HelloWorld.class. That’s the compiled object code for the imaginary JVM machine. The <span class="command">java</span> command actually launches the emulator for the JVM, tilling it to run the program in the <code>HelloWorld</code> class.</p>
+    <a id="runningelsewhere"><h1 id="running-elsewhere">2 Running Elsewhere</h1></a><p><a id="runningelsewhere">Now </a><a href="http://www.cs.odu.du/~zeil/cs252/latest/index.html?doc=ftp&amp;anchor=" target="cs252">transfer</a> that <span class="file">HelloWorld.class</span> file to the machine at which you are actually seated. I’ll assume,for the sake of this lab, that you are seated at a Windows PC. (If you are seated at a Linux machine, you might want to find something else to work on for a bit, because otherwise the rest of this exercise won’t be impressive at all.)</p>
+    <p>A typical Windows machine will already have a JVM emulator, because your web browser would use it whenever it visited a web page with applets. To check this, open up a <span class="command">cmd</span> window (click the Start button and type “cmd” into the “Search programs and files” box for Windows 7 or select “Run…” and then type “cmd” into the “Open:” box for older Windows versions). Within the cmd window, type</p>
+    <pre><code class="sh hljs ">java -version
+</code></pre><p>and you should get a version message confirming that java is available.</p>
+    <p>Now, in that <span class="command">cmd</span> window, <span class="command">cd</span> to the folder into which you transferred the HelloWorld.class file. Give the command</p>
+    <pre><code class="sh hljs ">java HelloWorld
+</code></pre><p>and you should see the familiar greeting.</p>
+    <a id="alargerexample"><h1 id="a-larger-example">3 A Larger Example</h1></a><p><a id="alargerexample">Return to one of the Unix/Linux machines, this time connecting </a><a href="http://www.cs.odu.du/~zeil/cs252/latest/index.html?doc=xwinlaunch&amp;anchor=" target="cs252">via X or NX</a>.</p>
+    <p>Copy the file <a href="https://www.cs.odu.edu/~zeil/cs382/latest/Public/runAnywhere/RunAnywhere.java">RunAnywhere.java</a> into a convenient directory. If you are using the same directory as earlier, delete any <span class="file">.class</span> files already in that directory.</p>
+    <a id="compilationflags"><h2 id="compilation-flags">3.1 Compilation Flags</h2><p>Like almost any compiler, javac has a number of options that can be given on the command line. Some common ones are:</p>
+    <dl>
+  <dt><code>-cp</code> <em>pathlist</em>
+  </dt>
+  <dd>Add the directories and jar files named in the pathlist (multiple  items may be separated by ‘:’) to the list of places searched when  locating other Java source or object code.</dd>
+  <dt><code>-g</code></dt>
+  <dd>Include debugging information in compiled code (required if you  want to be able to run the gdb debugger.</dd>
+</dl><dl>
+  <dt><code>-depend</code></dt>
+  <dd>Check each class used in the code being compiled to see if those  mentioned classes’ source code has been changed since they were last  compiled. If so, automatically recompile those classes.</dd>
+  <dt><code>-deprecation</code></dt>
+  <dd>Check the code for features that used to be legal in Java, but are  expected to become illegal in the near future.</dd>
+  <dt><code>-O</code></dt>
+  <dd>Optimize the compiled code (produces smaller, faster programs but  takes longer to compile)</dd>
+</dl><p>Of these, you would probably use -g almost all the time (unless you are one of those mythical programmers who never needs to debug their code).</p>
+    <p>So, compile this program with</p>
+    <pre><code class="sh hljs ">javac -g RunAnywhere.java
+</code></pre><p>then run the program with</p>
+    <pre><code class="sh hljs ">java RunAnywhere
+</code></pre><p>You should see window pop up shortly. Try clicking on the word “run”.</p>
+    </a><a id="executionoptions"><h2 id="execution-options">3.2 Execution Options</h2><p>Like the compiler, the java execution program allows for some command-line options. The most commonly used are:</p>
+    <dl>
+  <dt><code>-cp</code> <em>pathlist</em>
+  </dt>
+  <dd>Add the directories and jar files named in the pathlist (multiple  items may be separated by ‘:’) to the list of places searched when  locating other Java object code.</dd>
+</dl><dl>
+  <dt><code>-jar</code></dt>
+  <dd>Instead of looking for a compiled class file, execute the  “default” class in a <span class="file">.jar</span> file.</dd>
+  <dt><code>-Xmx</code>_N_
+  </dt>
+  <dd>Sets the amount of memory to be reserved for the heap in the JVM  emulator. <em>N</em> is a memory size consisting of  an integer followed by a units indicator, usually M for megabytes,  e.g., <code>-Xmx512M</code>.</dd>
+</dl><p>To see the effect of the -cp option, try doing this:</p>
+    <pre><code class="sh hljs bash">mkdir folder
+<span class="hljs-built_in">cd</span> folder
+java RunAnywhere
+java -cp .. RunAnywhere
+</code></pre><p>The first attempt to execute the program fails because, after we have moved into a different directory, the java program cannot find our compiled class. The -cp option in the second command tells it where to look for that class and so is able to run the program.</p>
+    <p>Now cd back into your working directory and do an</p>
+    <pre><code class="sh hljs ">ls
+</code></pre><p>Notice that you have more than one <span class="file">.class</span> file, even though you compiled only one <span class="file">.java</span> file. That’s a fairly common occurrence.</p>
+    <h1 id="packaging">4 Packaging</h1><p>Of course, compiling a larger project consisting of several separate <span class="file">.java</span> files is also likely to result in several .class files. It could be awkward if, every time you wanted to transfer a compiled Java program to another platform, you had to transfer an arbitrary number of different <span class="file">.class</span> files. This awkwardness can be relieved by packaging the compiled class files into a single <span class="firstterm">Java Archive</span> (jar).</p>
+    <p>A jar file is actually a conventional “zip” compressed archive file with a little bit of extra directory information written into a special file (called the <span class="firstterm">manifest</span>) included in the archive.[^ </p>
+    <p>You could create a jar file like this:</p>
+    <pre><code class="sh hljs ruby">jar -cf allInOne.jar *.<span class="hljs-keyword">class</span> 
+</code></pre><p>or</p>
+    <pre><code class="sh hljs ruby">jar -cfe allInOne.jar <span class="hljs-constant">RunAnywhere</span> *.<span class="hljs-keyword">class</span> 
+</code></pre><p>The <code>-c</code> option indicates that we want to <strong>c</strong>reate a new jar archive. The <code>e</code> option in the second form states that we are going to give a default <strong>e</strong>ntrypoint (i.e., a default program to execute).[^ The ‘e’ option, as of 8/2015, does not work on OS/X.]</p>
+    <p>Use the first form if you are simply packing a group of “utility” classes, none of which is a full executable application, or if you are choosing to package together several different programs, none of which is more deserving of a “default” status than any other.</p>
+    <p>For now, use the second form to create <span class="file">allInOne.jar</span>.</p>
+    <p>To show that the jar file really is just a variation on a conventional <code>zip</code> archive, try</p>
+    <pre><code class="sh hljs bash">unzip <span class="hljs-operator">-l</span> allInOne.jar
+</code></pre><p>to see what’s inside it.</p>
+    <p>Then delete the .class files and execute the program:</p>
+    <pre><code class="sh hljs ruby">rm *.<span class="hljs-keyword">class</span>
+java -cp allInOne.jar <span class="hljs-constant">RunAnywhere</span>
+java -jar allInOne.jar
+</code></pre><p>The first <span class="command">java</span> command uses the <code>-cp</code> option to tell where to look for compiled code (in the jar file) and explicitly names the program (<code>RunAnywhere</code>) that we want to look for. The second simply states that we want to execute the default program in that jar file. Both should work.</p>
+    <p>Finally, transfer the file <span class="file">allInOne.jar</span> to a Windows PC. You should be able to launch the program from a <span class="command">cmd</span> window by <span class="command">cd</span>’ing to the appropriate directory and giving either of the <span class="command">java</span> commands above. Alternatively, use the Windows GUI to open the folder where you placed that jar and double-click on the jar file to launch its default program.</p>
+    </a></div><script>sshowControl0 = { counter: 1,
+             showNumber: 0, max: 1};
+             window.onhashchange = hashHasChanged;</script><div class="navFooter" id="slideshowControl0"><table class="navFooter"><tbody><tr class="slideshowcontrol"><td class="slideshowcontrolLeft"></td><td class="slideshowcontrolMiddle">
+<a class="imgLink" href="https://www.cs.odu.edu/~zeil/cs382/latest/Directory/outline/" title="Course home/outline"><img src="./Write Once, Run Anywhere_files/home.png"></a>
+<a href="mailto:zeil@cs.odu.edu?subject=CS382%2C%20Write%20Once%2C%20Run%20Anywhere"><img src="./Write Once, Run Anywhere_files/email.png" title="Email to instructor"></a><span style="margin: 0 32px;"></span></td><td class="slideshowcontrolRight"></td></tr></tbody></table></div><div class="copyright"><a id="executionoptions">© 2014-2021, Old Dominion Univ.</a></div><a id="executionoptions">
+</a></body></html>

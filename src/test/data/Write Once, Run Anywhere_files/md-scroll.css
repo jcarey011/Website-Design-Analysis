@@ -1,0 +1,244 @@
+
+@media (min-width: 120ex) {
+    body {
+        width: 120ex;
+	margin-left: auto;
+	margin-right: auto;
+    }
+}
+
+.titleblock {
+   padding-top: 0.5ex;
+   padding-bottom: 0.25ex;
+   background-color: #0000A0; 
+   color: #E0E0E0; 
+}
+div.titleblock h1.title { background-color: #0000A0; text-align: center; color: #E0E0E0;}
+div.titleblock h2.author { background-color: #0000A0; text-align: center; color: #E0E0E0;}
+h1.title a { background-color: #0000A0; text-align: center; color: #E0E0E0;}
+
+table {
+    font-size: 1em;
+}
+
+table.sourceCode { background-color: #E0E0E0;}
+.sourceCode { background-color: #E0E0E0;}
+span.firstterm {color: #006000; font-style: italic; text-decoration:underline;}
+#header { background-color: #0000A0; text-align: center; color: #C0C0FF;}
+
+code.cpp {
+  background-color: #F0F0F0;
+}
+code.java {
+  background-color: #F0F0F0;
+}
+
+div.navHeader {text-align: center; 
+               border-bottom: solid #000040;
+               margin-top: 40px;}
+table.navHeader {border-style: none; width: 100%;}
+
+div.navFooter {text-align: center; 
+               border-top: solid #000040;
+               margin-top: 40px;}
+table.navFooter {border-style: none; width: 100%;}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: sans-serif;
+}
+
+h1 { color: #000040; 
+     clear: both;
+     font-size: 200%;
+   }
+h2 { color: #000020; 
+     clear: both;
+     font-size: 160%;
+   }
+h3 { clear: both;
+     font-size: 120%;}
+hr { clear: both;}
+
+
+.hli {background-color: #ffff99; }
+.hlii {background-color: #66ccff; }
+.hliii {background-color: #cc33ff; }
+.hliv {background-color: #ff6000; }
+div.noFloat {clear: both; }
+span.emph {font-style:italic; color: rgb(128,0,0); }
+span.varname {font-family:sans-serif; font-style: italic;}
+span.type {font-family:sans-serif;}
+span.function {font-family:sans-serif;}
+span.file {font-family:sans-serif;}
+span.command {font-weight: heavy; font-family:sans-serif;}
+span.replaceable {font-style:italic; color: #215E21; }
+span.userinput {font-style:italic; color: #215E21; }
+span.strike {text-decoration: line-through; }
+code {background-color: transparent; }
+
+div.exampleTitle {color: #000040; font-weight: bold; font-size: 110%;}
+figcaption {font-weight: bold;}
+
+div.slideshowslide {border-bottom: 1px dotted black; }
+div.slideshow {clear: both; border-style: groove;}
+
+table.slideshowcontrol {clear: both; border-style: none; background-color: #e0e0e0; width: 100%;}
+tr.slideshowcontrol { border-style: none; }
+td.slideshowcontrol { border-style: none; text-align: center; }
+td.slideshowcontrolLeft { border-style: none; text-align: left; font-size: x-large;}
+td.slideshowcontrolMiddle { border-style: none; text-align: center; font-size: x-large;}
+td.slideshowcontrolRight { border-style: none; text-align: right; font-size: x-large;}
+a.slideshowcontrol { color: blue; cursor:pointer; cursor: hand;}
+
+
+table { border: 2px solid black; border-collapse: collapse; }
+th { text-align: center; border-bottom: 2px solid black; border-right: 1px solid black;}
+tr { border-bottom: 1px solid black; }
+td { border-right: 1px solid black; }
+caption { font-weight: bold;  margin: 1em; }
+
+blockquote {
+ font-size: 95%;
+ font-weight: normal;
+ line-height: 120%;
+ padding-top: 0.2em;
+ padding-bottom: 0.2em;
+ padding-left: 1em;
+ padding-right: 1em;
+ border-style: solid;
+ border-left-width: 1em;
+ border-top-width: thin;
+ border-right-width: thin;
+ border-bottom-width: thin;
+ border-color: #405080;
+ color: #000A1B;
+ background-color: #E4E5E7;
+}
+
+
+blockquote blockquote {
+ font-size: 100%;
+ font-weight: normal;
+ line-height: 100%;
+ padding-top: 0em;
+ padding-bottom: 0em;
+ padding-left: 1em;
+ padding-right: 1em;
+ border-style: none;
+}
+
+
+blockquote.example {
+ font-size: 95%;
+ font-weight: normal;
+ line-height: 120%;
+ padding-top: 0.2em;
+ padding-bottom: 0.2em;
+ padding-left: 1em;
+ padding-right: 1em;
+ border-style: solid;
+ border-left-width: 1em;
+ border-top-width: thin;
+ border-right-width: thin;
+ border-bottom-width: thin;
+ border-color: #408050;
+ color: #001B0A;
+ background-color: #E4E5E7;
+}
+
+
+
+
+
+
+li li { font-size: 90%; font-style: normal }
+li ul li { font-size: 90%; font-style: normal }
+ol li ol li {list-style-type: upper-alpha; }
+ol li ul li ol li {list-style-type: upper-alpha; }
+ol li ol li ol li {list-style-type: lower-alpha; }
+
+dt { font-weight: 600; }
+
+div.toc {
+        background-color: #90B0ff;
+        font-weight: bold;
+        margin-top: 1.5ex;
+        margin-bottom: 1.5ex;
+        padding-top: 0.5ex;
+        padding-bottom: 0.5ex;
+        padding-left: 1.5ex;
+}
+
+.toc-h2 {
+   padding-left: 2ex;
+}
+
+div.details {
+   padding-left: 2ex;
+   border-left-style: dotted;
+   border-left-color: #8080FF;
+}
+
+
+.summary {
+   font-style: italic;
+   font-weight: 500;
+}
+
+img.right {float: right;}
+img.left {float: left;}
+img.center {display: block; margin-left: auto; margin-right: auto;}
+span.right {float: right;}
+span.left {float: left;}
+span.center {display: block; margin-left: auto; margin-right: auto;}
+
+div.sidebar {float: right;         
+             background-color: #C0E0ff;
+             margin: 1ex; 
+	     padding: 1ex; 
+             border-left: solid 1px;}
+div.pct10 {max-width: 10%}
+div.pct20 {max-width: 20%}
+div.pct30 {max-width: 30%}
+div.pct40 {max-width: 40%}
+div.pct50 {max-width: 50%}
+div.pct60 {max-width: 60%}
+div.pct70 {max-width: 70%}
+div.pct80 {max-width: 80%}
+div.pct90 {max-width: 90%}
+div.pct15 {max-width: 15%}
+div.pct25 {max-width: 25%}
+div.pct35 {max-width: 35%}
+div.pct45 {max-width: 45%}
+div.pct55 {max-width: 55%}
+div.pct65 {max-width: 65%}
+div.pct75 {max-width: 75%}
+div.pct85 {max-width: 85%}
+div.pct95 {max-width: 95%}
+div.pct33 {max-width: 33%}
+div.pct66 {max-width: 66%}
+div.pct67 {max-width: 67%}
+
+div.leftColumn {display: inline-block; vertical-align: top; max-width: 47.5%; margin: 1ex; padding: 1ex; border-right: dashed 1px;}
+
+div.rightColumn {display: inline-block; vertical-align: top; max-width: 47.5%; margin: 1ex; padding: 1ex;}
+
+.MathJax_Display {
+  text-align: left !important;
+  padding-left: 4em;
+}
+
+@media screen
+{
+  div.detailPart {
+     display: none;
+  }
+}
+
+
+@media print
+{
+  div.detailPart {
+     display: block;
+  }
+}
