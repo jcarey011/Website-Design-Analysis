@@ -1,0 +1,2 @@
+rootProject.name = 'Website-Design-Analysis'
+include('src')
