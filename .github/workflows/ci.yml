@@ -24,6 +24,6 @@ jobs:
       run: ./gradlew build
     - name: Build and test
       working-directory: src/main/java/edu/odu/cs/cs350
-      run: ../gradlew build
+      run: ./gradlew build
 
 
