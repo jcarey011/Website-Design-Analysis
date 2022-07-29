@@ -10,12 +10,12 @@ import org.junit.jupiter.api.Test;
 
 public class WebTest{
     @Test void testConstructor(){
-        String [] thingy = new String[]{"1", "settings.ini", "src/test/data/outline.html"};
+        String [] thingy = new String[]{"1", "settings.ini", "src/test/data/Outline.html", "src/test/data/Outz.html"};
         List<File> files = new ArrayList<>();
-        File f1 = new File("src/test/data/outline.html");
-        //File f2 = new File("src/test/data/outline.htm");
+        File f1 = new File("src/test/data/Outline.html");
+        File f2 = new File("src/test/data/Outz.html"); 
         files.add(f1);
-       // files.add(f2);
+        files.add(f2);
 
         Website a = new Website(thingy);
         assertEquals(files,a.getSourceFiles());
