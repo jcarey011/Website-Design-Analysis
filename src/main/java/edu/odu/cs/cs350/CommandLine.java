@@ -8,6 +8,7 @@ public class CommandLine {
     
     private static int numberOfFiles;
     private static String fileName;
+    public static List<String> fileList;
 
     public CommandLine(){
 
@@ -19,8 +20,16 @@ public class CommandLine {
         return fileName;
     }
     /*
+     * function can be used to add names directly to static list in this class
+     * @param filename    Name or names of files to be added
+     */
+    public static void addNames(String fileName)
+    {
+        fileList.add(fileName);
+    }
+    /*
      * Function will set private name
-     * @param name  name to set 
+     * @param name  Name to set 
      */
     public static void setName(String name)
     {

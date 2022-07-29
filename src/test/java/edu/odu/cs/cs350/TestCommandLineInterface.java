@@ -1,21 +1,20 @@
 package edu.odu.cs.cs350;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.fail;
+
+import org.junit.experimental.theories.suppliers.TestedOn;
 import org.junit.jupiter.api.Test;
 
+import edu.odu.cs.cs350.CommandLine;
 
-/*public class TestCommandLineInterface {
+
+public class TestCommandLineInterface {
     
     @Test
-    public void testCLIFetchNumber()
+    public static void testAddFunction()
     {
-        int numberOfFiles = 4;
-        fetchNumberFiles(numberOfFiles);
-        assertEquals(fetchNumberFiles, 4);
-    }
-    public void testCLIOutput()
-    {
-
+        String fileName = "Hannibal.txt";
+        CommandLine.addNames(fileName);
+        assertThat(CommandLine.fileList, contains("Hannibal.txt"));
     }
 }
-*/
