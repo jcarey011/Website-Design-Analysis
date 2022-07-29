@@ -11,12 +11,12 @@ import org.apache.poi.xssf.usermodel.*;
 
 
 public class ExcelWriter {
-    /* 
+    
     public static void main(String[] args) throws IOException {
 
             createExcel();
     } 
-    */
+    
 
     /**
      * Gets the local date and time and adds the summary titele to the end
@@ -37,7 +37,7 @@ public class ExcelWriter {
      * @return Excel file
      * @throws IOException
      */
-    public static void createExcel() throws IOException{
+    public static File createExcel() throws IOException{
 
         //creating workbook
         XSSFWorkbook workbook = new XSSFWorkbook();
@@ -75,10 +75,7 @@ public class ExcelWriter {
 
         OutputStream out = new FileOutputStream(produceFileName());
 
-        workbook.write(out);
-        out.close();
-
-        workbook.close();
+        return out;
 
 
 
