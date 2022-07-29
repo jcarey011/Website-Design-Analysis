@@ -1,5 +1,3 @@
-/* USING LIVE WEBSITE COPY AS A TEST */
-
 package edu.odu.cs.cs350;
 
 import java.io.*;
@@ -13,7 +11,7 @@ import org.jsoup.nodes.*;
 import org.jsoup.select.*;
 public class DocParser 
 {
-    private String absFilePath;
+     private String absFilePath;
     private List <Tag> tags;
     private int numTags;
 
@@ -71,8 +69,18 @@ public class DocParser
 
     Document newDoc = Jsoup.parse(filePath);
     Elements anchorTags = newDoc.select( "a[href]");
+
+        List<Elements> listAnchorTags = new ArrayList<Elements>();
+        listAnchorTags.add(anchorTags);
+
     Elements imageTags = newDoc.select("img[src]");
+        List<Elements> listImageTags = new ArrayList<Elements>();
+        listImageTags.add(imageTags);
+
     Elements linkTags = newDoc.select("link");
+        List<Elements> listLinkTags = new ArrayList<Elements>();
+        listLinkTags.add(linkTags);
+
     Elements scriptTags = newDoc.select("script");
 
     int numAnchorTags = anchorTags.size();
@@ -80,20 +88,12 @@ public class DocParser
     int numLinkTags = linkTags.size();
     int numScriptTags = scriptTags.size();
 
-    System.out.println(numAnchorTags);
-    System.out.println(anchorTags);
-
-    System.out.println(numImageTags);
-    System.out.println(imageTags);
-
-    System.out.println(numLinkTags);
-    System.out.println(linkTags);
-
-    System.out.println(numScriptTags);
-    System.out.println(scriptTags);
 
     return null;
     }
+    
+
+
 }
   /*  
     //File input = new File("example/test.html")

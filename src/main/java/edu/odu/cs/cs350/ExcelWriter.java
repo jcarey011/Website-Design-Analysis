@@ -37,7 +37,7 @@ public class ExcelWriter {
      * @return Excel file
      * @throws IOException
      */
-    public static File createExcel() throws IOException{
+    public static OutputStream createExcel() throws IOException{
 
         //creating workbook
         XSSFWorkbook workbook = new XSSFWorkbook();
