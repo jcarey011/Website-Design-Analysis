@@ -29,7 +29,7 @@ test {
     }
 }
 
-task reports (dependsOn: ['javadoc', 'test', 'jacocoTestReport', 'reportStats']){
+task reports (dependsOn: ['javadoc', 'test', 'jacocoTestReport']){
     
 }
 
@@ -52,7 +52,7 @@ tasks.withType(Javadoc) {
       options.addStringOption('charSet', 'UTF-8')
 }
 
-task deployReports(dependsOn: 'reports'){
+task deployReports(dependsOn: ['reports', 'reportStats']){
     doLast{
         exec{
             commandLine "git", "remote", "update"
