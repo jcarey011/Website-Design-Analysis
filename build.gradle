@@ -29,7 +29,7 @@ test {
     }
 }
 
-task reports (dependsOn: ['javadoc', 'test', 'jacocoTestReport']){
+task reports (dependsOn: ['javadoc', 'test', 'jacocoTestReport', 'reportStats']){
     
 }
 
