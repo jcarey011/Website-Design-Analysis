@@ -1,5 +1,7 @@
  plugins {
-    id 'java'
+    id "java"
+    id "jacoco"
+    id "org.barfuin.gradle.jacocolog" version "2.0.0"
 }
 
 repositories {
@@ -28,6 +30,18 @@ test {
 
 task reports (dependsOn: ['javadoc', 'test']){
     
+}
+
+jacoco {
+    toolVersion = "0.8.4"
+}
+
+jacocoTestReport {
+    reports {
+        html.enabled true
+        xml.enabled true
+        csv.enabled true
+    }
 }
 
 task deployReports(dependsOn: 'reports'){
