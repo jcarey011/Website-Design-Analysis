@@ -84,6 +84,9 @@ task deployReports(dependsOn: 'reports'){
             commandLine "git", "add", "."
         }
         exec{
+            commandLine "git", "commit", "-m", "update gh pages"
+        } 
+        exec{
             commandLine "git", "push"
         } 
     
