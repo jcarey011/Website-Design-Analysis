@@ -44,13 +44,26 @@ jacocoTestReport {
     }
 }
 
+tasks.withType(Javadoc) {
+      failOnError false
+      options.addStringOption('Xdoclint:none', '-quiet')
+      options.addStringOption('encoding', 'UTF-8')
+      options.addStringOption('charSet', 'UTF-8')
+}
+
 task deployReports(dependsOn: 'reports'){
     doLast{
+        exec{
+            commandLine "git", "remote", "update"
+        }
+        exec{
+            commandLine "git", "fetch", "--all"
+        }
         exec{
             commandLine "git", "add", "."
         }
         exec{
-            commandLine "git", "commit", "-m", "commit before checkout"
+            commandLine "git", "commit", "-m", "cleanup"
         }
         exec{
             commandLine "git", "checkout", "gh-pages"
@@ -62,14 +75,17 @@ task deployReports(dependsOn: 'reports'){
             commandLine "git", "add", "."
         }
         exec{
-            commandLine "git", "commit", "-m", "commit before checkout"
-        }
+            commandLine "git", "commit", "-m", "update gh pages"
+        } 
         exec{
             commandLine "git", "checkout", "main", "--", "build/reports"
         }
         exec{
             commandLine "git", "add", "."
         }
+        exec{
+            commandLine "git", "push"
+        } 
     
     }
 }
