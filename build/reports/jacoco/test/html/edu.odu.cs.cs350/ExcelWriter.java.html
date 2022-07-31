@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ExcelWriter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Website-Design-Analysis</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">ExcelWriter.java</span></div><h1>ExcelWriter.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.io.*;
+import java.util.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.*;
+
+
+
+<span class="nc" id="L13">public class ExcelWriter {</span>
+    
+    public static void main(String[] args) throws IOException {
+
+<span class="nc" id="L17">            createExcel();</span>
+<span class="nc" id="L18">    } </span>
+    
+
+    /**
+     * Gets the local date and time and adds the summary titele to the end
+     * @return file name
+     */
+    
+    public static String produceFileName(){
+
+<span class="nc" id="L28">        LocalDateTime today = LocalDateTime.now();</span>
+<span class="nc" id="L29">            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyyMMdd-hhmmss&quot;);</span>
+<span class="nc" id="L30">            String formattedTime = formatter.format(today);</span>
+
+<span class="nc" id="L32">            return formattedTime + &quot;-summary.xlsx&quot;;</span>
+    }
+
+    /**
+     * Returns the newly created Excel document with the file name created from the produceFileName function
+     * @return Excel file
+     * @throws IOException
+     */
+    public static OutputStream createExcel() throws IOException{
+
+        //creating workbook
+<span class="nc" id="L43">        XSSFWorkbook workbook = new XSSFWorkbook();</span>
+        
+        //creating spreadsheet
+<span class="nc" id="L46">        XSSFSheet spreadsheet = workbook.createSheet(&quot;Summary&quot;);</span>
+
+        //creating row
+        XSSFRow row;
+
+        //data to be written
+<span class="nc" id="L52">        Map &lt;String, Object[]&gt; websiteData = new TreeMap&lt;String, Object[]&gt;();</span>
+
+<span class="nc" id="L54">        websiteData.put( &quot;1&quot;, new Object[] { &quot;Page&quot;, &quot;# Images&quot;, &quot;# CSS&quot;, &quot;Scripts&quot;, &quot;# Links (Intra-Page)&quot;, &quot;# Links (Internal)&quot;, &quot;# Links (External)&quot;} );</span>
+
+<span class="nc" id="L56">        Set&lt;String&gt; keyid = websiteData.keySet();</span>
+
+<span class="nc" id="L58">        int rowID = 0;</span>
+
+        //writing data into rows
+
+<span class="nc bnc" id="L62" title="All 2 branches missed.">        for (String key : keyid)</span>
+        {
+<span class="nc" id="L64">            row = spreadsheet.createRow(rowID++);</span>
+<span class="nc" id="L65">            Object[] objectArr = websiteData.get(key);</span>
+
+<span class="nc" id="L67">            int cellID = 0;</span>
+
+<span class="nc bnc" id="L69" title="All 2 branches missed.">            for (Object obj : objectArr)</span>
+            {
+<span class="nc" id="L71">                Cell cell = row.createCell(cellID++);</span>
+<span class="nc" id="L72">                cell.setCellValue((String)obj);</span>
+            }
+<span class="nc" id="L74">        }</span>
+
+<span class="nc" id="L76">        OutputStream out = new FileOutputStream(produceFileName());</span>
+
+<span class="nc" id="L78">        return out;</span>
+
+
+
+    }
+}
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

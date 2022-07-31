@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Options.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Website-Design-Analysis</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">Options.java</span></div><h1>Options.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.ini4j.Wini;
+
+public class Options {
+    private List&lt;String&gt; validExts;
+    private int smallestSeq;
+    private int maxFuncParams;
+
+<span class="fc" id="L15">    public Options(){</span>
+<span class="fc" id="L16">        this.validExts = new ArrayList&lt;&gt;(Arrays.asList(&quot;html&quot;, &quot;htm&quot;));</span>
+<span class="fc" id="L17">        this.smallestSeq = 10;</span>
+<span class="fc" id="L18">        this.maxFuncParams = 8;</span>
+<span class="fc" id="L19">    }</span>
+
+<span class="fc" id="L21">    public Options(String confPath){</span>
+<span class="fc" id="L22">        readConfigFile(confPath);</span>
+<span class="fc" id="L23">    }</span>
+
+    public void setValidExts(List&lt;String&gt; exts){
+<span class="nc" id="L26">        this.validExts = exts;</span>
+<span class="nc" id="L27">    }</span>
+
+    public void setSmallestSeq(int n){
+<span class="nc" id="L30">        this.smallestSeq = n;</span>
+<span class="nc" id="L31">    }</span>
+
+    public void setMaxFuncParams(int max){
+<span class="nc" id="L34">        this.maxFuncParams = max;</span>
+<span class="nc" id="L35">    }</span>
+
+    public int getSmallestSeq(){
+<span class="nc" id="L38">        return this.smallestSeq;</span>
+    }
+
+    public int getMaxFuncParams(){
+<span class="nc" id="L42">        return this.maxFuncParams;</span>
+    }
+
+    public List&lt;String&gt; getValidExts(){
+<span class="fc" id="L46">        return this.validExts;</span>
+    }
+
+    private void readConfigFile(String confPath){
+
+<span class="fc" id="L51">        Wini configuration = null;</span>
+        try {
+<span class="nc" id="L53">             configuration = new Wini(new File(confPath));</span>
+<span class="fc" id="L54">        } catch(Exception e) {</span>
+<span class="fc" id="L55">            e.printStackTrace();</span>
+<span class="nc" id="L56">        }</span>
+
+<span class="fc" id="L58">        this.validExts = Arrays.asList(&quot;html&quot;, &quot;htm&quot;);</span>
+<span class="fc" id="L59">        this.smallestSeq = 10;</span>
+<span class="fc" id="L60">        this.maxFuncParams = 8;</span>
+
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">        if(configuration != null) {</span>
+<span class="nc" id="L63">            String extensions = configuration.get(&quot;settings&quot;, &quot;extensions&quot;);</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">            if(extensions == null) {</span>
+<span class="nc" id="L65">                return;</span>
+            }
+
+<span class="nc" id="L68">            this.validExts = Arrays.asList(extensions.split(&quot;,&quot;));</span>
+        }
+<span class="fc" id="L70">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
