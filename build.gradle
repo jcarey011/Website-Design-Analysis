@@ -2,6 +2,8 @@
     id "java"
     id "jacoco"
     id "org.barfuin.gradle.jacocolog" version "2.0.0"
+    id 'pmd'
+    id 'edu.odu.cs.report_accumulator' version '1.4'     
 }
 
 repositories {
@@ -91,4 +93,11 @@ task deployReports(dependsOn: 'reports'){
         } 
     
     }
+}
+
+reportStats {
+    reportsURL = 'https://jcarey011.github.io/Website-Design-Analysis/'
+    htmlSourceDir = file('src/build/reports/test/')  // default value
+    reportsDir = file('src/build/reports') // default value
+    buildID = "12345"                  // defaults to current date, but can be any run identifier
 }
