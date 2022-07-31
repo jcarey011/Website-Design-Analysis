@@ -96,7 +96,7 @@ task deployReports(dependsOn: 'reports'){
 
 reportStats {
     reportsURL = 'https://jcarey011.github.io/Website-Design-Analysis/'
-    htmlSourceDir = file('*/build/reports')  // default value
-    reportsDir = file('src/main/html') // default value
+    htmlSourceDir = file('src/main/html')  // default value
+    reportsDir = file('build/reports') // default value
     buildID = "12345"                  // defaults to current date, but can be any run identifier
 }
