@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TextWriter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Website-Design-Analysis</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">TextWriter.java</span></div><h1>TextWriter.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+import java.io.File;
+import java.io.PrintStream;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+
+
+<span class="nc" id="L9">public class TextWriter</span>
+{
+    public static void main(String [] directories)
+    {
+
+    //string array with fake directory data and int array with fake image size data
+<span class="nc" id="L15">    String[] directory = {&quot;/Rainbow&quot;, &quot;/Reindeer&quot;, &quot;/Apple&quot;, &quot;/Zebra&quot;, &quot;/Unicorn&quot;, &quot;/Test&quot;};</span>
+<span class="nc" id="L16">    int[] sizes = {125, 657, 27, 195, 206, 987};</span>
+    //calling method to sort directory names lexicographically
+<span class="nc" id="L18">    sortingDirectories(directory);</span>
+
+    
+<span class="nc" id="L21">    int i=0;</span>
+<span class="nc" id="L22">    int total=0;</span>
+<span class="nc" id="L23">    String name= FileName();</span>
+    //creating txt file 
+    try{
+<span class="nc" id="L26">        File file = new File (name);</span>
+<span class="nc" id="L27">        PrintStream fileStream = new PrintStream(file);</span>
+<span class="nc" id="L28">        System.setOut(fileStream);</span>
+    }
+<span class="nc" id="L30">    catch (Exception e)</span>
+    {
+<span class="nc" id="L32">        System.out.println(e);</span>
+<span class="nc" id="L33">    }</span>
+   
+    //printing out to newly created txt file
+<span class="nc bnc" id="L36" title="All 2 branches missed.">    for(String string : directory)</span>
+    {
+<span class="nc" id="L38">        System.out.print(sizes[i] + &quot; &quot;);</span>
+<span class="nc" id="L39">        System.out.println(&quot;.&quot; + string);</span>
+<span class="nc" id="L40">        total=sizes[i]+total;</span>
+<span class="nc" id="L41">        i++;</span>
+    }
+<span class="nc" id="L43">    System.out.println(total); </span>
+<span class="nc" id="L44">}</span>
+
+
+/**
+ * Sorts directory names lexicographically
+ * @param directories which is the list of directories
+ * @return directories which would be the now sorted list of directories
+ */
+
+public static String[] sortingDirectories(String[] directories)
+{
+<span class="fc bfc" id="L55" title="All 2 branches covered.">    for (int i=0; i&lt;directories.length; i++){</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">        for(int j=i+1; j&lt;directories.length; j++){</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">            if(directories[i].compareToIgnoreCase(directories[j])&gt;0){</span>
+<span class="fc" id="L58">                String temp = directories[i];</span>
+<span class="fc" id="L59">                directories[i]=directories[j];</span>
+<span class="fc" id="L60">                directories[j]=temp;</span>
+            }
+        }
+    }
+<span class="fc" id="L64">    return directories;</span>
+}
+
+
+/**
+ * Creates filename based on the date and time
+ * @return the date and time to name the file + summary as an appendage
+ */
+public static String FileName(){
+
+<span class="nc" id="L74">    LocalDateTime today = LocalDateTime.now();</span>
+<span class="nc" id="L75">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyyMMdd-hhmmss&quot;);</span>
+<span class="nc" id="L76">        String formattedTime = formatter.format(today);</span>
+
+<span class="nc" id="L78">        return formattedTime + &quot;-summary.txt&quot;;</span>
+}
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
