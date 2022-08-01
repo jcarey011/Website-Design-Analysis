@@ -24,11 +24,15 @@ jobs:
       run: gradle test
     - uses: fregante/setup-git-user@v1
     - name: Setup ssh agent
+    - name: get build number
+      run: echo build number is $CI_BUILD_REF
       run: eval $(ssh-agent s)
     - name: add secret key
       env:
         SSH_KEY: ${{secrets.PRIVATE_SSH_KEY}}   
-      run: echo "$PRIVATE_SSH_KEY" > key           
+      run: echo "$PRIVATE_SSH_KEY" > key 
+    - name: create build label 
+      run: export BUILD_LABEL="`date -Idate` $CI_BUILD_REF"          
     - name: deploy
-      run: gradle deployReports 
+      run: gradle deployReports -Dorg.gradle.project.buildNumber="$BUILD_LABEL"
 
