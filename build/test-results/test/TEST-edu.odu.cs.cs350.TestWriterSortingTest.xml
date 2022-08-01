@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.odu.cs.cs350.TestWriterSortingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-31T20:21:09" hostname="callisto" time="0.01">
+<testsuite name="edu.odu.cs.cs350.TestWriterSortingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-01T01:35:04" hostname="io" time="0.005">
   <properties/>
-  <testcase name="testWriterSort()" classname="edu.odu.cs.cs350.TestWriterSortingTest" time="0.01"/>
+  <testcase name="testWriterSort()" classname="edu.odu.cs.cs350.TestWriterSortingTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

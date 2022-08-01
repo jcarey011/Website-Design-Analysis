@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.odu.cs.cs350.OptionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-31T20:21:09" hostname="callisto" time="0.073">
+<testsuite name="edu.odu.cs.cs350.OptionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-01T01:35:04" hostname="io" time="0.007">
   <properties/>
-  <testcase name="testLoadExtensionsFromFile()" classname="edu.odu.cs.cs350.OptionsTest" time="0.073"/>
+  <testcase name="testLoadExtensionsFromFile()" classname="edu.odu.cs.cs350.OptionsTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[java.io.FileNotFoundException: /home/cs_jcare011/Website-Design-Analysis/settings.ini (No such file or directory)
 	at java.base/java.io.FileInputStream.open0(Native Method)
