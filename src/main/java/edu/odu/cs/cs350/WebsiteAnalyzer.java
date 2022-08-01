@@ -10,11 +10,14 @@ import edu.odu.cs.cs350.Website;
 public class WebsiteAnalyzer {
     
 public static void main(String args[]){
+
+    
+
     
     
     
     
-    CommandLine.setNumberFiles(/*Number of Files*/);
+    CommandLine.setNumberFiles(CommandLine.fetchNumberFiles());
     CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());
 }
 
