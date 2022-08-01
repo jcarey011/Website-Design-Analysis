@@ -4,14 +4,26 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.text.html.HTML.Tag;
+
+import javax.swing.text.html.*;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
 public class DocParser 
 {
-     private String absFilePath;
+
+    
+
+    public Document Parser() throws IOException{
+
+        //HTMLDocument document = new HTMLDocument(filePath);
+        File fileFromPath = new File("");
+        Document newDoc = Jsoup.parse(fileFromPath, "null");
+        return newDoc;
+    }
+
+     /*private String absFilePath;
     private List <Tag> tags;
     private int numTags;
 
@@ -68,74 +80,113 @@ public class DocParser
     ///Store these in the list and then print out the list
 
     Document newDoc = Jsoup.parse(filePath);
-    Elements anchorTags = newDoc.select( "a[href]");
-
-        List<Elements> listAnchorTags = new ArrayList<Elements>();
-        listAnchorTags.add(anchorTags);
-
-    Elements imageTags = newDoc.select("img[src]");
-        List<Elements> listImageTags = new ArrayList<Elements>();
-        listImageTags.add(imageTags);
-
-    Elements linkTags = newDoc.select("link");
-        List<Elements> listLinkTags = new ArrayList<Elements>();
-        listLinkTags.add(linkTags);
-
-    Elements scriptTags = newDoc.select("script");
-
-    int numAnchorTags = anchorTags.size();
-    int numImageTags = imageTags.size();
-    int numLinkTags = linkTags.size();
-    int numScriptTags = scriptTags.size();
-
-
-    return null;
-    }
-    
-
-
-}
-  /*  
-    //File input = new File("example/test.html")
-
-    Document newDoc = Jsoup.connect("https://www.cnn.com/").get();
-
-
-    Elements anchorTags = newDoc.select( "a[href]");
-    Elements imageTags = newDoc.select("img[src]");
-    Elements linkTags = newDoc.select("[link]");
-    Elements scriptTags = newDoc.select("[script]");
-
-    int numAnchorTags = anchorTags.size();
-    int numImageTags = imageTags.size();
-    int numLinkTags = linkTags.size();
-    int numScriptTags = scriptTags.size();
-
-    System.out.println(numAnchorTags);
-    System.out.println(anchorTags);
-
-    System.out.println(numImageTags);
-    System.out.println(imageTags);
-
-    System.out.println(numLinkTags);
-    System.out.println(linkTags);
-
-    System.out.println(numScriptTags);
-    System.out.println(scriptTags);
     
     }
-
-
-public static void main(String[] args) throws IOException {
-
-    Website website = new Website(args);
-    Options userOptions = website.getOptions();
-    for(File file : website.getSourceFiles()){
-        DocParser doc = new DocParser(file);
-    }
-
-
-}
-
-}
     */
+
+    /**
+     * Extracts all anchor tags
+     * 
+     * @param the parsed html file
+     * 
+     * @return a list of all anchor tags
+     */
+
+    public List <Elements> extractAnchors(Document parsedDoc){
+
+        Elements anchorTags = parsedDoc.select( "a[href]");
+        List<Elements> listAnchorTags = new ArrayList<Elements>();
+        
+        for (Elements e : new ArrayList<Elements>(listAnchorTags)){
+
+            listAnchorTags.add(anchorTags);
+        }
+        
+
+        return listAnchorTags;
+
+    }
+
+    /**
+     * Extracts all image tags
+     * 
+     * @param the parsed html file
+     * 
+     * @return a list of all image tags
+     */
+    
+    public List <Elements> extractImages(Document parsedDoc){
+
+        Elements imageTags = parsedDoc.select("img[src]");
+        List<Elements> listImageTags = new ArrayList<Elements>();
+
+        for (Elements e : new ArrayList<Elements>(listImageTags)){
+
+            listImageTags.add(imageTags);
+        }
+        
+
+        return listImageTags;
+
+    }
+
+    /**
+     * Extracts all link tags
+     * 
+     * @param the parsed html file
+     * 
+     * @return a list of all link tags
+     */
+
+    public List <Elements> extractLinks(Document parsedDoc){
+
+        Elements linkTags = parsedDoc.select("link");
+        List<Elements> listLinkTags = new ArrayList<Elements>();
+
+        for (Elements e : new ArrayList<Elements>(listLinkTags)){
+
+            listLinkTags.add(linkTags);
+        }
+        
+
+        return listLinkTags;
+
+    }
+
+    /**
+     * Extracts all script tags
+     * 
+     * @param the parsed html file
+     * 
+     * @return a list of all script tags
+     */
+
+    public List <Elements> extractScripts(Document parsedDoc){
+
+        Elements scriptTags = parsedDoc.select("script");
+        List<Elements> listScriptTags = new ArrayList<Elements>();
+        
+        for (Elements e : new ArrayList<Elements>(listScriptTags)){
+
+            listScriptTags.add(scriptTags);
+        }
+        
+
+        return listScriptTags;
+
+    }
+
+
+    
+    
+
+
+}
+   
+    
+
+
+
+
+
+    
