@@ -92,12 +92,13 @@ public class DocParser
      * @return a list of all anchor tags
      */
 
-    public List <Elements> extractAnchors(Document parsedDoc){
+    public List <Elements> extractAnchors(Document doc) throws IOException{
 
-        Elements anchorTags = parsedDoc.select( "a[href]");
+        doc = Parser();
+        Elements anchorTags = doc.select( "a[href]");
         List<Elements> listAnchorTags = new ArrayList<Elements>();
         
-        for (Elements e : new ArrayList<Elements>(listAnchorTags)){
+        for (Elements e  : new ArrayList<Elements>(listAnchorTags)){
 
             listAnchorTags.add(anchorTags);
         }
@@ -115,9 +116,10 @@ public class DocParser
      * @return a list of all image tags
      */
     
-    public List <Elements> extractImages(Document parsedDoc){
+    public List <Elements> extractImages(Document doc) throws IOException{
 
-        Elements imageTags = parsedDoc.select("img[src]");
+        doc = Parser();
+        Elements imageTags = doc.select("img[src]");
         List<Elements> listImageTags = new ArrayList<Elements>();
 
         for (Elements e : new ArrayList<Elements>(listImageTags)){
@@ -138,9 +140,10 @@ public class DocParser
      * @return a list of all link tags
      */
 
-    public List <Elements> extractLinks(Document parsedDoc){
+    public List <Elements> extractLinks(Document doc) throws IOException{
 
-        Elements linkTags = parsedDoc.select("link");
+        doc = Parser();
+        Elements linkTags = doc.select("link");
         List<Elements> listLinkTags = new ArrayList<Elements>();
 
         for (Elements e : new ArrayList<Elements>(listLinkTags)){
@@ -161,9 +164,11 @@ public class DocParser
      * @return a list of all script tags
      */
 
-    public List <Elements> extractScripts(Document parsedDoc){
+    public List <Elements> extractScripts(Document doc) throws IOException{
 
-        Elements scriptTags = parsedDoc.select("script");
+
+         doc =  Parser();
+        Elements scriptTags = doc.select("script");
         List<Elements> listScriptTags = new ArrayList<Elements>();
         
         for (Elements e : new ArrayList<Elements>(listScriptTags)){
