@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="edu.odu.cs.cs350.TestWriterSortingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-01T01:35:04" hostname="io" time="0.005">
+=======
+<testsuite name="edu.odu.cs.cs350.TestWriterSortingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-01T00:31:27" hostname="io" time="0.005">
+>>>>>>> cb82565acfcbd96bf20881771667961c604e8d2c
   <properties/>
   <testcase name="testWriterSort()" classname="edu.odu.cs.cs350.TestWriterSortingTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
