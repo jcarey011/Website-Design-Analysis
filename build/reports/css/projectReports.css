@@ -1,0 +1,26 @@
+
+div.graph {
+    display: block;
+    background-color: #C0C0C0;
+    width:400px; 
+    height:300px;
+    padding: 10px;
+}
+
+th {
+	font-size: 155%;
+	padding-top: 1.5em;
+}
+
+div.reportLinks {
+    left-margin: 5ex
+}
+
+div.reportGraphs {
+    background-color: #C0C0C0;
+    left-margin: 5ex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
