@@ -125,8 +125,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#%3Cinit%3E()">DocParser()</a></span> - Constructor for class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#%3Cinit%3E(java.io.File)">DocParser(File)</a></span> - Constructor for class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
-<dd>&nbsp;</dd>
 </dl>
 <a id="I:E">
 <!--   -->
@@ -139,6 +137,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/ExcelWriter.html#%3Cinit%3E()">ExcelWriter()</a></span> - Constructor for class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/ExcelWriter.html" title="class in edu.odu.cs.cs350">ExcelWriter</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#extractAnchors(org.jsoup.nodes.Document)">extractAnchors(Document)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
+<dd>
+<div class="block">Extracts all anchor tags</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#extractImages(org.jsoup.nodes.Document)">extractImages(Document)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
+<dd>
+<div class="block">Extracts all image tags</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#extractLinks(org.jsoup.nodes.Document)">extractLinks(Document)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
+<dd>
+<div class="block">Extracts all link tags</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#extractScripts(org.jsoup.nodes.Document)">extractScripts(Document)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
+<dd>
+<div class="block">Extracts all script tags</div>
+</dd>
 </dl>
 <a id="I:F">
 <!--   -->
@@ -168,21 +182,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">G</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#getAbsFilePath()">getAbsFilePath()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Options.html#getMaxFuncParams()">getMaxFuncParams()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Options.html" title="class in edu.odu.cs.cs350">Options</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/CommandLine.html#getNames()">getNames()</a></span> - Static method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/CommandLine.html" title="class in edu.odu.cs.cs350">CommandLine</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#getNumTags()">getNumTags()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Website.html#getOptions()">getOptions()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Website.html" title="class in edu.odu.cs.cs350">Website</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Options.html#getSmallestSeq()">getSmallestSeq()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Options.html" title="class in edu.odu.cs.cs350">Options</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Website.html#getSourceFiles()">getSourceFiles()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Website.html" title="class in edu.odu.cs.cs350">Website</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#getTags()">getTags()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Options.html#getValidExts()">getValidExts()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Options.html" title="class in edu.odu.cs.cs350">Options</a></dt>
 <dd>&nbsp;</dd>
@@ -230,6 +238,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">P</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#Parser()">Parser()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/ExcelWriter.html#produceFileName()">produceFileName()</a></span> - Static method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/ExcelWriter.html" title="class in edu.odu.cs.cs350">ExcelWriter</a></dt>
 <dd>
 <div class="block">Gets the local date and time and adds the summary titele to the end</div>
@@ -244,23 +254,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">S</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#setAbsFilePath(java.lang.String)">setAbsFilePath(String)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Options.html#setMaxFuncParams(int)">setMaxFuncParams(int)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Options.html" title="class in edu.odu.cs.cs350">Options</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/CommandLine.html#setName(java.lang.String)">setName(String)</a></span> - Static method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/CommandLine.html" title="class in edu.odu.cs.cs350">CommandLine</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/CommandLine.html#setNumberFiles(int)">setNumberFiles(int)</a></span> - Static method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/CommandLine.html" title="class in edu.odu.cs.cs350">CommandLine</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#setNumTags(int)">setNumTags(int)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Website.html#setOptions(edu.odu.cs.cs350.Options)">setOptions(Options)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Website.html" title="class in edu.odu.cs.cs350">Website</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Options.html#setSmallestSeq(int)">setSmallestSeq(int)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Options.html" title="class in edu.odu.cs.cs350">Options</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Website.html#setSourceFiles(java.util.List)">setSourceFiles(List&lt;File&gt;)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Website.html" title="class in edu.odu.cs.cs350">Website</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#setTags(java.util.List)">setTags(List&lt;HTML.Tag&gt;)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/Options.html#setValidExts(java.util.List)">setValidExts(List&lt;String&gt;)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/Options.html" title="class in edu.odu.cs.cs350">Options</a></dt>
 <dd>&nbsp;</dd>
@@ -274,13 +278,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">T</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#Tag(java.io.File)">Tag(File)</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="edu/odu/cs/cs350/TextWriter.html" title="class in edu.odu.cs.cs350"><span class="typeNameLink">TextWriter</span></a> - Class in <a href="edu/odu/cs/cs350/package-summary.html">edu.odu.cs.cs350</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/TextWriter.html#%3Cinit%3E()">TextWriter()</a></span> - Constructor for class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/TextWriter.html" title="class in edu.odu.cs.cs350">TextWriter</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/DocParser.html#toString()">toString()</a></span> - Method in class edu.odu.cs.cs350.<a href="edu/odu/cs/cs350/DocParser.html" title="class in edu.odu.cs.cs350">DocParser</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a id="I:W">

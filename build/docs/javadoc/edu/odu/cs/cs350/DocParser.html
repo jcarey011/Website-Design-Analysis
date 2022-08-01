@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -154,10 +154,6 @@ extends java.lang.Object</pre>
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">DocParser</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.File)">DocParser</a></span>&#8203;(java.io.File&nbsp;file)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -177,43 +173,36 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAbsFilePath()">getAbsFilePath</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractAnchors(org.jsoup.nodes.Document)">extractAnchors</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</code></th>
+<td class="colLast">
+<div class="block">Extracts all anchor tags</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNumTags()">getNumTags</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractImages(org.jsoup.nodes.Document)">extractImages</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</code></th>
+<td class="colLast">
+<div class="block">Extracts all image tags</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;javax.swing.text.html.HTML.Tag&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTags()">getTags</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractLinks(org.jsoup.nodes.Document)">extractLinks</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</code></th>
+<td class="colLast">
+<div class="block">Extracts all link tags</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAbsFilePath(java.lang.String)">setAbsFilePath</a></span>&#8203;(java.lang.String&nbsp;filePath)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractScripts(org.jsoup.nodes.Document)">extractScripts</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</code></th>
+<td class="colLast">
+<div class="block">Extracts all script tags</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setNumTags(int)">setNumTags</a></span>&#8203;(int&nbsp;n)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTags(java.util.List)">setTags</a></span>&#8203;(java.util.List&lt;javax.swing.text.html.HTML.Tag&gt;&nbsp;tags)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;javax.swing.text.html.HTML.Tag&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Tag(java.io.File)">Tag</a></span>&#8203;(java.io.File&nbsp;file)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
+<td class="colFirst"><code>org.jsoup.nodes.Document</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Parser()">Parser</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -222,7 +211,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -243,24 +232,10 @@ extends java.lang.Object</pre>
 <a id="&lt;init&gt;()">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>DocParser</h4>
-<pre>public&nbsp;DocParser()</pre>
-</li>
-</ul>
-<a id="&lt;init&gt;(java.io.File)">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DocParser</h4>
-<pre>public&nbsp;DocParser&#8203;(java.io.File&nbsp;file)
-          throws java.io.IOException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
+<pre>public&nbsp;DocParser()</pre>
 </li>
 </ul>
 </li>
@@ -273,84 +248,81 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="setAbsFilePath(java.lang.String)">
+<a id="Parser()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setAbsFilePath</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setAbsFilePath&#8203;(java.lang.String&nbsp;filePath)</pre>
-</li>
-</ul>
-<a id="setTags(java.util.List)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setTags</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setTags&#8203;(java.util.List&lt;javax.swing.text.html.HTML.Tag&gt;&nbsp;tags)</pre>
-</li>
-</ul>
-<a id="setNumTags(int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setNumTags</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setNumTags&#8203;(int&nbsp;n)</pre>
-</li>
-</ul>
-<a id="getAbsFilePath()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAbsFilePath</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getAbsFilePath()</pre>
-</li>
-</ul>
-<a id="getTags()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getTags</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;javax.swing.text.html.HTML.Tag&gt;&nbsp;getTags()</pre>
-</li>
-</ul>
-<a id="getNumTags()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getNumTags</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;getNumTags()</pre>
-</li>
-</ul>
-<a id="toString()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toString</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;toString()</pre>
+<h4>Parser</h4>
+<pre class="methodSignature">public&nbsp;org.jsoup.nodes.Document&nbsp;Parser()
+                                throws java.io.IOException</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="Tag(java.io.File)">
+<a id="extractAnchors(org.jsoup.nodes.Document)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>extractAnchors</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractAnchors&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</pre>
+<div class="block">Extracts all anchor tags</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>the</code> - parsed html file</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of all anchor tags</dd>
+</dl>
+</li>
+</ul>
+<a id="extractImages(org.jsoup.nodes.Document)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>extractImages</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractImages&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</pre>
+<div class="block">Extracts all image tags</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>the</code> - parsed html file</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of all image tags</dd>
+</dl>
+</li>
+</ul>
+<a id="extractLinks(org.jsoup.nodes.Document)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>extractLinks</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractLinks&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</pre>
+<div class="block">Extracts all link tags</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>the</code> - parsed html file</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of all link tags</dd>
+</dl>
+</li>
+</ul>
+<a id="extractScripts(org.jsoup.nodes.Document)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>Tag</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;javax.swing.text.html.HTML.Tag&gt;&nbsp;Tag&#8203;(java.io.File&nbsp;file)
-                                                   throws java.io.IOException</pre>
+<h4>extractScripts</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractScripts&#8203;(org.jsoup.nodes.Document&nbsp;parsedDoc)</pre>
+<div class="block">Extracts all script tags</div>
 <dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>the</code> - parsed html file</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of all script tags</dd>
 </dl>
 </li>
 </ul>
