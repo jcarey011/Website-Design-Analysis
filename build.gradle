@@ -96,7 +96,7 @@ task deployReports(dependsOn: ['reports', 'reportStats']){
 
 reportStats {
     reportsURL = 'https://jcarey011.github.io/Website-Design-Analysis/'
-    htmlSourceDir = file('build/reports/tests/test')  // default value
+    htmlSourceDir = file('build/html')  // default value
     reportsDir = file('build/reports') // default value
 }
 //test commit
