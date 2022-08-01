@@ -23,9 +23,9 @@ jobs:
     - name: Test
       run: gradle test
     - uses: fregante/setup-git-user@v1
-    - name: Setup ssh agent
     - name: get build number
       run: echo build number is $CI_BUILD_REF
+    - name: start ssh agent
       run: eval $(ssh-agent s)
     - name: add secret key
       env:
