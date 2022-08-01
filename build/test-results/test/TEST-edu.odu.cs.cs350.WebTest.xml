@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.odu.cs.cs350.WebTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2022-07-31T20:21:09" hostname="callisto" time="0.02">
+<testsuite name="edu.odu.cs.cs350.WebTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2022-08-01T00:31:26" hostname="io" time="0.077">
   <properties/>
-  <testcase name="testFindFilesInDir()" classname="edu.odu.cs.cs350.WebTest" time="0.007">
+  <testcase name="testFindFilesInDir()" classname="edu.odu.cs.cs350.WebTest" time="0.045">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;5&gt; but was: &lt;4&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;5&gt; but was: &lt;4&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -99,9 +99,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:829)
 </failure>
   </testcase>
-  <testcase name="testConstructor()" classname="edu.odu.cs.cs350.WebTest" time="0.012"/>
+  <testcase name="testConstructor()" classname="edu.odu.cs.cs350.WebTest" time="0.031"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[java.io.FileNotFoundException: /home/cs_jcare011/Website-Design-Analysis/settings.ini (No such file or directory)
+  <system-err><![CDATA[java.io.FileNotFoundException: /home/cs_hhawa001/Website-Design-Analysis/settings.ini (No such file or directory)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
