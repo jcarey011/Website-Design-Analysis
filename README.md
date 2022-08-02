@@ -1,3 +1,12 @@
+#Authors
+- jcarey011 - jcare011@odu.edu
+- Mtan006 - mtan006@odu.edu
+- hhawa01 - hhawa001@odu.edu
+- rmack1020 - rmack1020@odu.edu
+- rgwal001 - rgwal001@odu.edu
+- jdlavinder - jlavi001@odu.edu
+
+
 Reports Web Page: https://jcarey011.github.io/Website-Design-Analysis/
 
 ![PlantText](https://user-images.githubusercontent.com/87342389/177419031-2d06507d-31a4-4e3f-8af3-a195c8c29040.png)
