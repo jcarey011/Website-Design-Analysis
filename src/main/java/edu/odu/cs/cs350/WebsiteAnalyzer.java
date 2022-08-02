@@ -25,8 +25,9 @@ public static void main(String args[]) throws IOException{
            // *docparser* code = new *docparser*(file);
           //  code.add(code);
         }
-    Path = CommandLine.inputPath();
 
+    Path = CommandLine.inputPath();
+    
     
 
     ExcelWriter.createExcel();
