@@ -2,7 +2,7 @@ package edu.odu.cs.cs350;
 import java.util.*;
 
 import org.apache.xmlbeans.impl.soap.Text;
-import org.ini4j.Options;
+//import org.ini4j.Options;
 
 import java.io.*;
 import java.nio.file.Path;
@@ -17,14 +17,10 @@ public static void main(String args[]) throws IOException{
     String Path;
 
     Website web = new Website(args);
-        Options userOptions = web.getOptions();
-        //List<*insert code*> html = new ArrayList<>();
-
-        for(File file : web.getSourceFiles()){
-            /*println(web);*/
-           // *docparser* code = new *docparser*(file);
-          //  code.add(code);
-        }
+    Options userOptions = web.getOptions();
+    Path = CommandLine.inputPath();
+    Options op = new Options(Path);
+    
 
     Path = CommandLine.inputPath();
     
