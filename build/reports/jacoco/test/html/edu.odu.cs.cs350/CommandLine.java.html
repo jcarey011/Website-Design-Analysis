@@ -3,21 +3,22 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class CommandLine {
     
     private static int numberOfFiles;
-    private static String fileName;
+    public static String fileName;
     public static List&lt;String&gt; fileList;
 
-<span class="nc" id="L13">    public CommandLine(){</span>
+<span class="nc" id="L14">    public CommandLine(){</span>
 
-<span class="nc" id="L15">    }</span>
+<span class="nc" id="L16">    }</span>
     /*
      * Function will access files and pull names
      */
     public static String getNames(){
-<span class="nc" id="L20">        return fileName;</span>
+<span class="nc" id="L21">        return fileName;</span>
     }
     /*
      * function can be used to add names directly to static list in this class
@@ -25,24 +26,24 @@ public class CommandLine {
      */
     public static void addNames(String fileName)
     {
-<span class="nc" id="L28">        fileList.add(fileName);</span>
-<span class="nc" id="L29">    }</span>
+<span class="nc" id="L29">        fileList.add(fileName);</span>
+<span class="nc" id="L30">    }</span>
     /*
      * Function will set private name
      * @param name  Name to set 
      */
     public static void setName(String name)
     {
-<span class="nc" id="L36">        fileName = name;</span>
-<span class="nc" id="L37">    }</span>
+<span class="nc" id="L37">        fileName = name;</span>
+<span class="nc" id="L38">    }</span>
     /*
      * Function will set number of files known
      * @param number  number to set private integer to
      */
     public static void setNumberFiles(int number)
     {
-<span class="nc" id="L44">        numberOfFiles = number;</span>
-<span class="nc" id="L45">    }</span>
+<span class="nc" id="L45">        numberOfFiles = number;</span>
+<span class="nc" id="L46">    }</span>
     /*
     *   Function will access files and collect number of files in total
     *   @param numfiles  number of files found
@@ -50,7 +51,7 @@ public class CommandLine {
     */
     public static int fetchNumberFiles()
     {
-<span class="nc" id="L53">        return numberOfFiles;</span>
+<span class="nc" id="L54">        return numberOfFiles;</span>
     }
     /* 
      * Function will output file names to CLI
@@ -59,14 +60,22 @@ public class CommandLine {
     */
     public static void outPutFileNames(int FileListSize)
     {
-<span class="nc" id="L62">        FileListSize = fetchNumberFiles();</span>
-<span class="nc" id="L63">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L64">        files.add(getNames());</span>
-<span class="nc bnc" id="L65" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
+<span class="nc" id="L63">        FileListSize = fetchNumberFiles();</span>
+<span class="nc" id="L64">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L65">        files.add(getNames());</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
         {
-<span class="nc" id="L67">           files.forEach(System.out::println);</span>
+<span class="nc" id="L68">           files.forEach(System.out::println);</span>
         }
-<span class="nc" id="L69">    }</span>
+<span class="nc" id="L70">    }</span>
+    public static String inputPath()
+    {
+<span class="nc" id="L73">        Scanner input = new Scanner(System.in);</span>
+<span class="nc" id="L74">        System.out.println(&quot;Enter File Path: &quot;);</span>
+<span class="nc" id="L75">        String Path = input.nextLine();</span>
+<span class="nc" id="L76">        System.out.println(&quot;File Path Is &quot; + Path);</span>
+<span class="nc" id="L77">        return Path;</span>
+    }
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

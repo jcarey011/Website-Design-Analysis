@@ -50,22 +50,22 @@ public class Options {
 
 <span class="fc" id="L51">        Wini configuration = null;</span>
         try {
-<span class="nc" id="L53">             configuration = new Wini(new File(confPath));</span>
-<span class="fc" id="L54">        } catch(Exception e) {</span>
-<span class="fc" id="L55">            e.printStackTrace();</span>
-<span class="nc" id="L56">        }</span>
+<span class="fc" id="L53">             configuration = new Wini(new File(confPath));</span>
+<span class="nc" id="L54">        } catch(Exception e) {</span>
+<span class="nc" id="L55">            e.printStackTrace();</span>
+<span class="fc" id="L56">        }</span>
 
 <span class="fc" id="L58">        this.validExts = Arrays.asList(&quot;html&quot;, &quot;htm&quot;);</span>
 <span class="fc" id="L59">        this.smallestSeq = 10;</span>
 <span class="fc" id="L60">        this.maxFuncParams = 8;</span>
 
 <span class="pc bpc" id="L62" title="1 of 2 branches missed.">        if(configuration != null) {</span>
-<span class="nc" id="L63">            String extensions = configuration.get(&quot;settings&quot;, &quot;extensions&quot;);</span>
-<span class="nc bnc" id="L64" title="All 2 branches missed.">            if(extensions == null) {</span>
+<span class="fc" id="L63">            String extensions = configuration.get(&quot;settings&quot;, &quot;extensions&quot;);</span>
+<span class="pc bpc" id="L64" title="1 of 2 branches missed.">            if(extensions == null) {</span>
 <span class="nc" id="L65">                return;</span>
             }
 
-<span class="nc" id="L68">            this.validExts = Arrays.asList(extensions.split(&quot;,&quot;));</span>
+<span class="fc" id="L68">            this.validExts = Arrays.asList(extensions.split(&quot;,&quot;));</span>
         }
 <span class="fc" id="L70">    }</span>
 }
