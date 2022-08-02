@@ -30,9 +30,9 @@ public static void main(String args[]){
     jsonFileName = JsonWriter.produceFileName();
     textFileName = TextWriter.FileName();
 
-    CommandLine.fileList.push(ExcelFileName);
-    CommandLine.fileList.push(jsonFileName);
-    CommandLine.fileList.push(textFileName);
+    CommandLine.addNames(ExcelFileName);
+    CommandLine.addNames(jsonFileName);
+    CommandLine.addNames(textFileName);
         
     CommandLine.setNumberFiles(3);
     CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());
