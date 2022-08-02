@@ -2,29 +2,36 @@ package edu.odu.cs.cs350;
 import java.util.*;
 
 import org.apache.xmlbeans.impl.soap.Text;
+import org.ini4j.Options;
 
 import java.io.*;
+import java.nio.file.Path;
 
 
 public class WebsiteAnalyzer {
     
-public static void main(String args[]){
+public static void main(String args[]) throws IOException{
     String textFileName;
     String jsonFileName;
     String ExcelFileName;
+    String Path;
 
     Website web = new Website(args);
         Options userOptions = web.getOptions();
         //List<*insert code*> html = new ArrayList<>();
 
         for(File file : web.getSourceFiles()){
-            println(web);
+            /*println(web);*/
            // *docparser* code = new *docparser*(file);
           //  code.add(code);
         }
+    Path = CommandLine.inputPath();
+
+    
+
     ExcelWriter.createExcel();
     JsonWriter.CreateJson();
-    TextWriter.main(directories);
+    TextWriter.main();
 
     ExcelFileName = ExcelWriter.produceFileName();
     jsonFileName = JsonWriter.produceFileName();

@@ -27,7 +27,7 @@ public class CommandLine {
      */
     public static void addNames(String fileName)
     {
-        fileList.add(fileName);
+        fileList.push(fileName);
     }
     /*
      * Function will set private name

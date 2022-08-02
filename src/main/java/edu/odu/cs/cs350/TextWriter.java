@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 
 public class TextWriter
 {
-    public static void main(String [] directories)
+    public static void main()
     {
 
     //string array with fake directory data and int array with fake image size data
