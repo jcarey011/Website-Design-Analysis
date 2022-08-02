@@ -1,6 +1,7 @@
 package edu.odu.cs.cs350;
 import static org.junit.Assert.*;
 import org.junit.jupiter.api.Test;
+import static org.junit.matchers.JUnitMatchers.*;
 
 import edu.odu.cs.cs350.CommandLine;
 
