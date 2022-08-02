@@ -2,14 +2,15 @@ package edu.odu.cs.cs350;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class CommandLine {
     
-    private static int numberOfFiles;
+    public static int numberOfFiles;
     public static String fileName;
-    public static List<String> fileList;
+    public static LinkedList<String> fileList;
 
     public CommandLine(){
 

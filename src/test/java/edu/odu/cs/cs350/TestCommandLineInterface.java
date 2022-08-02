@@ -1,6 +1,5 @@
 package edu.odu.cs.cs350;
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.fail;
 import org.junit.jupiter.api.Test;
 
 import edu.odu.cs.cs350.CommandLine;
