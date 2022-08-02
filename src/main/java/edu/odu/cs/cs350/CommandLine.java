@@ -3,11 +3,12 @@ package edu.odu.cs.cs350;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class CommandLine {
     
     private static int numberOfFiles;
-    private static String fileName;
+    public static String fileName;
     public static List<String> fileList;
 
     public CommandLine(){
@@ -66,6 +67,14 @@ public class CommandLine {
         {
            files.forEach(System.out::println);
         }
+    }
+    public static String inputPath()
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter File Path: ");
+        String Path = input.nextLine();
+        System.out.println("File Path Is " + Path);
+        return Path;
     }
     
 }

@@ -1,4 +1,4 @@
-/*package edu.odu.cs.cs350;
+package edu.odu.cs.cs350;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.fail;
 
@@ -17,5 +17,20 @@ public class TestCommandLineInterface {
         CommandLine.addNames(fileName);
         assertThat(CommandLine.fileList, contains("Hannibal.txt"));
     }
+    @Test
+    public static void testGetNames()
+    {
+        CommandLine.addNamesaddNames("Testname");
+        CommandLine.getNames();
+        assertThat(CommandLine.getNames(), contains("Testname"));
+    }
+    @Test
+    public static void testFetchFunction()
+    {
+        CommandLine.setNumberFiles(12);
+        CommandLine.fetchNumberFiles();
+        assertThat(CommandLine.fetchNumberFiles(), contains(12));
+    }
+
 }
-*/
+
