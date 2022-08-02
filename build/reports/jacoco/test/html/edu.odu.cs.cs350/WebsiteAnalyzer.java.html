@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WebsiteAnalyzer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Website-Design-Analysis</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">WebsiteAnalyzer.java</span></div><h1>WebsiteAnalyzer.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+import java.util.*;
+
+import org.apache.xmlbeans.impl.soap.Text;
+//import org.ini4j.Options;
+
+import java.io.*;
+import java.nio.file.Path;
 
 
-<span class="nc" id="L4">public class WebsiteAnalyzer {</span>
+<span class="nc" id="L11">public class WebsiteAnalyzer {</span>
+    public static LinkedList&lt;String&gt; PathsList;
+public static void main(String args[]) throws IOException{
+    String textFileName;
+    String jsonFileName;
+    String ExcelFileName;
+    String Path;
     
-public static void main(String args[]){
 
+<span class="nc" id="L20">    Website web = new Website(args);</span>
+<span class="nc" id="L21">    Options userOptions = web.getOptions();</span>
+<span class="nc" id="L22">    Path = CommandLine.inputPath();</span>
+<span class="nc" id="L23">    Options op = new Options(Path);</span>
     
 
+<span class="nc" id="L26">    Path = CommandLine.inputPath();</span>
+<span class="nc" id="L27">    PathsList.push(Path);</span>
     
-    
-    
-    
-<span class="nc" id="L14">    CommandLine.setNumberFiles(CommandLine.fetchNumberFiles());</span>
-<span class="nc" id="L15">    CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());</span>
-<span class="nc" id="L16">}</span>
+
+<span class="nc" id="L30">    ExcelWriter.createExcel();</span>
+<span class="nc" id="L31">    JsonWriter.CreateJson();</span>
+<span class="nc" id="L32">    TextWriter.main();</span>
+
+<span class="nc" id="L34">    ExcelFileName = ExcelWriter.produceFileName();</span>
+<span class="nc" id="L35">    jsonFileName = JsonWriter.produceFileName();</span>
+<span class="nc" id="L36">    textFileName = TextWriter.FileName();</span>
+
+<span class="nc" id="L38">    CommandLine.addNames(ExcelFileName);</span>
+<span class="nc" id="L39">    CommandLine.addNames(jsonFileName);</span>
+<span class="nc" id="L40">    CommandLine.addNames(textFileName);</span>
+        
+<span class="nc" id="L42">    CommandLine.setNumberFiles(3);</span>
+<span class="nc" id="L43">    CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());</span>
+<span class="nc" id="L44">}</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -2,23 +2,24 @@
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class CommandLine {
     
-    private static int numberOfFiles;
+    public static int numberOfFiles;
     public static String fileName;
-    public static List&lt;String&gt; fileList;
+    public static LinkedList&lt;String&gt; fileList;
 
-<span class="nc" id="L14">    public CommandLine(){</span>
+<span class="nc" id="L15">    public CommandLine(){</span>
 
-<span class="nc" id="L16">    }</span>
+<span class="nc" id="L17">    }</span>
     /*
      * Function will access files and pull names
      */
     public static String getNames(){
-<span class="nc" id="L21">        return fileName;</span>
+<span class="nc" id="L22">        return fileName;</span>
     }
     /*
      * function can be used to add names directly to static list in this class
@@ -26,24 +27,24 @@ public class CommandLine {
      */
     public static void addNames(String fileName)
     {
-<span class="nc" id="L29">        fileList.add(fileName);</span>
-<span class="nc" id="L30">    }</span>
+<span class="nc" id="L30">        fileList.push(fileName);</span>
+<span class="nc" id="L31">    }</span>
     /*
      * Function will set private name
      * @param name  Name to set 
      */
     public static void setName(String name)
     {
-<span class="nc" id="L37">        fileName = name;</span>
-<span class="nc" id="L38">    }</span>
+<span class="nc" id="L38">        fileName = name;</span>
+<span class="nc" id="L39">    }</span>
     /*
      * Function will set number of files known
      * @param number  number to set private integer to
      */
     public static void setNumberFiles(int number)
     {
-<span class="nc" id="L45">        numberOfFiles = number;</span>
-<span class="nc" id="L46">    }</span>
+<span class="nc" id="L46">        numberOfFiles = number;</span>
+<span class="nc" id="L47">    }</span>
     /*
     *   Function will access files and collect number of files in total
     *   @param numfiles  number of files found
@@ -51,7 +52,7 @@ public class CommandLine {
     */
     public static int fetchNumberFiles()
     {
-<span class="nc" id="L54">        return numberOfFiles;</span>
+<span class="nc" id="L55">        return numberOfFiles;</span>
     }
     /* 
      * Function will output file names to CLI
@@ -60,21 +61,21 @@ public class CommandLine {
     */
     public static void outPutFileNames(int FileListSize)
     {
-<span class="nc" id="L63">        FileListSize = fetchNumberFiles();</span>
-<span class="nc" id="L64">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L65">        files.add(getNames());</span>
-<span class="nc bnc" id="L66" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
+<span class="nc" id="L64">        FileListSize = fetchNumberFiles();</span>
+<span class="nc" id="L65">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L66">        files.add(getNames());</span>
+<span class="nc bnc" id="L67" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
         {
-<span class="nc" id="L68">           files.forEach(System.out::println);</span>
+<span class="nc" id="L69">           files.forEach(System.out::println);</span>
         }
-<span class="nc" id="L70">    }</span>
+<span class="nc" id="L71">    }</span>
     public static String inputPath()
     {
-<span class="nc" id="L73">        Scanner input = new Scanner(System.in);</span>
-<span class="nc" id="L74">        System.out.println(&quot;Enter File Path: &quot;);</span>
-<span class="nc" id="L75">        String Path = input.nextLine();</span>
-<span class="nc" id="L76">        System.out.println(&quot;File Path Is &quot; + Path);</span>
-<span class="nc" id="L77">        return Path;</span>
+<span class="nc" id="L74">        Scanner input = new Scanner(System.in);</span>
+<span class="nc" id="L75">        System.out.println(&quot;Enter File Path: &quot;);</span>
+<span class="nc" id="L76">        String Path = input.nextLine();</span>
+<span class="nc" id="L77">        System.out.println(&quot;File Path Is &quot; + Path);</span>
+<span class="nc" id="L78">        return Path;</span>
     }
     
 }

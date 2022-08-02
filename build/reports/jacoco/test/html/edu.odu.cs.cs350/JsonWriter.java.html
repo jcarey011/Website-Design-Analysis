@@ -21,11 +21,11 @@ import org.json.simple.JSONObject;
      */
 	public static String produceFileName(){
 
-<span class="nc" id="L24">		LocalDateTime today = LocalDateTime.now();</span>
-<span class="nc" id="L25">		DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyyMMdd-hhmmss&quot;);</span>
-<span class="nc" id="L26">		String formattedTime = formatter.format(today);</span>
+<span class="fc" id="L24">		LocalDateTime today = LocalDateTime.now();</span>
+<span class="fc" id="L25">		DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyyMMdd-hhmmss&quot;);</span>
+<span class="fc" id="L26">		String formattedTime = formatter.format(today);</span>
 
-<span class="nc" id="L28">		return formattedTime + &quot;-summary.json&quot;;</span>
+<span class="fc" id="L28">		return formattedTime + &quot;-summary.json&quot;;</span>
 	}
     /**
      * Creates and outputs json file
