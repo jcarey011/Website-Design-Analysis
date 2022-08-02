@@ -33,6 +33,12 @@ task reports (dependsOn: ['javadoc', 'test', 'jacocoTestReport']){
     
 }
 
+jar {
+	manifest {
+		attributes 'Main-Class': 'edu.odu.cs.cs350.WebsiteAnalyzer'
+	}
+}
+
 jacoco {
     toolVersion = "0.8.4"
 }
