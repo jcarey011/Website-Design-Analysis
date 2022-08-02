@@ -8,6 +8,6 @@ public class TestJson {
 	public void testJsonFileName()
 	{
 		String testpat = JsonWriter.produceFileName();
-		assertThat(testpat.matches("\\d{8}-\\d{6}-summary.json"));
+		assertTrue(testpat.matches("\\d{8}-\\d{6}-summary.json"));
 	}
 }
