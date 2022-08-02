@@ -1,5 +1,5 @@
 #Authors
-- jcarey011 - jcarey011@odu.edu
+- jcarey011 - jcare011@odu.edu
 - Mtan006 - mtan006@odu.edu
 - hhawa01 - hhawa01@odu.edu
 - rmack1020 - rmack1020@odu.edu
