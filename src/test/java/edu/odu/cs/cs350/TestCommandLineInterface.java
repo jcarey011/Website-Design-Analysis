@@ -17,7 +17,7 @@ public class TestCommandLineInterface {
     @Test
     public static void testGetNames()
     {
-        CommandLine.addNamesaddNames("Testname");
+        CommandLine.addNames("Testname");
         CommandLine.getNames();
         assertThat(CommandLine.getNames(), containsString("Testname"));
     }
