@@ -1,3 +1,4 @@
+/* *
 package edu.odu.cs.cs350;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.fail;
@@ -9,7 +10,7 @@ import edu.odu.cs.cs350.CommandLine;
 
 
 public class TestCommandLineInterface {
-    
+   
     @Test
     public static void testAddFunction()
     {
@@ -33,4 +34,4 @@ public class TestCommandLineInterface {
     }
 
 }
-
+*/
