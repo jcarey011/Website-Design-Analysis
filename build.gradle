@@ -1,8 +1,10 @@
  plugins {
     id "java"
     id "jacoco"
+    id "application"
     id "org.barfuin.gradle.jacocolog" version "2.0.0"
-    id 'edu.odu.cs.report_accumulator' version '1.4'     
+    id 'edu.odu.cs.report_accumulator' version '1.4'  
+    id "pmd"   
 }
 
 repositories {
@@ -49,6 +51,23 @@ jacocoTestReport {
         xml.enabled true
         csv.enabled true
     }
+}
+
+pmd {
+
+    toolVersion = "6.21.0"
+    ignoreFailures = true
+    ruleSets = [
+        "category/java/bestpractices.xml" ,
+        "category/java/codestyle.xml" ,
+        "category/java/design/xml" ,
+        "category/java/errorprone.xml" ,
+        "category/java/performance.xml"
+    ]
+}
+
+pmdTest {
+    enabled = false
 }
 
 tasks.withType(Javadoc) {
