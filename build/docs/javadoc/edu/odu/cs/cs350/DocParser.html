@@ -173,29 +173,29 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractAnchors(org.jsoup.nodes.Document)">extractAnchors</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;doc)</code></th>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.nodes.Element&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractAnchors()">extractAnchors</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Extracts all anchor tags</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractImages(org.jsoup.nodes.Document)">extractImages</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;doc)</code></th>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.nodes.Element&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractImages()">extractImages</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Extracts all image tags</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractLinks(org.jsoup.nodes.Document)">extractLinks</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;doc)</code></th>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.nodes.Element&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractLinks()">extractLinks</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Extracts all link tags</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;org.jsoup.select.Elements&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractScripts(org.jsoup.nodes.Document)">extractScripts</a></span>&#8203;(org.jsoup.nodes.Document&nbsp;doc)</code></th>
+<td class="colFirst"><code>java.util.List&lt;org.jsoup.nodes.Element&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractScripts()">extractScripts</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Extracts all script tags</div>
 </td>
@@ -262,18 +262,16 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="extractAnchors(org.jsoup.nodes.Document)">
+<a id="extractAnchors()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>extractAnchors</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractAnchors&#8203;(org.jsoup.nodes.Document&nbsp;doc)
-                                                         throws java.io.IOException</pre>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.nodes.Element&gt;&nbsp;extractAnchors()
+                                                       throws java.io.IOException</pre>
 <div class="block">Extracts all anchor tags</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>the</code> - parsed html file</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a list of all anchor tags</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -281,18 +279,16 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="extractImages(org.jsoup.nodes.Document)">
+<a id="extractImages()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>extractImages</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractImages&#8203;(org.jsoup.nodes.Document&nbsp;doc)
-                                                        throws java.io.IOException</pre>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.nodes.Element&gt;&nbsp;extractImages()
+                                                      throws java.io.IOException</pre>
 <div class="block">Extracts all image tags</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>the</code> - parsed html file</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a list of all image tags</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -300,18 +296,16 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="extractLinks(org.jsoup.nodes.Document)">
+<a id="extractLinks()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>extractLinks</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractLinks&#8203;(org.jsoup.nodes.Document&nbsp;doc)
-                                                       throws java.io.IOException</pre>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.nodes.Element&gt;&nbsp;extractLinks()
+                                                     throws java.io.IOException</pre>
 <div class="block">Extracts all link tags</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>the</code> - parsed html file</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a list of all link tags</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -319,18 +313,16 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="extractScripts(org.jsoup.nodes.Document)">
+<a id="extractScripts()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>extractScripts</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.select.Elements&gt;&nbsp;extractScripts&#8203;(org.jsoup.nodes.Document&nbsp;doc)
-                                                         throws java.io.IOException</pre>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;org.jsoup.nodes.Element&gt;&nbsp;extractScripts()
+                                                       throws java.io.IOException</pre>
 <div class="block">Extracts all script tags</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>the</code> - parsed html file</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a list of all script tags</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
