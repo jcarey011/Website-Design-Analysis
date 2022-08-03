@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var data = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -151,11 +151,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">Website</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String%5B%5D)">Website</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.nio.file.Path)">Website</a></span>&#8203;(java.nio.file.Path&nbsp;path)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -177,40 +173,18 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;java.io.File&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findFilesInDir(java.io.File,edu.odu.cs.cs350.Options)">findFilesInDir</a></span>&#8203;(java.io.File&nbsp;file,
-              <a href="Options.html" title="class in edu.odu.cs.cs350">Options</a>&nbsp;options)</code></th>
-<td class="colLast">
-<div class="block">Recursively searches a directory for valid files and adds them to a List</div>
-</td>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#examineDirectory()">examineDirectory</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;java.io.File&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#findSourceFiles(java.lang.String%5B%5D,edu.odu.cs.cs350.Options)">findSourceFiles</a></span>&#8203;(java.lang.String[]&nbsp;args,
-               <a href="Options.html" title="class in edu.odu.cs.cs350">Options</a>&nbsp;options)</code></th>
-<td class="colLast">
-<div class="block">Returns a List of paths of valid files from the user paths passed into the
- CLI</div>
-</td>
+<td class="colFirst"><code>java.util.List&lt;java.nio.file.Path&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDirectoryList()">getDirectoryList</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="Options.html" title="class in edu.odu.cs.cs350">Options</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOptions()">getOptions</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;java.io.File&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSourceFiles()">getSourceFiles</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOptions(edu.odu.cs.cs350.Options)">setOptions</a></span>&#8203;(<a href="Options.html" title="class in edu.odu.cs.cs350">Options</a>&nbsp;options)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSourceFiles(java.util.List)">setSourceFiles</a></span>&#8203;(java.util.List&lt;java.io.File&gt;&nbsp;files)</code></th>
+<td class="colFirst"><code>java.util.List&lt;java.nio.file.Path&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFileList()">getFileList</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -237,22 +211,13 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Website</h4>
-<pre>public&nbsp;Website()</pre>
-</li>
-</ul>
-<a id="&lt;init&gt;(java.lang.String[])">
+<a id="&lt;init&gt;(java.nio.file.Path)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Website</h4>
-<pre>public&nbsp;Website&#8203;(java.lang.String[]&nbsp;args)</pre>
+<pre>public&nbsp;Website&#8203;(java.nio.file.Path&nbsp;path)</pre>
 </li>
 </ul>
 </li>
@@ -265,77 +230,36 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="setSourceFiles(java.util.List)">
+<a id="examineDirectory()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setSourceFiles</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setSourceFiles&#8203;(java.util.List&lt;java.io.File&gt;&nbsp;files)</pre>
-</li>
-</ul>
-<a id="setOptions(edu.odu.cs.cs350.Options)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setOptions</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setOptions&#8203;(<a href="Options.html" title="class in edu.odu.cs.cs350">Options</a>&nbsp;options)</pre>
-</li>
-</ul>
-<a id="getSourceFiles()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getSourceFiles</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;java.io.File&gt;&nbsp;getSourceFiles()</pre>
-</li>
-</ul>
-<a id="getOptions()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getOptions</h4>
-<pre class="methodSignature">public&nbsp;<a href="Options.html" title="class in edu.odu.cs.cs350">Options</a>&nbsp;getOptions()</pre>
-</li>
-</ul>
-<a id="findSourceFiles(java.lang.String[],edu.odu.cs.cs350.Options)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>findSourceFiles</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;java.io.File&gt;&nbsp;findSourceFiles&#8203;(java.lang.String[]&nbsp;args,
-                                                    <a href="Options.html" title="class in edu.odu.cs.cs350">Options</a>&nbsp;options)</pre>
-<div class="block">Returns a List of paths of valid files from the user paths passed into the
- CLI</div>
+<h4>examineDirectory</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;examineDirectory()
+                      throws java.io.IOException</pre>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>args</code> - String array of command line arguments</dd>
-<dd><code>options</code> - config containing list of valid file extensions</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>List of valid file paths</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="findFilesInDir(java.io.File,edu.odu.cs.cs350.Options)">
+<a id="getFileList()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFileList</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;java.nio.file.Path&gt;&nbsp;getFileList()</pre>
+</li>
+</ul>
+<a id="getDirectoryList()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>findFilesInDir</h4>
-<pre class="methodSignature">public&nbsp;java.util.List&lt;java.io.File&gt;&nbsp;findFilesInDir&#8203;(java.io.File&nbsp;file,
-                                                   <a href="Options.html" title="class in edu.odu.cs.cs350">Options</a>&nbsp;options)</pre>
-<div class="block">Recursively searches a directory for valid files and adds them to a List</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - directory to be searched</dd>
-<dd><code>options</code> - config containing a list of valid file extensions</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>List of all valid files within the directory and subdirectories</dd>
-</dl>
+<h4>getDirectoryList</h4>
+<pre class="methodSignature">public&nbsp;java.util.List&lt;java.nio.file.Path&gt;&nbsp;getDirectoryList()</pre>
 </li>
 </ul>
 </li>
