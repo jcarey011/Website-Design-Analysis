@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.odu.cs.cs350.WebTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-02T02:04:46" hostname="MANUEL-TAN" time="0.011">
+<testsuite name="edu.odu.cs.cs350.WebTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-03T00:35:32" hostname="ganymede" time="0.008">
   <properties/>
-  <testcase name="testFindFilesInDir()" classname="edu.odu.cs.cs350.WebTest" time="0.007"/>
+  <testcase name="testFindFilesInDir()" classname="edu.odu.cs.cs350.WebTest" time="0.005"/>
   <testcase name="testConstructor()" classname="edu.odu.cs.cs350.WebTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.odu.cs.cs350.OptionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-02T02:04:46" hostname="MANUEL-TAN" time="0.057">
+<testsuite name="edu.odu.cs.cs350.OptionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-03T00:35:32" hostname="ganymede" time="0.056">
   <properties/>
-  <testcase name="testLoadExtensionsFromFile()" classname="edu.odu.cs.cs350.OptionsTest" time="0.057"/>
+  <testcase name="testLoadExtensionsFromFile()" classname="edu.odu.cs.cs350.OptionsTest" time="0.056"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
