@@ -1,10 +1,12 @@
 package edu.odu.cs.cs350;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Scanner; 
+import java.util.Scanner;
+import java.nio.file.Path; 
+import java.nio.file.Paths;
 
 public class CommandLine {
     
@@ -69,13 +71,15 @@ public class CommandLine {
            files.forEach(System.out::println);
         }
     }
-    public static String inputPath()
+    public static Path inputPath()
     {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter File Path: ");
-        String Path = input.nextLine();
-        System.out.println("File Path Is " + Path);
-        return Path;
+        //System.out.println("Enter File Path: ");
+        String path = input.nextLine();
+        //System.out.println("File Path Is " + path);
+        Path p1 = Paths.get(path);
+        input.close();
+        return p1;
     }
     
 }
