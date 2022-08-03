@@ -2,7 +2,7 @@ GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_
 Website-Design-Analysis,edu.odu.cs.cs350,Website,24,164,2,16,8,38,5,13,3,6
 Website-Design-Analysis,edu.odu.cs.cs350,ExcelWriter,124,0,4,0,23,0,6,0,4,0
 Website-Design-Analysis,edu.odu.cs.cs350,JsonWriter,28,12,0,0,10,4,2,1,2,1
-Website-Design-Analysis,edu.odu.cs.cs350,DocParser,138,0,8,0,32,0,10,0,6,0
+Website-Design-Analysis,edu.odu.cs.cs350,DocParser,126,0,8,0,32,0,10,0,6,0
 Website-Design-Analysis,edu.odu.cs.cs350,Options,22,80,2,2,11,20,7,4,5,4
 Website-Design-Analysis,edu.odu.cs.cs350,CommandLine,59,0,2,0,21,0,9,0,8,0
 Website-Design-Analysis,edu.odu.cs.cs350,TextWriter,132,42,2,6,24,7,4,4,3,1

@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-08-03T01:51:46.305">
+    version="6.21.0" timestamp="2022-08-03T20:22:12.057">
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/AnchorTags.java">
 <violation beginline="3" endline="10" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="AnchorTags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
 Each class should declare at least one constructor
@@ -71,118 +71,79 @@ System.out.println is used
 </violation>
 </file>
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/DocParser.java">
-<violation beginline="8" endline="8" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
-Avoid unused imports such as 'javax.swing.text.html'
-</violation>
-<violation beginline="13" endline="189" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+<violation beginline="12" endline="123" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
 Each class should declare at least one constructor
 </violation>
-<violation beginline="18" endline="24" begincolumn="12" endcolumn="5" rule="MethodNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
+<violation beginline="17" endline="23" begincolumn="12" endcolumn="5" rule="MethodNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
 The instance method name 'Parser' doesn't match '[a-z][a-zA-Z0-9]*'
 </violation>
-<violation beginline="21" endline="21" begincolumn="9" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="20" endline="20" begincolumn="9" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'fileFromPath' could be declared final
 </violation>
-<violation beginline="22" endline="22" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="21" endline="21" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'newDoc' could be declared final
 </violation>
-<violation beginline="23" endline="23" begincolumn="9" endcolumn="22" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
+<violation beginline="22" endline="22" begincolumn="9" endcolumn="22" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
 Consider simply returning the value vs storing it in local variable 'newDoc'
 </violation>
-<violation beginline="95" endline="95" begincolumn="52" endcolumn="54" rule="AvoidReassigningParameters" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
-Avoid reassigning parameters such as 'doc'
+<violation beginline="34" endline="34" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'doc' could be declared final
 </violation>
-<violation beginline="98" endline="109" begincolumn="18" endcolumn="52" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="anchorTags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'anchorTags' (lines '98'-'109').
-</violation>
-<violation beginline="98" endline="98" begincolumn="9" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="35" endline="35" begincolumn="9" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'anchorTags' could be declared final
 </violation>
-<violation beginline="98" endline="98" begincolumn="31" endcolumn="52" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="35" endline="35" begincolumn="31" endcolumn="52" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="99" endline="99" begincolumn="41" endcolumn="65" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
-Explicit type arguments can be replaced by Diamond Operator
-</violation>
-<violation beginline="99" endline="99" begincolumn="9" endcolumn="65" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="36" endline="36" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listAnchorTags' could be declared final
 </violation>
-<violation beginline="101" endline="101" begincolumn="23" endcolumn="23" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
-Avoid unused local variables such as 'e'.
-</violation>
-<violation beginline="101" endline="101" begincolumn="14" endcolumn="23" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="38" endline="38" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
-<violation beginline="119" endline="119" begincolumn="51" endcolumn="53" rule="AvoidReassigningParameters" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
-Avoid reassigning parameters such as 'doc'
+<violation beginline="57" endline="57" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'doc' could be declared final
 </violation>
-<violation beginline="122" endline="133" begincolumn="18" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="imageTags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'imageTags' (lines '122'-'133').
-</violation>
-<violation beginline="122" endline="122" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="58" endline="58" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'imageTags' could be declared final
 </violation>
-<violation beginline="122" endline="122" begincolumn="30" endcolumn="51" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="58" endline="58" begincolumn="30" endcolumn="51" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="123" endline="123" begincolumn="40" endcolumn="64" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
-Explicit type arguments can be replaced by Diamond Operator
-</violation>
-<violation beginline="123" endline="123" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="59" endline="59" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listImageTags' could be declared final
 </violation>
-<violation beginline="125" endline="125" begincolumn="23" endcolumn="23" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
-Avoid unused local variables such as 'e'.
-</violation>
-<violation beginline="125" endline="125" begincolumn="14" endcolumn="23" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="61" endline="61" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
-<violation beginline="143" endline="143" begincolumn="50" endcolumn="52" rule="AvoidReassigningParameters" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
-Avoid reassigning parameters such as 'doc'
+<violation beginline="80" endline="80" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'doc' could be declared final
 </violation>
-<violation beginline="146" endline="157" begincolumn="18" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="linkTags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'linkTags' (lines '146'-'157').
-</violation>
-<violation beginline="146" endline="146" begincolumn="9" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="81" endline="81" begincolumn="9" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'linkTags' could be declared final
 </violation>
-<violation beginline="146" endline="146" begincolumn="29" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="81" endline="81" begincolumn="29" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="147" endline="147" begincolumn="39" endcolumn="63" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
-Explicit type arguments can be replaced by Diamond Operator
-</violation>
-<violation beginline="147" endline="147" begincolumn="9" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="82" endline="82" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listLinkTags' could be declared final
 </violation>
-<violation beginline="149" endline="149" begincolumn="23" endcolumn="23" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
-Avoid unused local variables such as 'e'.
-</violation>
-<violation beginline="149" endline="149" begincolumn="14" endcolumn="23" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="84" endline="84" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
-<violation beginline="167" endline="167" begincolumn="52" endcolumn="54" rule="AvoidReassigningParameters" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="doc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
-Avoid reassigning parameters such as 'doc'
+<violation beginline="104" endline="104" begincolumn="9" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'doc' could be declared final
 </violation>
-<violation beginline="171" endline="182" begincolumn="18" endcolumn="50" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="scriptTags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'scriptTags' (lines '171'-'182').
-</violation>
-<violation beginline="171" endline="171" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="105" endline="105" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'scriptTags' could be declared final
 </violation>
-<violation beginline="171" endline="171" begincolumn="31" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="105" endline="105" begincolumn="31" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="172" endline="172" begincolumn="41" endcolumn="65" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
-Explicit type arguments can be replaced by Diamond Operator
-</violation>
-<violation beginline="172" endline="172" begincolumn="9" endcolumn="65" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="106" endline="106" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listScriptTags' could be declared final
 </violation>
-<violation beginline="174" endline="174" begincolumn="23" endcolumn="23" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
-Avoid unused local variables such as 'e'.
-</violation>
-<violation beginline="174" endline="174" begincolumn="14" endcolumn="23" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="108" endline="108" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
 </file>

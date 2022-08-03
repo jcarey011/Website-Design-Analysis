@@ -5,179 +5,113 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import javax.swing.text.html.*;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
-<span class="nc" id="L13">public class DocParser </span>
+<span class="nc" id="L12">public class DocParser </span>
 {
 
     
 
     public Document Parser() throws IOException{
 
-        //HTMLDocument document = new HTMLDocument(filePath);
-<span class="nc" id="L21">        File fileFromPath = new File(&quot;&quot;);</span>
-<span class="nc" id="L22">        Document newDoc = Jsoup.parse(fileFromPath, &quot;null&quot;);</span>
-<span class="nc" id="L23">        return newDoc;</span>
-    }
-
-     /*private String absFilePath;
-    private List &lt;Tag&gt; tags;
-    private int numTags;
-
-    public DocParser(){
-        this.absFilePath = &quot;&quot;;
-        this.tags = new ArrayList&lt;&gt;();
-        this.numTags = 0;
         
+<span class="nc" id="L20">        File fileFromPath = new File(&quot;&quot;);</span>
+<span class="nc" id="L21">        Document newDoc = Jsoup.parse(fileFromPath, &quot;null&quot;);</span>
+<span class="nc" id="L22">        return newDoc;</span>
     }
-
-    public DocParser(File file) throws IOException{
-        this.absFilePath = findAbsFilePath(file);
-        this.tags = Tag(file);
-        this.numTags = this.tags.size();
-    }
-
-    public void setAbsFilePath(String filePath){
-        this.absFilePath = filePath;
-    }
-
-    public void setTags(List&lt;Tag&gt; tags){
-        this.tags = tags;
-    }
-
-    public void setNumTags(int n){
-        this.numTags = n;
-    }
-
-    public String getAbsFilePath(){
-        return this.absFilePath;
-    }
-
-    public List&lt;Tag&gt; getTags(){
-        return this.tags;
-    }
-
-    public int getNumTags(){
-        return this.numTags;
-    }
-
-    public String toString(){
-        String out = String.format(&quot;    %s, %d&quot;, this.absFilePath, this.numTags);
-        return out;
-    }
-
-    private String findAbsFilePath(File file){
-        String a = file.getAbsolutePath();
-        return a;
-    }
-
-    public List&lt;Tag&gt; Tag(File file) throws IOException{
-    String filePath = file.getAbsolutePath();
-    
-    ///Store these in the list and then print out the list
-
-    Document newDoc = Jsoup.parse(filePath);
-    
-    }
-    */
 
     /**
      * Extracts all anchor tags
      * 
-     * @param the parsed html file
      * 
      * @return a list of all anchor tags
      */
 
-    public List &lt;Elements&gt; extractAnchors(Document doc) throws IOException{
+    public List &lt;Element&gt; extractAnchors() throws IOException{
 
-<span class="nc" id="L97">        doc = Parser();</span>
-<span class="nc" id="L98">        Elements anchorTags = doc.select( &quot;a[href]&quot;);</span>
-<span class="nc" id="L99">        List&lt;Elements&gt; listAnchorTags = new ArrayList&lt;Elements&gt;();</span>
+<span class="nc" id="L34">        Document doc = Parser();</span>
+<span class="nc" id="L35">        Elements anchorTags = doc.select( &quot;a[href]&quot;);</span>
+<span class="nc" id="L36">        List&lt;Element&gt; listAnchorTags = new ArrayList&lt;&gt;();</span>
         
-<span class="nc bnc" id="L101" title="All 2 branches missed.">        for (Elements e  : new ArrayList&lt;Elements&gt;(listAnchorTags)){</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        for (Element e  : anchorTags){</span>
 
-<span class="nc" id="L103">            listAnchorTags.add(anchorTags);</span>
-<span class="nc" id="L104">        }</span>
+<span class="nc" id="L40">            listAnchorTags.add(e);</span>
+<span class="nc" id="L41">        }</span>
         
 
-<span class="nc" id="L107">        return listAnchorTags;</span>
+<span class="nc" id="L44">        return listAnchorTags;</span>
 
     }
 
     /**
      * Extracts all image tags
      * 
-     * @param the parsed html file
      * 
      * @return a list of all image tags
      */
     
-    public List &lt;Elements&gt; extractImages(Document doc) throws IOException{
+    public List &lt;Element&gt; extractImages() throws IOException{
 
-<span class="nc" id="L121">        doc = Parser();</span>
-<span class="nc" id="L122">        Elements imageTags = doc.select(&quot;img[src]&quot;);</span>
-<span class="nc" id="L123">        List&lt;Elements&gt; listImageTags = new ArrayList&lt;Elements&gt;();</span>
+<span class="nc" id="L57">        Document doc = Parser();</span>
+<span class="nc" id="L58">        Elements imageTags = doc.select(&quot;img[src]&quot;);</span>
+<span class="nc" id="L59">        List&lt;Element&gt; listImageTags = new ArrayList&lt;&gt;();</span>
 
-<span class="nc bnc" id="L125" title="All 2 branches missed.">        for (Elements e : new ArrayList&lt;Elements&gt;(listImageTags)){</span>
+<span class="nc bnc" id="L61" title="All 2 branches missed.">        for (Element e : imageTags){</span>
 
-<span class="nc" id="L127">            listImageTags.add(imageTags);</span>
-<span class="nc" id="L128">        }</span>
+<span class="nc" id="L63">            listImageTags.add(e);</span>
+<span class="nc" id="L64">        }</span>
         
 
-<span class="nc" id="L131">        return listImageTags;</span>
+<span class="nc" id="L67">        return listImageTags;</span>
 
     }
 
     /**
      * Extracts all link tags
      * 
-     * @param the parsed html file
      * 
      * @return a list of all link tags
      */
 
-    public List &lt;Elements&gt; extractLinks(Document doc) throws IOException{
+    public List &lt;Element&gt; extractLinks() throws IOException{
 
-<span class="nc" id="L145">        doc = Parser();</span>
-<span class="nc" id="L146">        Elements linkTags = doc.select(&quot;link&quot;);</span>
-<span class="nc" id="L147">        List&lt;Elements&gt; listLinkTags = new ArrayList&lt;Elements&gt;();</span>
+<span class="nc" id="L80">        Document doc = Parser();</span>
+<span class="nc" id="L81">        Elements linkTags = doc.select(&quot;link&quot;);</span>
+<span class="nc" id="L82">        List&lt;Element&gt; listLinkTags = new ArrayList&lt;&gt;();</span>
 
-<span class="nc bnc" id="L149" title="All 2 branches missed.">        for (Elements e : new ArrayList&lt;Elements&gt;(listLinkTags)){</span>
+<span class="nc bnc" id="L84" title="All 2 branches missed.">        for (Element e : linkTags){</span>
 
-<span class="nc" id="L151">            listLinkTags.add(linkTags);</span>
-<span class="nc" id="L152">        }</span>
+<span class="nc" id="L86">            listLinkTags.add(e);</span>
+<span class="nc" id="L87">        }</span>
         
 
-<span class="nc" id="L155">        return listLinkTags;</span>
+<span class="nc" id="L90">        return listLinkTags;</span>
 
     }
 
     /**
      * Extracts all script tags
      * 
-     * @param the parsed html file
      * 
      * @return a list of all script tags
      */
 
-    public List &lt;Elements&gt; extractScripts(Document doc) throws IOException{
+    public List &lt;Element&gt; extractScripts() throws IOException{
 
 
-<span class="nc" id="L170">         doc =  Parser();</span>
-<span class="nc" id="L171">        Elements scriptTags = doc.select(&quot;script&quot;);</span>
-<span class="nc" id="L172">        List&lt;Elements&gt; listScriptTags = new ArrayList&lt;Elements&gt;();</span>
+<span class="nc" id="L104">        Document doc =  Parser();</span>
+<span class="nc" id="L105">        Elements scriptTags = doc.select(&quot;script&quot;);</span>
+<span class="nc" id="L106">        List&lt;Element&gt; listScriptTags = new ArrayList&lt;&gt;();</span>
         
-<span class="nc bnc" id="L174" title="All 2 branches missed.">        for (Elements e : new ArrayList&lt;Elements&gt;(listScriptTags)){</span>
+<span class="nc bnc" id="L108" title="All 2 branches missed.">        for (Element e : scriptTags){</span>
 
-<span class="nc" id="L176">            listScriptTags.add(scriptTags);</span>
-<span class="nc" id="L177">        }</span>
+<span class="nc" id="L110">            listScriptTags.add(e);</span>
+<span class="nc" id="L111">        }</span>
         
 
-<span class="nc" id="L180">        return listScriptTags;</span>
+<span class="nc" id="L114">        return listScriptTags;</span>
 
     }
 
