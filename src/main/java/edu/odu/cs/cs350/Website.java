@@ -1,10 +1,68 @@
 package edu.odu.cs.cs350;
 
-import java.util.*;
+//import java.util.*;
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Files;
+import java.util.List;
+import java.util.ArrayList;
+//import java.util.stream.Stream;
+//import java.util.stream.Collectors;
+
 
 public class Website {
-    private Options options;
+    
+    Path pathInput;
+
+    List<Path> allFiles;
+    List<Path> allDirectories;
+
+    public Website(Path path){
+
+        this.pathInput = path;
+
+        this.allFiles = new ArrayList<>();
+        this.allDirectories = new ArrayList<>();
+
+    }
+
+    public void examineDirectory() throws IOException{
+
+        Files.walk(this.pathInput).forEach((Path path) -> {
+
+            if(Files.isRegularFile(path)){
+                
+                this.allFiles.add(path);
+
+            }
+            else if (Files.isDirectory(path)){
+
+                this.allDirectories.add(path);
+            }
+        });
+    }
+
+    public List<Path> getFileList(){
+
+        return this.allFiles;
+    }
+
+    public List<Path> getDirectoryList(){
+
+        return this.allDirectories;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*private Options options;
     private List<File> sourceFiles;
 
     public Website(){
@@ -50,7 +108,7 @@ public class Website {
      *
      * @return         List of valid file paths
      */
-    public List<File> findSourceFiles(String [] args, Options options){
+    /*public List<File> findSourceFiles(String [] args, Options options){
         List<File> sourceFiles = new ArrayList<>();
         List<String> fileExts = options.getValidExts();
 
@@ -79,7 +137,7 @@ public class Website {
      *
      * @return         List of all valid files within the directory and subdirectories
      */
-    public List<File> findFilesInDir(File file, Options options){
+    /*public List<File> findFilesInDir(File file, Options options){
         List<File> files = new ArrayList<File>();
         List<String> fileExts = options.getValidExts();
         File [] filesInDIr = file.listFiles();
@@ -104,4 +162,7 @@ public class Website {
         }
         return files;
     }
+    
+
+*/
 }

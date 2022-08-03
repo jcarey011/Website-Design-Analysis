@@ -1,32 +1,52 @@
 package edu.odu.cs.cs350;
 import java.util.*;
 
-import org.apache.xmlbeans.impl.soap.Text;
+//import org.apache.xmlbeans.impl.soap.Text;
 //import org.ini4j.Options;
 
 import java.io.*;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 public class WebsiteAnalyzer {
     public static LinkedList<String> PathsList;
-public static void main(String args[]) throws IOException{
-    String textFileName;
-    String jsonFileName;
-    String ExcelFileName;
-    String Path;
+public static void main(String[] args) throws IOException{
+    //String textFileName;
+    //String jsonFileName;
+    //String ExcelFileName;
+    //String Path;
     
 
-    Website web = new Website(args);
-    Options userOptions = web.getOptions();
-    Path = CommandLine.inputPath();
-    Options op = new Options(Path);
+    //Website web = new Website(args);
+    //Options userOptions = web.getOptions();
+    //Path p = CommandLine.inputPath();
+    //Options op = new Options(Path);
+
+    Path pathToExamine = Paths.get(args [0]);
+    System.out.println(pathToExamine);
+
+    Website web = new Website(pathToExamine);
+    web.examineDirectory();
+
+    System.out.println("Files Identified:");
+
+    for(Path file: web.getFileList()){
+        System.out.format(" - %s%n", file);
+    }
+
+    System.out.println();
+
+    System.out.println("Directories Identified:");
+    for(Path file : web.getDirectoryList()){
+        System.out.format(" - %s%n", file);
+    }
     
 
-    Path = CommandLine.inputPath();
-    PathsList.push(Path);
+   // Path = CommandLine.inputPath();
+   // PathsList.push(Path);
     
-
+/* 
     ExcelWriter.createExcel();
     JsonWriter.CreateJson();
     TextWriter.main();
@@ -41,6 +61,8 @@ public static void main(String args[]) throws IOException{
         
     CommandLine.setNumberFiles(3);
     CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());
+
+    */
 }
 
 }
