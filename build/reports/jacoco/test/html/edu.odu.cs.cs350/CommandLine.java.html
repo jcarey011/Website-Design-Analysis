@@ -73,15 +73,14 @@ public class CommandLine {
 <span class="nc" id="L73">           files.forEach(System.out::println);</span>
         }
 <span class="nc" id="L75">    }</span>
-    public static Path inputPath()
+    public static String inputPath()
     {
 <span class="nc" id="L78">        Scanner input = new Scanner(System.in);</span>
         //System.out.println(&quot;Enter File Path: &quot;);
 <span class="nc" id="L80">        String path = input.nextLine();</span>
         //System.out.println(&quot;File Path Is &quot; + path);
-<span class="nc" id="L82">        Path p1 = Paths.get(path);</span>
-<span class="nc" id="L83">        input.close();</span>
-<span class="nc" id="L84">        return p1;</span>
+<span class="nc" id="L82">        input.close();</span>
+<span class="nc" id="L83">        return path;</span>
     }
     
 }
