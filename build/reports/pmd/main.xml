@@ -2,10 +2,52 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-08-04T17:02:19.601">
-<file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/AnchorTags.java">
-<violation beginline="3" endline="10" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="AnchorTags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
-Each class should declare at least one constructor
+    version="6.21.0" timestamp="2022-08-04T18:51:56.691">
+<file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Anchor.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Anchor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.jsoup.nodes'
+</violation>
+<violation beginline="5" endline="7" begincolumn="1" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
+The enum name 'linkType' doesn't match '[A-Z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="6" endline="6" begincolumn="31" endcolumn="38" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'External' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="6" endline="6" begincolumn="9" endcolumn="17" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'intraPage' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="28" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'intraSite' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="11" endline="11" begincolumn="18" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Anchor" variable="linktype" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="11" endline="11" begincolumn="9" endcolumn="26" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the linktype field if you want a default access modifier
+</violation>
+<violation beginline="11" endline="11" begincolumn="9" endcolumn="26" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="13" endline="13" begincolumn="23" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="Anchor" variable="linktype" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'linktype' is not assigned and could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="34" endcolumn="46" rule="UseVarargs" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Anchor" method="getLinkType" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#usevarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="18" endline="21" begincolumn="16" endcolumn="9" rule="LinguisticNaming" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#linguisticnaming" priority="3">
+Linguistics Antipattern - The getter 'getLinkType' should not return void linguistically
+</violation>
+<violation beginline="18" endline="18" begincolumn="34" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkType" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="24" endcolumn="27" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Anchor" method="getLinkType" variable="test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'test'.
+</violation>
+<violation beginline="19" endline="21" begincolumn="24" endcolumn="60" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Anchor" method="getLinkType" variable="test" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'test' (lines '19'-'21').
+</violation>
+<violation beginline="19" endline="19" begincolumn="17" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkType" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'test' could be declared final
 </violation>
 </file>
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/CommandLine.java">
