@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Image.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Website-Design-Analysis</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">Image.java</span></div><h1>Image.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
 
-<span class="nc" id="L3">public class Image {</span>
+import java.util.ArrayList;
+import java.util.List;
+import java.nio.file.Path;
+import java.nio.file.*;
+
+<span class="nc" id="L8">public class Image {</span>
 	
+	public long bytes;
+	public Path imgPath;  
+    
+	public void Files(Path path) {
+<span class="nc" id="L14">		this.imgPath = path;</span>
+<span class="nc" id="L15">	}</span>
+	
+    public List&lt;Image&gt; extractImageData(Path path){
+<span class="nc" id="L18">    	Website web = new Website(path);</span>
+    	// Files f = new Files(path);
+<span class="nc" id="L20">    	List&lt;Image&gt; listImages = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">    	for (Path e: web.getFileList()) {</span>
+    		
+    		// algorithm to record listImages.bytes &amp; listImages.imgPath
+    		
+<span class="nc" id="L25">    	}</span>
+<span class="nc" id="L26">    	return listImages;</span>
+    
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
