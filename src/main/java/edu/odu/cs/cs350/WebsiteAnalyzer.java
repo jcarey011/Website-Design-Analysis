@@ -13,16 +13,13 @@ public class WebsiteAnalyzer {
     public static LinkedList<String> PathsList;
 
         public static void main(String[] args) throws IOException{
-        //String textFileName;
-        //String jsonFileName;
-        //String ExcelFileName;
-        //String Path;
+        String textFileName;
+        String jsonFileName;
+        String ExcelFileName;
+        
         
 
-        //Website web = new Website(args);
-        //Options userOptions = web.getOptions();
-        //Path p = CommandLine.inputPath();
-        //Options op = new Options(Path);
+    
 
         Path pathToExamine = Paths.get(args [0]);
         System.out.println(pathToExamine);
@@ -46,10 +43,7 @@ public class WebsiteAnalyzer {
         ExcelWriter.createExcel();
         
 
-    // Path = CommandLine.inputPath();
-    // PathsList.push(Path);
-        
-    /* 
+    
         ExcelWriter.createExcel();
         JsonWriter.CreateJson();
         TextWriter.main();
@@ -65,7 +59,7 @@ public class WebsiteAnalyzer {
         CommandLine.setNumberFiles(3);
         CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());
 
-        */
+        
     }
 
 }
