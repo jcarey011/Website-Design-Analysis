@@ -15,7 +15,9 @@ public class CommandLine {
     public static LinkedList<String> fileList;
 
     public CommandLine(){
-
+        numberOfFiles = 0;
+        fileName = "";
+        fileList = new LinkedList<>();
     }
     /*
      * Function will access files and pull names

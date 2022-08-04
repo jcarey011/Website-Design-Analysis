@@ -1,33 +1,34 @@
 package edu.odu.cs.cs350;
-import static org.junit.Assert.*;
+
 import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 import static org.junit.matchers.JUnitMatchers.*;
 
-//import edu.odu.cs.cs350.CommandLine;
-
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.contains;
 
 public class TestCommandLineInterface {
     
     @Test
     public static void testAddFunction()
     {
-        String fileName = "Hannibal.txt";
-        CommandLine.addNames(fileName);
-        //assertThat(CommandLine.fileList, containsString("Hannibal.txt")); commenting out so build is successful 
+        CommandLine c = new CommandLine();
+        c.addNames("Hannibal.txt");
+        assertThat(c.fileList, contains("Hannibal.txt"));
     }
     @Test
     public static void testGetNames()
     {
-        CommandLine.addNames("Testname");
-        CommandLine.getNames();
-        assertThat(CommandLine.getNames(), containsString("Testname"));
+        CommandLine c = new CommandLine();
+        c.fileName = "Hannibal.txt";
+        String actual = CommandLine.getNames();
+        String expected = "Hannibal.txt";
+        assertThat(actual, is(expected));
     }
     @Test
     public static void testFetchFunction()
     {
-        CommandLine.setNumberFiles(12);
-        CommandLine.fetchNumberFiles();
-        assertEquals(12, CommandLine.fetchNumberFiles());
+
     }
 
 }
