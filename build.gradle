@@ -36,9 +36,18 @@ task reports (dependsOn: ['javadoc', 'test', 'jacocoTestReport']){
 }
 
 jar {
+
+    archiveBaseName = "Website Analyzer"
+    
 	manifest {
-		attributes 'Main-Class': 'edu.odu.cs.cs350.WebsiteAnalyzer'
+		attributes (
+           "Main-Class": "edu.odu.cs.cs350.WebsiteAnalyzer"
+        )
 	}
+}
+
+run {
+     main = "edu.odu.cs.cs350.WebsiteAnalyzer"   
 }
 
 jacoco {

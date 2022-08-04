@@ -73,15 +73,14 @@ public class CommandLine {
            files.forEach(System.out::println);
         }
     }
-    public static Path inputPath()
+    public static String inputPath()
     {
         Scanner input = new Scanner(System.in);
         //System.out.println("Enter File Path: ");
         String path = input.nextLine();
         //System.out.println("File Path Is " + path);
-        Path p1 = Paths.get(path);
         input.close();
-        return p1;
+        return path;
     }
     
 }

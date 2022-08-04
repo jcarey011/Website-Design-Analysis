@@ -29,8 +29,9 @@ public class WebTest{
     }
     @Test
     public void testGetFileList(){
-        Website w = new Website();
+        
         Path p1 = Paths.get("C:", "documents", "tests", "test.html");
+        Website w = new Website(p1);
         w.allFiles.add(p1);
         List<Path> expected = w.allFiles;
         List<Path> actual = w.getFileList();
@@ -39,8 +40,8 @@ public class WebTest{
     @Test
     public void testGetDirectoryList()
     {
-        Website w = new Website();
         Path p1 = Paths.get("C:", "documents", "tests");
+        Website w = new Website(p1);
         w.allDirectories.add(p1);
         List<Path> expected = w.allDirectories;
         List<Path> actual = w.getDirectoryList();

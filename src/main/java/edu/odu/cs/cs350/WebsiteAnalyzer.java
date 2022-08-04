@@ -16,12 +16,15 @@ public class WebsiteAnalyzer {
         String textFileName;
         String jsonFileName;
         String ExcelFileName;
+
+        
+        String p = CommandLine.inputPath(); 
         
         
 
     
 
-        Path pathToExamine = Paths.get(args [0]);
+        Path pathToExamine = Paths.get(p);
         System.out.println(pathToExamine);
 
         Website web = new Website(pathToExamine);

@@ -67,7 +67,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Website-Design-Analysis.jar;%APP_HOME%\lib\poi-ooxml-3.12.jar;%APP_HOME%\lib\ini4j-0.5.4.jar;%APP_HOME%\lib\json-simple-1.1.1.jar;%APP_HOME%\lib\poi-3.12.jar;%APP_HOME%\lib\jsoup-1.12.1.jar;%APP_HOME%\lib\poi-ooxml-schemas-3.12.jar;%APP_HOME%\lib\junit-4.10.jar;%APP_HOME%\lib\commons-codec-1.9.jar;%APP_HOME%\lib\xmlbeans-2.6.0.jar;%APP_HOME%\lib\hamcrest-core-1.1.jar;%APP_HOME%\lib\stax-api-1.0.1.jar
+set CLASSPATH=%APP_HOME%\lib\Website Analyzer.jar;%APP_HOME%\lib\poi-ooxml-3.12.jar;%APP_HOME%\lib\ini4j-0.5.4.jar;%APP_HOME%\lib\json-simple-1.1.1.jar;%APP_HOME%\lib\poi-3.12.jar;%APP_HOME%\lib\jsoup-1.12.1.jar;%APP_HOME%\lib\poi-ooxml-schemas-3.12.jar;%APP_HOME%\lib\junit-4.10.jar;%APP_HOME%\lib\commons-codec-1.9.jar;%APP_HOME%\lib\xmlbeans-2.6.0.jar;%APP_HOME%\lib\hamcrest-core-1.1.jar;%APP_HOME%\lib\stax-api-1.0.1.jar
 
 
 @rem Execute Website-Design-Analysis
