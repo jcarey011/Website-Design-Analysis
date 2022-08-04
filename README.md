@@ -2,7 +2,7 @@
 - jcarey011 - jcare011@odu.edu
 - Mtan006 - mtan006@odu.edu
 - hhawa01 - hhawa001@odu.edu
-- rmack1020 - rmack1020@odu.edu
+- rmack1020 - rmack005@odu.edu
 - rgwal001 - rgwal001@odu.edu
 - jdlavinder - jlavi001@odu.edu
 
