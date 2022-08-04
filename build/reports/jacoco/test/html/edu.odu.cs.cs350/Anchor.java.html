@@ -4,25 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 import org.jsoup.nodes.Element;
 
-<span class="nc" id="L7">	enum linkType {</span>
-<span class="nc" id="L8">		intraPage, intraSite, External</span>
-	}
 
 public class Anchor {
 
-	linkType linktype;
+	Classification linkType;
 
-<span class="nc" id="L15">	public Anchor(linkType linktype) {</span>
-<span class="nc" id="L16">		this.linktype = linktype;</span>
+<span class="nc" id="L12">	public Anchor(Classification linkType) {</span>
+<span class="nc" id="L13">		this.linkType = linkType;</span>
 
-<span class="nc" id="L18">	}</span>
+<span class="nc" id="L15">	}</span>
 
-	public List&lt;linkType&gt; getLinkTypes (List&lt;Element&gt; tags) {
-<span class="nc" id="L21">        List&lt;linkType&gt; listLinkTypes = new ArrayList&lt;&gt;();</span>
-<span class="nc bnc" id="L22" title="All 2 branches missed.">		for (Element e  : tags){</span>
+	public List&lt;Classification&gt; getLinkTypes (List&lt;Element&gt; tags) {
+<span class="nc" id="L18">        List&lt;Classification&gt; listLinkTypes = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L19" title="All 2 branches missed.">		for (Element e  : tags){</span>
 			// Need to design algorithm for determining intraPage (# at start or URL), intraSite (SameHost.com), External (DifferentHost.com)
-<span class="nc" id="L24">        }</span>
-<span class="nc" id="L25">        return listLinkTypes;</span>
+<span class="nc" id="L21">        }</span>
+<span class="nc" id="L22">        return listLinkTypes;</span>
 //		Temporarily for reference:        
 //		Anchor test = new Anchor(linkType.intraPage);
 //		return test;
