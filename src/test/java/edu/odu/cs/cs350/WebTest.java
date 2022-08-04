@@ -1,17 +1,12 @@
 package edu.odu.cs.cs350;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.Assert.*;
-import static org.junit.matchers.JUnitMatchers.*;
-
 import static org.hamcrest.Matchers.is;
-
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.FileSystems;
+
 
 
 import org.junit.jupiter.api.Test;
@@ -24,8 +19,6 @@ public class WebTest{
         List<Path> allFiles = new ArrayList<>();
         List<Path> allDirectories = new ArrayList<>();
 
-        
-        
         
     }
 
