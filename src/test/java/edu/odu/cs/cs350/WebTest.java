@@ -43,8 +43,12 @@ public class WebTest{
     @Test
     public void testGetFileList(){
         List<Path> allFiles = new ArrayList<>();
-        List<Path> allDirectories = new ArrayList<>();
-        
+        Path p1 = Paths.get("C:", "documents", "tests", "test.html");
+        allFiles.add(p1);
+        Website w = new Website(p1);
+        String Directory;
+        Directory = w.getFileList().toString();
+        assertThat(Directory, containsString("C:/documents/tests/test.html"));
     
     }
     @Test
@@ -57,7 +61,7 @@ public class WebTest{
         String Directory;
         
         Directory = w.getDirectoryList().toString();
-        assertThat(Directory, containsString("C:"));
+        assertThat(Directory, containsString("C:/documents/tests"));
     }
 
    /*  @Test void testFindFilesInDir(){
