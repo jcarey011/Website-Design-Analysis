@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-08-04T22:04:09.694">
+    version="6.21.0" timestamp="2022-08-04T22:30:06.652">
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Anchor.java">
 <violation beginline="7" endline="9" begincolumn="9" endcolumn="9" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
 The enum name 'linkType' doesn't match '[A-Z][a-zA-Z0-9]*'
