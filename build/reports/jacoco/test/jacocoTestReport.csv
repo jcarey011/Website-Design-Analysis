@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 Website-Design-Analysis,edu.odu.cs.cs350,Website,53,0,4,0,14,0,7,0,5,0
-Website-Design-Analysis,edu.odu.cs.cs350,ExcelWriter,128,0,4,0,24,0,5,0,3,0
+Website-Design-Analysis,edu.odu.cs.cs350,ExcelWriter,116,12,4,0,20,4,4,1,2,1
 Website-Design-Analysis,edu.odu.cs.cs350,JsonWriter,28,12,0,0,10,4,2,1,2,1
 Website-Design-Analysis,edu.odu.cs.cs350,DocParser,126,0,8,0,32,0,10,0,6,0
 Website-Design-Analysis,edu.odu.cs.cs350,Options,47,55,2,2,16,15,8,3,6,3
