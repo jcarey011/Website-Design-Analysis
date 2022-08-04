@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-08-04T23:43:50.549">
+    version="6.21.0" timestamp="2022-08-04T23:48:09.547">
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Anchor.java">
 <violation beginline="10" endline="10" begincolumn="24" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Anchor" variable="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
@@ -329,6 +329,20 @@ Avoid printStackTrace(); use a logger call instead.
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Script.java">
 <violation beginline="3" endline="5" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="Script" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
 Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/TargetType.java">
+<violation beginline="4" endline="4" begincolumn="23" endcolumn="29" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TargetType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'Archive' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="4" endline="4" begincolumn="39" endcolumn="43" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TargetType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'Audio' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="4" endline="4" begincolumn="9" endcolumn="20" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TargetType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'HTMLDocument' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="4" endline="4" begincolumn="32" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TargetType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'Video' doesn't match '[A-Z][A-Z_0-9]*'
 </violation>
 </file>
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/TextWriter.java">
