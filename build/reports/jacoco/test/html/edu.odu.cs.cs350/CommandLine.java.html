@@ -15,13 +15,15 @@ public class CommandLine {
     public static LinkedList&lt;String&gt; fileList;
 
 <span class="nc" id="L17">    public CommandLine(){</span>
-
-<span class="nc" id="L19">    }</span>
+<span class="nc" id="L18">        numberOfFiles = 0;</span>
+<span class="nc" id="L19">        fileName = &quot;&quot;;</span>
+<span class="nc" id="L20">        fileList = new LinkedList&lt;&gt;();</span>
+<span class="nc" id="L21">    }</span>
     /*
      * Function will access files and pull names
      */
     public static String getNames(){
-<span class="nc" id="L24">        return fileName;</span>
+<span class="nc" id="L26">        return fileName;</span>
     }
     /*
      * function can be used to add names directly to static list in this class
@@ -29,24 +31,24 @@ public class CommandLine {
      */
     public static void addNames(String fileName)
     {
-<span class="nc" id="L32">        fileList.push(fileName);</span>
-<span class="nc" id="L33">    }</span>
+<span class="nc" id="L34">        fileList.push(fileName);</span>
+<span class="nc" id="L35">    }</span>
     /*
      * Function will set private name
      * @param name  Name to set 
      */
     public static void setName(String name)
     {
-<span class="nc" id="L40">        fileName = name;</span>
-<span class="nc" id="L41">    }</span>
+<span class="nc" id="L42">        fileName = name;</span>
+<span class="nc" id="L43">    }</span>
     /*
      * Function will set number of files known
      * @param number  number to set private integer to
      */
     public static void setNumberFiles(int number)
     {
-<span class="nc" id="L48">        numberOfFiles = number;</span>
-<span class="nc" id="L49">    }</span>
+<span class="nc" id="L50">        numberOfFiles = number;</span>
+<span class="nc" id="L51">    }</span>
     /*
     *   Function will access files and collect number of files in total
     *   @param numfiles  number of files found
@@ -54,7 +56,7 @@ public class CommandLine {
     */
     public static int fetchNumberFiles()
     {
-<span class="nc" id="L57">        return numberOfFiles;</span>
+<span class="nc" id="L59">        return numberOfFiles;</span>
     }
     /* 
      * Function will output file names to CLI
@@ -63,23 +65,23 @@ public class CommandLine {
     */
     public static void outPutFileNames(int FileListSize)
     {
-<span class="nc" id="L66">        FileListSize = fetchNumberFiles();</span>
-<span class="nc" id="L67">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L68">        files.add(getNames());</span>
-<span class="nc bnc" id="L69" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
+<span class="nc" id="L68">        FileListSize = fetchNumberFiles();</span>
+<span class="nc" id="L69">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L70">        files.add(getNames());</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
         {
-<span class="nc" id="L71">           files.forEach(System.out::println);</span>
+<span class="nc" id="L73">           files.forEach(System.out::println);</span>
         }
-<span class="nc" id="L73">    }</span>
+<span class="nc" id="L75">    }</span>
     public static Path inputPath()
     {
-<span class="nc" id="L76">        Scanner input = new Scanner(System.in);</span>
+<span class="nc" id="L78">        Scanner input = new Scanner(System.in);</span>
         //System.out.println(&quot;Enter File Path: &quot;);
-<span class="nc" id="L78">        String path = input.nextLine();</span>
+<span class="nc" id="L80">        String path = input.nextLine();</span>
         //System.out.println(&quot;File Path Is &quot; + path);
-<span class="nc" id="L80">        Path p1 = Paths.get(path);</span>
-<span class="nc" id="L81">        input.close();</span>
-<span class="nc" id="L82">        return p1;</span>
+<span class="nc" id="L82">        Path p1 = Paths.get(path);</span>
+<span class="nc" id="L83">        input.close();</span>
+<span class="nc" id="L84">        return p1;</span>
     }
     
 }
