@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-08-04T22:30:06.652">
+    version="6.21.0" timestamp="2022-08-04T22:46:18.980">
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Anchor.java">
 <violation beginline="7" endline="9" begincolumn="9" endcolumn="9" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
 The enum name 'linkType' doesn't match '[A-Z][a-zA-Z0-9]*'
@@ -101,87 +101,90 @@ Local variable 'p1' could be declared final
 </violation>
 </file>
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/DocParser.java">
-<violation beginline="12" endline="123" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="23" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="DocParser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file'
+</violation>
+<violation beginline="13" endline="124" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
 Each class should declare at least one constructor
 </violation>
-<violation beginline="17" endline="23" begincolumn="12" endcolumn="5" rule="MethodNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
+<violation beginline="18" endline="24" begincolumn="12" endcolumn="5" rule="MethodNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
 The instance method name 'Parser' doesn't match '[a-z][a-zA-Z0-9]*'
 </violation>
-<violation beginline="20" endline="20" begincolumn="9" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="21" endline="21" begincolumn="9" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'fileFromPath' could be declared final
 </violation>
-<violation beginline="21" endline="21" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="22" endline="22" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'newDoc' could be declared final
 </violation>
-<violation beginline="22" endline="22" begincolumn="9" endcolumn="22" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
+<violation beginline="23" endline="23" begincolumn="9" endcolumn="22" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
 Consider simply returning the value vs storing it in local variable 'newDoc'
 </violation>
-<violation beginline="34" endline="34" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="35" endline="35" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'doc' could be declared final
 </violation>
-<violation beginline="35" endline="35" begincolumn="9" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="36" endline="36" begincolumn="9" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'anchorTags' could be declared final
 </violation>
-<violation beginline="35" endline="35" begincolumn="31" endcolumn="52" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="36" endline="36" begincolumn="31" endcolumn="52" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="36" endline="36" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="37" endline="37" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listAnchorTags' could be declared final
 </violation>
-<violation beginline="38" endline="38" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="39" endline="39" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
-<violation beginline="57" endline="57" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="58" endline="58" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'doc' could be declared final
 </violation>
-<violation beginline="58" endline="58" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="59" endline="59" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'imageTags' could be declared final
 </violation>
-<violation beginline="58" endline="58" begincolumn="30" endcolumn="51" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="59" endline="59" begincolumn="30" endcolumn="51" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="59" endline="59" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="60" endline="60" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listImageTags' could be declared final
 </violation>
-<violation beginline="61" endline="61" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="62" endline="62" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
-<violation beginline="80" endline="80" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="81" endline="81" begincolumn="9" endcolumn="31" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'doc' could be declared final
 </violation>
-<violation beginline="81" endline="81" begincolumn="9" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="82" endline="82" begincolumn="9" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'linkTags' could be declared final
 </violation>
-<violation beginline="81" endline="81" begincolumn="29" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="82" endline="82" begincolumn="29" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="82" endline="82" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="83" endline="83" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listLinkTags' could be declared final
 </violation>
-<violation beginline="84" endline="84" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="85" endline="85" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractLinks" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
-<violation beginline="104" endline="104" begincolumn="9" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="105" endline="105" begincolumn="9" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'doc' could be declared final
 </violation>
-<violation beginline="105" endline="105" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="106" endline="106" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'scriptTags' could be declared final
 </violation>
-<violation beginline="105" endline="105" begincolumn="31" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="106" endline="106" begincolumn="31" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="106" endline="106" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="107" endline="107" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listScriptTags' could be declared final
 </violation>
-<violation beginline="108" endline="108" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="109" endline="109" begincolumn="14" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="DocParser" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
 </file>
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/ExcelWriter.java">
-<violation beginline="13" endline="84" begincolumn="26" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350" class="ExcelWriter" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+<violation beginline="13" endline="86" begincolumn="26" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350" class="ExcelWriter" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
 All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
 </violation>
-<violation beginline="13" endline="84" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
+<violation beginline="13" endline="86" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
 The utility class name 'ExcelWriter' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper)'
 </violation>
 <violation beginline="24" endline="24" begincolumn="9" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="produceFileName" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
@@ -196,61 +199,61 @@ Local variable 'formattedTime' could be declared final
 <violation beginline="26" endline="26" begincolumn="36" endcolumn="58" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ExcelWriter" method="produceFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="39" endline="39" begincolumn="22" endcolumn="29" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="workbook" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="41" endline="41" begincolumn="22" endcolumn="29" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="workbook" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this XSSFWorkbook object are closed after use
 </violation>
-<violation beginline="39" endline="39" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="41" endline="41" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'workbook' could be declared final
 </violation>
-<violation beginline="42" endline="83" begincolumn="19" endcolumn="63" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="spreadsheet" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'spreadsheet' (lines '42'-'83').
+<violation beginline="44" endline="85" begincolumn="19" endcolumn="63" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="spreadsheet" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'spreadsheet' (lines '44'-'85').
 </violation>
-<violation beginline="42" endline="42" begincolumn="9" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'spreadsheet' could be declared final
 </violation>
-<violation beginline="48" endline="48" begincolumn="46" endcolumn="76" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+<violation beginline="50" endline="50" begincolumn="46" endcolumn="76" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
 Explicit type arguments can be replaced by Diamond Operator
 </violation>
-<violation beginline="48" endline="48" begincolumn="9" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="50" endline="50" begincolumn="9" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'websiteData' could be declared final
 </violation>
-<violation beginline="52" endline="52" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="54" endline="54" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'keyid' could be declared final
 </violation>
-<violation beginline="54" endline="83" begincolumn="13" endcolumn="21" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="rowID" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'rowID' (lines '54'-'83').
+<violation beginline="56" endline="85" begincolumn="13" endcolumn="21" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="rowID" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'rowID' (lines '56'-'85').
 </violation>
-<violation beginline="58" endline="58" begincolumn="14" endcolumn="23" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="60" endline="60" begincolumn="14" endcolumn="23" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'key' could be declared final
 </violation>
-<violation beginline="60" endline="60" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="row" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DD'-anomaly for variable 'row' (lines '60'-'60').
+<violation beginline="62" endline="62" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="row" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'row' (lines '62'-'62').
 </violation>
-<violation beginline="60" endline="83" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="row" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'row' (lines '60'-'83').
+<violation beginline="62" endline="85" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="row" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'row' (lines '62'-'85').
 </violation>
-<violation beginline="61" endline="61" begincolumn="13" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="63" endline="63" begincolumn="13" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'objectArr' could be declared final
 </violation>
-<violation beginline="63" endline="63" begincolumn="17" endcolumn="26" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="cellID" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DD'-anomaly for variable 'cellID' (lines '63'-'63').
+<violation beginline="65" endline="65" begincolumn="17" endcolumn="26" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="cellID" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'cellID' (lines '65'-'65').
 </violation>
-<violation beginline="63" endline="83" begincolumn="17" endcolumn="26" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="cellID" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'cellID' (lines '63'-'83').
+<violation beginline="65" endline="85" begincolumn="17" endcolumn="26" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="cellID" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'cellID' (lines '65'-'85').
 </violation>
-<violation beginline="65" endline="65" begincolumn="18" endcolumn="27" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="67" endline="67" begincolumn="18" endcolumn="27" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'obj' could be declared final
 </violation>
-<violation beginline="67" endline="67" begincolumn="17" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="69" endline="69" begincolumn="17" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'cell' could be declared final
 </violation>
-<violation beginline="68" endline="68" begincolumn="17" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="70" endline="70" begincolumn="17" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="72" endline="72" begincolumn="32" endcolumn="47" rule="AvoidFileStream" ruleset="Performance" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
+<violation beginline="74" endline="74" begincolumn="32" endcolumn="47" rule="AvoidFileStream" ruleset="Performance" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
 Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
 </violation>
-<violation beginline="72" endline="72" begincolumn="9" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="74" endline="74" begincolumn="9" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ExcelWriter" method="createExcel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'out' could be declared final
 </violation>
 </file>

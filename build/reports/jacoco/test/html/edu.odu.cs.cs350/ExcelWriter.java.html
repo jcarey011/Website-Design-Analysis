@@ -28,6 +28,8 @@ import org.apache.poi.xssf.usermodel.*;
 <span class="fc" id="L28">            return formattedTime + &quot;-summary.xlsx&quot;;</span>
     }
 
+    
+
     /**
      * Returns the newly created Excel document with the file name created from the produceFileName function
      * @return Excel file
@@ -36,47 +38,47 @@ import org.apache.poi.xssf.usermodel.*;
     public static OutputStream createExcel() throws IOException{
 
         //creating workbook
-<span class="nc" id="L39">        XSSFWorkbook workbook = new XSSFWorkbook();</span>
+<span class="nc" id="L41">        XSSFWorkbook workbook = new XSSFWorkbook();</span>
 
         //creating spreadsheet
-<span class="nc" id="L42">        XSSFSheet spreadsheet = workbook.createSheet(&quot;Summary&quot;);</span>
+<span class="nc" id="L44">        XSSFSheet spreadsheet = workbook.createSheet(&quot;Summary&quot;);</span>
 
         //creating row
         XSSFRow row;
 
         //data to be written
-<span class="nc" id="L48">        Map &lt;String, Object[]&gt; websiteData = new TreeMap&lt;String, Object[]&gt;();</span>
+<span class="nc" id="L50">        Map &lt;String, Object[]&gt; websiteData = new TreeMap&lt;String, Object[]&gt;();</span>
 
-<span class="nc" id="L50">        websiteData.put( &quot;1&quot;, new Object[] { &quot;Page&quot;, &quot;# Images&quot;, &quot;# CSS&quot;, &quot;Scripts&quot;, &quot;# Links (Intra-Page)&quot;, &quot;# Links (Internal)&quot;, &quot;# Links (External)&quot;} );</span>
+<span class="nc" id="L52">        websiteData.put( &quot;1&quot;, new Object[] { &quot;Page&quot;, &quot;# Images&quot;, &quot;# CSS&quot;, &quot;Scripts&quot;, &quot;# Links (Intra-Page)&quot;, &quot;# Links (Internal)&quot;, &quot;# Links (External)&quot;} );</span>
 
-<span class="nc" id="L52">        Set&lt;String&gt; keyid = websiteData.keySet();</span>
+<span class="nc" id="L54">        Set&lt;String&gt; keyid = websiteData.keySet();</span>
 
-<span class="nc" id="L54">        int rowID = 0;</span>
+<span class="nc" id="L56">        int rowID = 0;</span>
 
         //writing data into rows
 
-<span class="nc bnc" id="L58" title="All 2 branches missed.">        for (String key : keyid)</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">        for (String key : keyid)</span>
         {
-<span class="nc" id="L60">            row = spreadsheet.createRow(rowID++);</span>
-<span class="nc" id="L61">            Object[] objectArr = websiteData.get(key);</span>
+<span class="nc" id="L62">            row = spreadsheet.createRow(rowID++);</span>
+<span class="nc" id="L63">            Object[] objectArr = websiteData.get(key);</span>
 
-<span class="nc" id="L63">            int cellID = 0;</span>
+<span class="nc" id="L65">            int cellID = 0;</span>
 
-<span class="nc bnc" id="L65" title="All 2 branches missed.">            for (Object obj : objectArr)</span>
+<span class="nc bnc" id="L67" title="All 2 branches missed.">            for (Object obj : objectArr)</span>
             {
-<span class="nc" id="L67">                Cell cell = row.createCell(cellID++);</span>
-<span class="nc" id="L68">                cell.setCellValue((String)obj);</span>
+<span class="nc" id="L69">                Cell cell = row.createCell(cellID++);</span>
+<span class="nc" id="L70">                cell.setCellValue((String)obj);</span>
             }
-<span class="nc" id="L70">        }</span>
+<span class="nc" id="L72">        }</span>
 
-<span class="nc" id="L72">        OutputStream out = new FileOutputStream(produceFileName());</span>
+<span class="nc" id="L74">        OutputStream out = new FileOutputStream(produceFileName());</span>
 
-<span class="nc" id="L74">        workbook.write(out);</span>
-<span class="nc" id="L75">        out.close();</span>
+<span class="nc" id="L76">        workbook.write(out);</span>
+<span class="nc" id="L77">        out.close();</span>
 
-<span class="nc" id="L77">        workbook.close();</span>
+<span class="nc" id="L79">        workbook.close();</span>
 
-<span class="nc" id="L79">        return out;</span>
+<span class="nc" id="L81">        return out;</span>
 
 
 

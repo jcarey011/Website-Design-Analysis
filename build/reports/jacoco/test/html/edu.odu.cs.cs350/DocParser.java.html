@@ -3,13 +3,14 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.nio.file.*;
 
 
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
-<span class="nc" id="L12">public class DocParser </span>
+<span class="nc" id="L13">public class DocParser </span>
 {
 
     
@@ -17,9 +18,9 @@ import org.jsoup.select.*;
     public Document Parser() throws IOException{
 
         
-<span class="nc" id="L20">        File fileFromPath = new File(&quot;&quot;);</span>
-<span class="nc" id="L21">        Document newDoc = Jsoup.parse(fileFromPath, &quot;null&quot;);</span>
-<span class="nc" id="L22">        return newDoc;</span>
+<span class="nc" id="L21">        File fileFromPath = new File(&quot;&quot;);</span>
+<span class="nc" id="L22">        Document newDoc = Jsoup.parse(fileFromPath, &quot;null&quot;);</span>
+<span class="nc" id="L23">        return newDoc;</span>
     }
 
     /**
@@ -31,17 +32,17 @@ import org.jsoup.select.*;
 
     public List &lt;Element&gt; extractAnchors() throws IOException{
 
-<span class="nc" id="L34">        Document doc = Parser();</span>
-<span class="nc" id="L35">        Elements anchorTags = doc.select( &quot;a[href]&quot;);</span>
-<span class="nc" id="L36">        List&lt;Element&gt; listAnchorTags = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L35">        Document doc = Parser();</span>
+<span class="nc" id="L36">        Elements anchorTags = doc.select( &quot;a[href]&quot;);</span>
+<span class="nc" id="L37">        List&lt;Element&gt; listAnchorTags = new ArrayList&lt;&gt;();</span>
         
-<span class="nc bnc" id="L38" title="All 2 branches missed.">        for (Element e  : anchorTags){</span>
+<span class="nc bnc" id="L39" title="All 2 branches missed.">        for (Element e  : anchorTags){</span>
 
-<span class="nc" id="L40">            listAnchorTags.add(e);</span>
-<span class="nc" id="L41">        }</span>
+<span class="nc" id="L41">            listAnchorTags.add(e);</span>
+<span class="nc" id="L42">        }</span>
         
 
-<span class="nc" id="L44">        return listAnchorTags;</span>
+<span class="nc" id="L45">        return listAnchorTags;</span>
 
     }
 
@@ -54,17 +55,17 @@ import org.jsoup.select.*;
     
     public List &lt;Element&gt; extractImages() throws IOException{
 
-<span class="nc" id="L57">        Document doc = Parser();</span>
-<span class="nc" id="L58">        Elements imageTags = doc.select(&quot;img[src]&quot;);</span>
-<span class="nc" id="L59">        List&lt;Element&gt; listImageTags = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L58">        Document doc = Parser();</span>
+<span class="nc" id="L59">        Elements imageTags = doc.select(&quot;img[src]&quot;);</span>
+<span class="nc" id="L60">        List&lt;Element&gt; listImageTags = new ArrayList&lt;&gt;();</span>
 
-<span class="nc bnc" id="L61" title="All 2 branches missed.">        for (Element e : imageTags){</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">        for (Element e : imageTags){</span>
 
-<span class="nc" id="L63">            listImageTags.add(e);</span>
-<span class="nc" id="L64">        }</span>
+<span class="nc" id="L64">            listImageTags.add(e);</span>
+<span class="nc" id="L65">        }</span>
         
 
-<span class="nc" id="L67">        return listImageTags;</span>
+<span class="nc" id="L68">        return listImageTags;</span>
 
     }
 
@@ -77,17 +78,17 @@ import org.jsoup.select.*;
 
     public List &lt;Element&gt; extractLinks() throws IOException{
 
-<span class="nc" id="L80">        Document doc = Parser();</span>
-<span class="nc" id="L81">        Elements linkTags = doc.select(&quot;link&quot;);</span>
-<span class="nc" id="L82">        List&lt;Element&gt; listLinkTags = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L81">        Document doc = Parser();</span>
+<span class="nc" id="L82">        Elements linkTags = doc.select(&quot;link&quot;);</span>
+<span class="nc" id="L83">        List&lt;Element&gt; listLinkTags = new ArrayList&lt;&gt;();</span>
 
-<span class="nc bnc" id="L84" title="All 2 branches missed.">        for (Element e : linkTags){</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">        for (Element e : linkTags){</span>
 
-<span class="nc" id="L86">            listLinkTags.add(e);</span>
-<span class="nc" id="L87">        }</span>
+<span class="nc" id="L87">            listLinkTags.add(e);</span>
+<span class="nc" id="L88">        }</span>
         
 
-<span class="nc" id="L90">        return listLinkTags;</span>
+<span class="nc" id="L91">        return listLinkTags;</span>
 
     }
 
@@ -101,17 +102,17 @@ import org.jsoup.select.*;
     public List &lt;Element&gt; extractScripts() throws IOException{
 
 
-<span class="nc" id="L104">        Document doc =  Parser();</span>
-<span class="nc" id="L105">        Elements scriptTags = doc.select(&quot;script&quot;);</span>
-<span class="nc" id="L106">        List&lt;Element&gt; listScriptTags = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L105">        Document doc =  Parser();</span>
+<span class="nc" id="L106">        Elements scriptTags = doc.select(&quot;script&quot;);</span>
+<span class="nc" id="L107">        List&lt;Element&gt; listScriptTags = new ArrayList&lt;&gt;();</span>
         
-<span class="nc bnc" id="L108" title="All 2 branches missed.">        for (Element e : scriptTags){</span>
+<span class="nc bnc" id="L109" title="All 2 branches missed.">        for (Element e : scriptTags){</span>
 
-<span class="nc" id="L110">            listScriptTags.add(e);</span>
-<span class="nc" id="L111">        }</span>
+<span class="nc" id="L111">            listScriptTags.add(e);</span>
+<span class="nc" id="L112">        }</span>
         
 
-<span class="nc" id="L114">        return listScriptTags;</span>
+<span class="nc" id="L115">        return listScriptTags;</span>
 
     }
 
