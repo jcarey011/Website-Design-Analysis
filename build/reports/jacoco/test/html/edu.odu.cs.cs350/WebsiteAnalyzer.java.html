@@ -13,60 +13,54 @@ import java.nio.file.Paths;
     public static LinkedList&lt;String&gt; PathsList;
 
         public static void main(String[] args) throws IOException{
-        //String textFileName;
-        //String jsonFileName;
-        //String ExcelFileName;
-        //String Path;
+        String textFileName;
+        String jsonFileName;
+        String ExcelFileName;
+        
         
 
-        //Website web = new Website(args);
-        //Options userOptions = web.getOptions();
-        //Path p = CommandLine.inputPath();
-        //Options op = new Options(Path);
+    
 
-<span class="nc" id="L27">        Path pathToExamine = Paths.get(args [0]);</span>
-<span class="nc" id="L28">        System.out.println(pathToExamine);</span>
+<span class="nc" id="L24">        Path pathToExamine = Paths.get(args [0]);</span>
+<span class="nc" id="L25">        System.out.println(pathToExamine);</span>
 
-<span class="nc" id="L30">        Website web = new Website(pathToExamine);</span>
-<span class="nc" id="L31">        web.examineDirectory();</span>
+<span class="nc" id="L27">        Website web = new Website(pathToExamine);</span>
+<span class="nc" id="L28">        web.examineDirectory();</span>
 
-<span class="nc" id="L33">        System.out.println(&quot;Files Identified:&quot;);</span>
+<span class="nc" id="L30">        System.out.println(&quot;Files Identified:&quot;);</span>
 
-<span class="nc bnc" id="L35" title="All 2 branches missed.">        for(Path file: web.getFileList()){</span>
-<span class="nc" id="L36">            System.out.format(&quot; - %s%n&quot;, file);</span>
-<span class="nc" id="L37">        }</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">        for(Path file: web.getFileList()){</span>
+<span class="nc" id="L33">            System.out.format(&quot; - %s%n&quot;, file);</span>
+<span class="nc" id="L34">        }</span>
 
-<span class="nc" id="L39">        System.out.println();</span>
+<span class="nc" id="L36">        System.out.println();</span>
 
-<span class="nc" id="L41">        System.out.println(&quot;Directories Identified:&quot;);</span>
-<span class="nc bnc" id="L42" title="All 2 branches missed.">        for(Path file : web.getDirectoryList()){</span>
-<span class="nc" id="L43">            System.out.format(&quot; - %s%n&quot;, file);</span>
-<span class="nc" id="L44">        }</span>
+<span class="nc" id="L38">        System.out.println(&quot;Directories Identified:&quot;);</span>
+<span class="nc bnc" id="L39" title="All 2 branches missed.">        for(Path file : web.getDirectoryList()){</span>
+<span class="nc" id="L40">            System.out.format(&quot; - %s%n&quot;, file);</span>
+<span class="nc" id="L41">        }</span>
 
-<span class="nc" id="L46">        ExcelWriter.createExcel();</span>
+<span class="nc" id="L43">        ExcelWriter.createExcel();</span>
         
 
-    // Path = CommandLine.inputPath();
-    // PathsList.push(Path);
-        
-    /* 
-        ExcelWriter.createExcel();
-        JsonWriter.CreateJson();
-        TextWriter.main();
+    
+<span class="nc" id="L47">        ExcelWriter.createExcel();</span>
+<span class="nc" id="L48">        JsonWriter.CreateJson();</span>
+<span class="nc" id="L49">        TextWriter.main();</span>
 
-        ExcelFileName = ExcelWriter.produceFileName();
-        jsonFileName = JsonWriter.produceFileName();
-        textFileName = TextWriter.FileName();
+<span class="nc" id="L51">        ExcelFileName = ExcelWriter.produceFileName();</span>
+<span class="nc" id="L52">        jsonFileName = JsonWriter.produceFileName();</span>
+<span class="nc" id="L53">        textFileName = TextWriter.FileName();</span>
 
-        CommandLine.addNames(ExcelFileName);
-        CommandLine.addNames(jsonFileName);
-        CommandLine.addNames(textFileName);
+<span class="nc" id="L55">        CommandLine.addNames(ExcelFileName);</span>
+<span class="nc" id="L56">        CommandLine.addNames(jsonFileName);</span>
+<span class="nc" id="L57">        CommandLine.addNames(textFileName);</span>
             
-        CommandLine.setNumberFiles(3);
-        CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());
+<span class="nc" id="L59">        CommandLine.setNumberFiles(3);</span>
+<span class="nc" id="L60">        CommandLine.outPutFileNames(CommandLine.fetchNumberFiles());</span>
 
-        */
-<span class="nc" id="L69">    }</span>
+        
+<span class="nc" id="L63">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
