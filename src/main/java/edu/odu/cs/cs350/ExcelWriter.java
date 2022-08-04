@@ -12,10 +12,6 @@ import org.apache.poi.xssf.usermodel.*;
 
 public class ExcelWriter {
     
-    public static void main(String[] args) throws IOException {
-
-            createExcel();
-    } 
     
 
     /**
@@ -41,7 +37,7 @@ public class ExcelWriter {
 
         //creating workbook
         XSSFWorkbook workbook = new XSSFWorkbook();
-        
+
         //creating spreadsheet
         XSSFSheet spreadsheet = workbook.createSheet("Summary");
 
@@ -74,6 +70,11 @@ public class ExcelWriter {
         }
 
         OutputStream out = new FileOutputStream(produceFileName());
+
+        workbook.write(out);
+        out.close();
+
+        workbook.close();
 
         return out;
 
