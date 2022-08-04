@@ -25,6 +25,12 @@ public class Website {
         this.allDirectories = new ArrayList<>();
 
     }
+    public Website()
+    {
+        this.pathInput = null;
+        this.allFiles = new ArrayList<>();
+        this.allDirectories = new ArrayList<>();
+    }
 
     public void examineDirectory() throws IOException{
 
