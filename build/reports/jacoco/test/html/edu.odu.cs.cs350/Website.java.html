@@ -17,39 +17,45 @@ public class Website {
     List&lt;Path&gt; allFiles;
     List&lt;Path&gt; allDirectories;
 
-<span class="fc" id="L20">    public Website(Path path){</span>
+<span class="nc" id="L20">    public Website(Path path){</span>
 
-<span class="fc" id="L22">        this.pathInput = path;</span>
+<span class="nc" id="L22">        this.pathInput = path;</span>
 
-<span class="fc" id="L24">        this.allFiles = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L25">        this.allDirectories = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L24">        this.allFiles = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L25">        this.allDirectories = new ArrayList&lt;&gt;();</span>
 
-<span class="fc" id="L27">    }</span>
+<span class="nc" id="L27">    }</span>
+    public Website()
+<span class="fc" id="L29">    {</span>
+<span class="fc" id="L30">        this.pathInput = null;</span>
+<span class="fc" id="L31">        this.allFiles = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L32">        this.allDirectories = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L33">    }</span>
 
     public void examineDirectory() throws IOException{
 
-<span class="nc" id="L31">        Files.walk(this.pathInput).forEach((Path path) -&gt; {</span>
+<span class="nc" id="L37">        Files.walk(this.pathInput).forEach((Path path) -&gt; {</span>
 
-<span class="nc bnc" id="L33" title="All 2 branches missed.">            if(Files.isRegularFile(path)){</span>
+<span class="nc bnc" id="L39" title="All 2 branches missed.">            if(Files.isRegularFile(path)){</span>
                 
-<span class="nc" id="L35">                this.allFiles.add(path);</span>
+<span class="nc" id="L41">                this.allFiles.add(path);</span>
 
             }
-<span class="nc bnc" id="L38" title="All 2 branches missed.">            else if (Files.isDirectory(path)){</span>
+<span class="nc bnc" id="L44" title="All 2 branches missed.">            else if (Files.isDirectory(path)){</span>
 
-<span class="nc" id="L40">                this.allDirectories.add(path);</span>
+<span class="nc" id="L46">                this.allDirectories.add(path);</span>
             }
-<span class="nc" id="L42">        });</span>
-<span class="nc" id="L43">    }</span>
+<span class="nc" id="L48">        });</span>
+<span class="nc" id="L49">    }</span>
 
     public List&lt;Path&gt; getFileList(){
 
-<span class="fc" id="L47">        return this.allFiles;</span>
+<span class="fc" id="L53">        return this.allFiles;</span>
     }
 
     public List&lt;Path&gt; getDirectoryList(){
 
-<span class="fc" id="L52">        return this.allDirectories;</span>
+<span class="fc" id="L58">        return this.allDirectories;</span>
     }
 
     
