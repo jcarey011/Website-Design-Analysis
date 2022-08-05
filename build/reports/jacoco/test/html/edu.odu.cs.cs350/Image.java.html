@@ -13,17 +13,22 @@ import java.nio.file.*;
 	public void Files(Path path) {
 <span class="nc" id="L14">		this.imgPath = path;</span>
 <span class="nc" id="L15">	}</span>
+	/**
+	 * Goes through list of images and gets the filse sizes
+	 * 
+	 * @returns list of file sizes
+	 */
 	
     public List&lt;Image&gt; extractImageData(Path path){
-<span class="nc" id="L18">    	Website web = new Website(path);</span>
+<span class="nc" id="L23">    	Website web = new Website(path);</span>
     	// Files f = new Files(path);
-<span class="nc" id="L20">    	List&lt;Image&gt; listImages = new ArrayList&lt;&gt;();</span>
-<span class="nc bnc" id="L21" title="All 2 branches missed.">    	for (Path e: web.getFileList()) {</span>
+<span class="nc" id="L25">    	List&lt;Image&gt; listImages = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">    	for (Path e: web.getFileList()) {</span>
     		
     		// algorithm to record listImages.bytes &amp; listImages.imgPath
     		
-<span class="nc" id="L25">    	}</span>
-<span class="nc" id="L26">    	return listImages;</span>
+<span class="nc" id="L30">    	}</span>
+<span class="nc" id="L31">    	return listImages;</span>
     
     }
 }
