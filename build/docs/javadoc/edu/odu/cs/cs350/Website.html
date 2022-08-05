@@ -131,6 +131,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">Website</span>
 extends java.lang.Object</pre>
+<div class="block">Collects list of files and directories for the directory that was inputted</div>
 </li>
 </ul>
 </div>
@@ -152,7 +153,11 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.nio.file.Path)">Website</a></span>&#8203;(java.nio.file.Path&nbsp;path)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Records all the directories and files
+ 
+ *param path to be analyzed</div>
+</td>
 </tr>
 </table>
 </li>
@@ -175,17 +180,23 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#examineDirectory()">examineDirectory</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Examines the directory</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;java.nio.file.Path&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDirectoryList()">getDirectoryList</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Retrieve list of identified directories</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.nio.file.Path&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFileList()">getFileList</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Retrive list of identified files</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -218,6 +229,9 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>Website</h4>
 <pre>public&nbsp;Website&#8203;(java.nio.file.Path&nbsp;path)</pre>
+<div class="block">Records all the directories and files
+ 
+ *param path to be analyzed</div>
 </li>
 </ul>
 </li>
@@ -238,9 +252,10 @@ extends java.lang.Object</pre>
 <h4>examineDirectory</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;examineDirectory()
                       throws java.io.IOException</pre>
+<div class="block">Examines the directory</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
+<dd><code>java.io.IOException</code> - if directory cannot be read</dd>
 </dl>
 </li>
 </ul>
@@ -251,6 +266,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getFileList</h4>
 <pre class="methodSignature">public&nbsp;java.util.List&lt;java.nio.file.Path&gt;&nbsp;getFileList()</pre>
+<div class="block">Retrive list of identified files</div>
 </li>
 </ul>
 <a id="getDirectoryList()">
@@ -260,6 +276,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getDirectoryList</h4>
 <pre class="methodSignature">public&nbsp;java.util.List&lt;java.nio.file.Path&gt;&nbsp;getDirectoryList()</pre>
+<div class="block">Retrieve list of identified directories</div>
 </li>
 </ul>
 </li>
