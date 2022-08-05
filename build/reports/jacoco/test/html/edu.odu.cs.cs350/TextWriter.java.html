@@ -71,11 +71,11 @@ public static String[] sortingDirectories(String[] directories)
  */
 public static String FileName(){
 
-<span class="nc" id="L74">    LocalDateTime today = LocalDateTime.now();</span>
-<span class="nc" id="L75">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyyMMdd-hhmmss&quot;);</span>
-<span class="nc" id="L76">        String formattedTime = formatter.format(today);</span>
+<span class="fc" id="L74">    LocalDateTime today = LocalDateTime.now();</span>
+<span class="fc" id="L75">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyyMMdd-hhmmss&quot;);</span>
+<span class="fc" id="L76">        String formattedTime = formatter.format(today);</span>
 
-<span class="nc" id="L78">        return formattedTime + &quot;-summary.txt&quot;;</span>
+<span class="fc" id="L78">        return formattedTime + &quot;-summary.txt&quot;;</span>
 }
 
 }
