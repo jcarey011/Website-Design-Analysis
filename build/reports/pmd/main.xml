@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-08-05T00:41:07.297">
+    version="6.21.0" timestamp="2022-08-05T00:47:14.759">
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Anchor.java">
 <violation beginline="10" endline="10" begincolumn="24" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Anchor" variable="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
@@ -16,16 +16,16 @@ Use explicit scoping instead of the default package private level
 <violation beginline="12" endline="12" begincolumn="23" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="Anchor" variable="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'linkType' is not assigned and could be declared final
 </violation>
-<violation beginline="17" endline="17" begincolumn="51" endcolumn="68" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="tags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="21" endline="21" begincolumn="51" endcolumn="68" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="tags" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'tags' is not assigned and could be declared final
 </violation>
-<violation beginline="18" endline="18" begincolumn="9" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="22" endline="22" begincolumn="9" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'listLinkTypes' could be declared final
 </violation>
-<violation beginline="19" endline="19" begincolumn="30" endcolumn="30" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+<violation beginline="23" endline="23" begincolumn="30" endcolumn="30" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
 Avoid unused local variables such as 'e'.
 </violation>
-<violation beginline="19" endline="19" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+<violation beginline="23" endline="23" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Anchor" method="getLinkTypes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
 Local variable 'e' could be declared final
 </violation>
 </file>

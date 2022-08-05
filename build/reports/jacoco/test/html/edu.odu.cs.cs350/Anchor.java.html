@@ -12,14 +12,18 @@ public class Anchor {
 <span class="nc" id="L12">	public Anchor(Classification linkType) {</span>
 <span class="nc" id="L13">		this.linkType = linkType;</span>
 
-<span class="nc" id="L15">	}</span>
-
+<span class="nc" id="L15">	}	</span>
+	/**
+	 * Determines whether analyzed anchor tags are intraPage, intraSite or external
+	 * @return list containing classifications of anchor tags
+	 * @param list of anchor tags
+	 */
 	public List&lt;Classification&gt; getLinkTypes (List&lt;Element&gt; tags) {
-<span class="nc" id="L18">        List&lt;Classification&gt; listLinkTypes = new ArrayList&lt;&gt;();</span>
-<span class="nc bnc" id="L19" title="All 2 branches missed.">		for (Element e  : tags){</span>
+<span class="nc" id="L22">        List&lt;Classification&gt; listLinkTypes = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L23" title="All 2 branches missed.">		for (Element e  : tags){</span>
 			// Need to design algorithm for determining intraPage (# at start or URL), intraSite (SameHost.com), External (DifferentHost.com)
-<span class="nc" id="L21">        }</span>
-<span class="nc" id="L22">        return listLinkTypes;</span>
+<span class="nc" id="L25">        }</span>
+<span class="nc" id="L26">        return listLinkTypes;</span>
 //		Temporarily for reference:        
 //		Anchor test = new Anchor(linkType.intraPage);
 //		return test;
