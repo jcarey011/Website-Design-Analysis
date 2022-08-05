@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-import java.nio.file.Path; 
-import java.nio.file.Paths;
+
 
 public class CommandLine {
     
@@ -14,16 +13,16 @@ public class CommandLine {
     public static String fileName;
     public static LinkedList&lt;String&gt; fileList;
 
-<span class="fc" id="L17">    public CommandLine(){</span>
-<span class="fc" id="L18">        numberOfFiles = 0;</span>
-<span class="fc" id="L19">        fileName = &quot;&quot;;</span>
-<span class="fc" id="L20">        fileList = new LinkedList&lt;&gt;();</span>
-<span class="fc" id="L21">    }</span>
+<span class="fc" id="L16">    public CommandLine(){</span>
+<span class="fc" id="L17">        numberOfFiles = 0;</span>
+<span class="fc" id="L18">        fileName = &quot;&quot;;</span>
+<span class="fc" id="L19">        fileList = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L20">    }</span>
     /*
      * Function will access files and pull names
      */
     public static String getNames(){
-<span class="fc" id="L26">        return fileName;</span>
+<span class="fc" id="L25">        return fileName;</span>
     }
     /*
      * function can be used to add names directly to static list in this class
@@ -31,24 +30,24 @@ public class CommandLine {
      */
     public static void addNames(String fileName)
     {
-<span class="fc" id="L34">        fileList.push(fileName);</span>
-<span class="fc" id="L35">    }</span>
+<span class="fc" id="L33">        fileList.push(fileName);</span>
+<span class="fc" id="L34">    }</span>
     /*
      * Function will set private name
      * @param name  Name to set 
      */
     public static void setName(String name)
     {
-<span class="nc" id="L42">        fileName = name;</span>
-<span class="nc" id="L43">    }</span>
+<span class="nc" id="L41">        fileName = name;</span>
+<span class="nc" id="L42">    }</span>
     /*
      * Function will set number of files known
      * @param number  number to set private integer to
      */
     public static void setNumberFiles(int number)
     {
-<span class="nc" id="L50">        numberOfFiles = number;</span>
-<span class="nc" id="L51">    }</span>
+<span class="nc" id="L49">        numberOfFiles = number;</span>
+<span class="nc" id="L50">    }</span>
     /*
     *   Function will access files and collect number of files in total
     *   @param numfiles  number of files found
@@ -56,7 +55,7 @@ public class CommandLine {
     */
     public static int fetchNumberFiles()
     {
-<span class="fc" id="L59">        return numberOfFiles;</span>
+<span class="fc" id="L58">        return numberOfFiles;</span>
     }
     /* 
      * Function will output file names to CLI
@@ -65,36 +64,36 @@ public class CommandLine {
     */
     public static void outPutFileNames(int FileListSize)
     {
-<span class="nc" id="L68">        FileListSize = fetchNumberFiles();</span>
-<span class="nc" id="L69">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L70">        files.add(getNames());</span>
-<span class="nc bnc" id="L71" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
+<span class="nc" id="L67">        FileListSize = fetchNumberFiles();</span>
+<span class="nc" id="L68">        List&lt;String&gt; files = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L69">        files.add(getNames());</span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">        for (int i = 0; i &lt; FileListSize; i++)</span>
         {
-<span class="nc" id="L73">           files.forEach(System.out::println);</span>
+<span class="nc" id="L72">           files.forEach(System.out::println);</span>
         }
-<span class="nc" id="L75">    }</span>
+<span class="nc" id="L74">    }</span>
     public static String inputPath()
     {
-<span class="nc" id="L78">        Scanner input = new Scanner(System.in);</span>
+<span class="nc" id="L77">        Scanner input = new Scanner(System.in);</span>
         //System.out.println(&quot;Enter File Path: &quot;);
-<span class="nc" id="L80">        String path = input.nextLine();</span>
+<span class="nc" id="L79">        String path = input.nextLine();</span>
         //System.out.println(&quot;File Path Is &quot; + path);
         //Path p1 = Paths.get(path);
-<span class="nc" id="L83">        input.close();</span>
-<span class="nc" id="L84">        return path;</span>
+<span class="nc" id="L82">        input.close();</span>
+<span class="nc" id="L83">        return path;</span>
     }
 
     public static void outputFileNames (){
 
        
-<span class="nc" id="L90">        String JsonFileName = JsonWriter.produceFileName();</span>
-<span class="nc" id="L91">        String ExcelFileName = ExcelWriter.produceFileName();</span>
-<span class="nc" id="L92">        String txtFileName = TextWriter.FileName();</span>
+<span class="nc" id="L89">        String JsonFileName = JsonWriter.produceFileName();</span>
+<span class="nc" id="L90">        String ExcelFileName = ExcelWriter.produceFileName();</span>
+<span class="nc" id="L91">        String txtFileName = TextWriter.FileName();</span>
 
-<span class="nc" id="L94">        System.out.println(String.format(&quot;%s%n%&quot;, JsonFileName, ExcelFileName, txtFileName));</span>
+<span class="nc" id="L93">        System.out.println(String.format(&quot;%s%n%&quot;, JsonFileName, ExcelFileName, txtFileName));</span>
 
         
-<span class="nc" id="L97">    }</span>
+<span class="nc" id="L96">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
