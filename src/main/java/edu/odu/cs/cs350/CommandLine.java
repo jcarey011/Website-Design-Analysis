@@ -79,8 +79,21 @@ public class CommandLine {
         //System.out.println("Enter File Path: ");
         String path = input.nextLine();
         //System.out.println("File Path Is " + path);
+        //Path p1 = Paths.get(path);
         input.close();
         return path;
+    }
+
+    public static void outputFileNames (){
+
+       
+        String JsonFileName = JsonWriter.produceFileName();
+        String ExcelFileName = ExcelWriter.produceFileName();
+        String txtFileName = TextWriter.FileName();
+
+        System.out.println(String.format("%s%n%", JsonFileName, ExcelFileName, txtFileName));
+
+        
     }
     
 }
