@@ -13,6 +13,11 @@ public class Image {
 	public void Files(Path path) {
 		this.imgPath = path;
 	}
+	/**
+	 * Goes through list of images and gets the filse sizes
+	 * 
+	 * @returns list of file sizes
+	 */
 	
     public List<Image> extractImageData(Path path){
     	Website web = new Website(path);
