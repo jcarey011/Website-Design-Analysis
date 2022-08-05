@@ -12,8 +12,12 @@ public class Anchor {
 	public Anchor(Classification linkType) {
 		this.linkType = linkType;
 
-	}
-
+	}	
+	/**
+	 * Determines whether analyzed anchor tags are intraPage, intraSite or external
+	 * @return list containing classifications of anchor tags
+	 * @param list of anchor tags
+	 */
 	public List<Classification> getLinkTypes (List<Element> tags) {
         List<Classification> listLinkTypes = new ArrayList<>();
 		for (Element e  : tags){
