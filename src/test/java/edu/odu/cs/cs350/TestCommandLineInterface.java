@@ -10,14 +10,14 @@ import static org.hamcrest.Matchers.contains;
 public class TestCommandLineInterface {
     
     @Test
-    public static void testAddFunction()
+    public void testAddFunction()
     {
         CommandLine c = new CommandLine();
         c.addNames("Hannibal.txt");
         assertThat(c.fileList, contains("Hannibal.txt"));
     }
     @Test
-    public static void testGetNames()
+    public void testGetNames()
     {
         CommandLine c = new CommandLine();
         c.fileName = "Hannibal.txt";
@@ -26,9 +26,13 @@ public class TestCommandLineInterface {
         assertThat(actual, is(expected));
     }
     @Test
-    public static void testFetchFunction()
+    public void testFetchFunction()
     {
-
+        CommandLine c = new CommandLine();
+        c.numberOfFiles = 3;
+        int expected = 3;
+        int actual = c.fetchNumberFiles;
+        assertThat(actual, is(expected));
     }
 
 }
