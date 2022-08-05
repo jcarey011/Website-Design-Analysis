@@ -31,7 +31,7 @@ public class TestCommandLineInterface {
         CommandLine c = new CommandLine();
         c.numberOfFiles = 3;
         int expected = 3;
-        int actual = c.fetchNumberFiles;
+        int actual = c.fetchNumberFiles();
         assertThat(actual, is(expected));
     }
 
