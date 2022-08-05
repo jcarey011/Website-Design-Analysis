@@ -9,6 +9,10 @@ import java.util.ArrayList;
 //import java.util.stream.Stream;
 //import java.util.stream.Collectors;
 
+/**
+ * Collects list of files and directories for the directory that was inputted
+ */
+
 
 public class Website {
     
@@ -16,161 +20,58 @@ public class Website {
 
     List&lt;Path&gt; allFiles;
     List&lt;Path&gt; allDirectories;
+/**
+ * Records all the directories and files
+ * 
+ * *param path to be analyzed
+ */
+<span class="fc" id="L28">    public Website(Path path){</span>
 
-<span class="fc" id="L20">    public Website(Path path){</span>
+<span class="fc" id="L30">        this.pathInput = path;</span>
 
-<span class="fc" id="L22">        this.pathInput = path;</span>
+<span class="fc" id="L32">        this.allFiles = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L33">        this.allDirectories = new ArrayList&lt;&gt;();</span>
 
-<span class="fc" id="L24">        this.allFiles = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L25">        this.allDirectories = new ArrayList&lt;&gt;();</span>
-
-<span class="fc" id="L27">    }</span>
-   /*  public Website()
-    {
-        this.pathInput = null;
-        this.allFiles = new ArrayList&lt;&gt;();
-        this.allDirectories = new ArrayList&lt;&gt;();
-    }
-    */
-
+<span class="fc" id="L35">    }</span>
+   
+/**
+ * Examines the directory
+ * 
+ * @throws IOException if directory cannot be read
+ * 
+ */
     public void examineDirectory() throws IOException{
 
-<span class="nc" id="L38">        Files.walk(this.pathInput).forEach((Path path) -&gt; {</span>
+<span class="nc" id="L45">        Files.walk(this.pathInput).forEach((Path path) -&gt; {</span>
 
-<span class="nc bnc" id="L40" title="All 2 branches missed.">            if(Files.isRegularFile(path)){</span>
+<span class="nc bnc" id="L47" title="All 2 branches missed.">            if(Files.isRegularFile(path)){</span>
                 
-<span class="nc" id="L42">                this.allFiles.add(path);</span>
+<span class="nc" id="L49">                this.allFiles.add(path);</span>
 
             }
-<span class="nc bnc" id="L45" title="All 2 branches missed.">            else if (Files.isDirectory(path)){</span>
+<span class="nc bnc" id="L52" title="All 2 branches missed.">            else if (Files.isDirectory(path)){</span>
 
-<span class="nc" id="L47">                this.allDirectories.add(path);</span>
+<span class="nc" id="L54">                this.allDirectories.add(path);</span>
             }
-<span class="nc" id="L49">        });</span>
-<span class="nc" id="L50">    }</span>
-
+<span class="nc" id="L56">        });</span>
+<span class="nc" id="L57">    }</span>
+/**
+ * 
+ * Retrive list of identified files
+ */
     public List&lt;Path&gt; getFileList(){
 
-<span class="fc" id="L54">        return this.allFiles;</span>
+<span class="fc" id="L64">        return this.allFiles;</span>
     }
+/**
+ * 
+ * Retrieve list of identified directories
+ *  
+*/    
 
     public List&lt;Path&gt; getDirectoryList(){
 
-<span class="fc" id="L59">        return this.allDirectories;</span>
+<span class="fc" id="L74">        return this.allDirectories;</span>
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*private Options options;
-    private List&lt;File&gt; sourceFiles;
-
-    public Website(){
-        this.options = new Options();
-        this.sourceFiles = new ArrayList&lt;&gt;();
-    }
-
-    public Website(String [] args){
-        this.options = findOptions(args);
-        this.sourceFiles = findSourceFiles(args, this.options);
-    }
-
-    public void setSourceFiles(List&lt;File&gt; files){
-        this.sourceFiles = files;
-    }
-
-    public void setOptions(Options options){
-        this.options = options;
-    }
-
-    public List&lt;File&gt; getSourceFiles(){
-        return this.sourceFiles;
-    }
-
-
-    public Options getOptions(){
-        return this.options;
-    }
-
-
-    private Options findOptions(String [] args){
-        String path = args[1];
-        Options options = new Options(path);
-        return options;
-    }
-
-    /**
-     * Returns a List of paths of valid files from the user paths passed into the
-     * CLI
-     *
-     * @param args     String array of command line arguments
-     * @param options   config containing list of valid file extensions
-     *
-     * @return         List of valid file paths
-     */
-    /*public List&lt;File&gt; findSourceFiles(String [] args, Options options){
-        List&lt;File&gt; sourceFiles = new ArrayList&lt;&gt;();
-        List&lt;String&gt; fileExts = options.getValidExts();
-
-        for (String path : args) {
-            File file = new File(path);
-            if (file.isDirectory()) {
-                List&lt;File&gt; filesFromDir = new ArrayList&lt;&gt;(findFilesInDir(file, options));
-                sourceFiles.addAll(filesFromDir);
-            }
-
-            else if (file.exists()) {
-                String ext = path.substring(path.lastIndexOf('.') + 1);
-                if (fileExts.contains(ext)) {
-                    sourceFiles.add(file);
-                }
-            }
-        }
-        return sourceFiles;
-    }
-
-    /**
-     * Recursively searches a directory for valid files and adds them to a List
-     *
-     * @param  file     directory to be searched
-     * @param options   config containing a list of valid file extensions
-     *
-     * @return         List of all valid files within the directory and subdirectories
-     */
-    /*public List&lt;File&gt; findFilesInDir(File file, Options options){
-        List&lt;File&gt; files = new ArrayList&lt;File&gt;();
-        List&lt;String&gt; fileExts = options.getValidExts();
-        File [] filesInDIr = file.listFiles();
-
-        for (File f : filesInDIr){
-
-            if (f.isDirectory()){
-                List&lt;File&gt; filesFromDir = new ArrayList&lt;&gt;();
-                filesFromDir = findFilesInDir(f, options);
-                if (filesFromDir.size() &gt; 0){
-                    files.addAll(filesFromDir);
-                }
-            }
-
-            else if (f.isFile()){
-                String path = f.getAbsolutePath();
-                String ext = path.substring(path.lastIndexOf('.') + 1);
-                if (fileExts.contains(ext)){
-                    files.add(f);
-                }
-            }
-        }
-        return files;
-    }
-    
-
-*/
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

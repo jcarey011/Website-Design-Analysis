@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2022-08-05T01:02:54.966">
+    version="6.21.0" timestamp="2022-08-05T01:03:00.677">
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Anchor.java">
 <violation beginline="10" endline="10" begincolumn="24" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Anchor" variable="linkType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
@@ -458,40 +458,40 @@ Potential violation of Law of Demeter (object not created locally)
 </violation>
 </file>
 <file name="/home/runner/work/Website-Design-Analysis/Website-Design-Analysis/src/main/java/edu/odu/cs/cs350/Website.java">
-<violation beginline="15" endline="15" begincolumn="10" endcolumn="18" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="pathInput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="19" endline="19" begincolumn="10" endcolumn="18" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="pathInput" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="15" endline="15" begincolumn="5" endcolumn="19" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+<violation beginline="19" endline="19" begincolumn="5" endcolumn="19" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
 To avoid mistakes add a comment at the beginning of the pathInput field if you want a default access modifier
 </violation>
-<violation beginline="15" endline="15" begincolumn="5" endcolumn="19" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+<violation beginline="19" endline="19" begincolumn="5" endcolumn="19" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
 Use explicit scoping instead of the default package private level
 </violation>
-<violation beginline="17" endline="17" begincolumn="16" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="allFiles" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="21" endline="21" begincolumn="16" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="allFiles" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="17" endline="17" begincolumn="5" endcolumn="24" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+<violation beginline="21" endline="21" begincolumn="5" endcolumn="24" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
 To avoid mistakes add a comment at the beginning of the allFiles field if you want a default access modifier
 </violation>
-<violation beginline="17" endline="17" begincolumn="5" endcolumn="24" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+<violation beginline="21" endline="21" begincolumn="5" endcolumn="24" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
 Use explicit scoping instead of the default package private level
 </violation>
-<violation beginline="18" endline="18" begincolumn="16" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="allDirectories" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="22" endline="22" begincolumn="16" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="allDirectories" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="18" endline="18" begincolumn="5" endcolumn="30" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+<violation beginline="22" endline="22" begincolumn="5" endcolumn="30" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
 To avoid mistakes add a comment at the beginning of the allDirectories field if you want a default access modifier
 </violation>
-<violation beginline="18" endline="18" begincolumn="5" endcolumn="30" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+<violation beginline="22" endline="22" begincolumn="5" endcolumn="30" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
 Use explicit scoping instead of the default package private level
 </violation>
-<violation beginline="20" endline="20" begincolumn="20" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="path" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+<violation beginline="28" endline="28" begincolumn="20" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="path" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
 Parameter 'path' is not assigned and could be declared final
 </violation>
-<violation beginline="38" endline="49" begincolumn="9" endcolumn="10" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Website" method="examineDirectory" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="45" endline="56" begincolumn="9" endcolumn="10" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Website" method="examineDirectory" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="38" endline="49" begincolumn="9" endcolumn="10" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Website" method="examineDirectory" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="45" endline="56" begincolumn="9" endcolumn="10" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Website" method="examineDirectory" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
 </file>
