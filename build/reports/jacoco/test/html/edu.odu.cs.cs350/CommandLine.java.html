@@ -79,9 +79,22 @@ public class CommandLine {
         //System.out.println(&quot;Enter File Path: &quot;);
 <span class="nc" id="L80">        String path = input.nextLine();</span>
         //System.out.println(&quot;File Path Is &quot; + path);
-<span class="nc" id="L82">        input.close();</span>
-<span class="nc" id="L83">        return path;</span>
+        //Path p1 = Paths.get(path);
+<span class="nc" id="L83">        input.close();</span>
+<span class="nc" id="L84">        return path;</span>
     }
+
+    public static void outputFileNames (){
+
+       
+<span class="nc" id="L90">        String JsonFileName = JsonWriter.produceFileName();</span>
+<span class="nc" id="L91">        String ExcelFileName = ExcelWriter.produceFileName();</span>
+<span class="nc" id="L92">        String txtFileName = TextWriter.FileName();</span>
+
+<span class="nc" id="L94">        System.out.println(String.format(&quot;%s%n%&quot;, JsonFileName, ExcelFileName, txtFileName));</span>
+
+        
+<span class="nc" id="L97">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
