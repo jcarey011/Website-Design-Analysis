@@ -1,5 +1,6 @@
 package edu.odu.cs.cs350;
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import org.junit.jupiter.api.Test;
 
@@ -14,5 +15,11 @@ public class TestWriterSortingTest
         TextWriter.sortingDirectories(test);
         assertArrayEquals(new String[] {"Acorn","Apple","Barn","Barn","Xylophone"}, test);
     }
-    
+	
+    @Test
+	public void testTextFileName()
+	{
+		String testpat = TextWriter.FileName();
+		assertTrue(testpat.matches("\\d{8}-\\d{6}-summary.txt"));
+	}
 }

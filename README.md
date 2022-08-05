@@ -9,26 +9,28 @@
 
 Reports Web Page: https://jcarey011.github.io/Website-Design-Analysis/
 
-![PlantText](https://user-images.githubusercontent.com/87342389/177419031-2d06507d-31a4-4e3f-8af3-a195c8c29040.png)
+![image](https://user-images.githubusercontent.com/56100599/182976391-e7e2f7f2-a043-4c5f-85dc-634ee2af3983.png)
 
 
 
 title Classes - Website Analysis
 
+class WebsiteAnalyzer {
 
-class Website {
-  Path localPath
-  Collection<URL> siteURLs
-  Collection<HTMLDocument> allPages
 }
 
-Class HTMLDocument {
-  Path localPath
-  Collection<StyleSheet> styles
-  Collection<JavaScript> scripts
-  Collection<Anchor> links
-  Collection<Image> images
-  
+class Website {
+	+Path localPath 
+	+Collection siteURLs 
+	+Collection allPages 
+}
+
+class DocParser {
+	+Path localPath
+	+Collection styles 
+	+Collection scripts 
+	+Collection links 
+	+Collection images
 }
 
 class Stylesheet {
@@ -43,23 +45,23 @@ class Image {
 
 }
 
-class Anchor {
-    URI path
-    Classification linkType
-    TargetType destinationType
+class Anchor { 
+	+URL path 
+	+Classification linkType 
+	+TargetType destinationType
 }
 
-enum Classification {
-    INTERNAL
-    INTRAPAGE
-    EXTERNAL
+enum Classification { 
+	+INTERNAL 
+	+INTRAPAGE 
+	+EXTERNAL 
 }
 
-enum TargetType {
-    HTMLDOCUMENT
-    ARCHIVE
-    VIDEO
-    AUDIO
+enum TargetType { 
+	+HTMLDOCUMENT 
+	+ARCHIVE 
+	+VIDEO 
+	+AUDIO 
 }
 
 class ExcelWriter {
@@ -74,7 +76,7 @@ class TextWriter {
 
 }
 
-class CommandLineInterface {
-  Input
-  Output
+class CommandLine { 
+	+Input 
+	+Output 
 }
